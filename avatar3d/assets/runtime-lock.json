@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "blender": {
+    "version": "4.5.13",
+    "url": "https://download.blender.org/release/Blender4.5/blender-4.5.13-windows-x64.zip",
+    "sha256": "b5fdf800ce65fa2f209e8f68d02667e4d720fa1c42f247c72d1882ab04decba6",
+    "checksum_source": "https://download.blender.org/release/Blender4.5/blender-4.5.13.sha256"
+  },
+  "addon": {
+    "version": "4.10.2",
+    "url": "https://github.com/saturday06/VRM-Addon-for-Blender/releases/download/v4.10.2/VRM_Addon_for_Blender-4_10_2.zip",
+    "sha256": "c02baf55b83a409fbc01e5c1912d7c8eff2807ce1a23d20eb6c049d1fb1d469c"
+  },
+  "sample": {
+    "name": "Seed-san",
+    "url": "https://raw.githubusercontent.com/vrm-c/vrm-specification/master/samples/Seed-san/vrm/Seed-san.vrm",
+    "sha256": "624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23",
+    "author": "VirtualCast, Inc.",
+    "license": "https://vrm.dev/licenses/1.0/",
+    "credit": "Seed-san model by VirtualCast, Inc.",
+    "scope": "仅为独立技术测试模型，不是地球人日志C角色或设计验收"
+  }
+}

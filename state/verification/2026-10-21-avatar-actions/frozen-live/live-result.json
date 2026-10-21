@@ -1,0 +1,25 @@
+{
+  "frozen": true,
+  "face_observation": {
+    "yaw": 1.1429598292786354,
+    "pitch": 5.054493668018936,
+    "roll": 0.6357184962854612,
+    "jaw": 0.13666366040706635,
+    "eye_left": 0.28881028294563293,
+    "eye_right": 0.2570551633834839,
+    "shoulder_roll": null
+  },
+  "pose_shoulder_angle": -3.17965602068939,
+  "thread_observation": {
+    "yaw": 1.1429598292786354,
+    "pitch": 5.054493668018936,
+    "roll": 0.6357184962854612,
+    "jaw": 0.13666366040706635,
+    "eye_left": 0.28881028294563293,
+    "eye_right": 0.2570551633834839,
+    "shoulder_roll": -2.833833915219189
+  },
+  "qt_frame_conversion": true,
+  "camera_started": false,
+  "input": "公开静态样例，非真人摄像头试用"
+}

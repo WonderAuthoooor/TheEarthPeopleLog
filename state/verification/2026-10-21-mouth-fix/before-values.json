@@ -1,0 +1,34 @@
+[
+  {
+    "openness": 0,
+    "mouth_alpha_min": 252
+  },
+  {
+    "openness": 0.081,
+    "mouth_alpha_min": 5
+  },
+  {
+    "openness": 0.1,
+    "mouth_alpha_min": 5
+  },
+  {
+    "openness": 0.15,
+    "mouth_alpha_min": 253
+  },
+  {
+    "openness": 0.25,
+    "mouth_alpha_min": 253
+  },
+  {
+    "openness": 0.5,
+    "mouth_alpha_min": 253
+  },
+  {
+    "openness": 0.75,
+    "mouth_alpha_min": 253
+  },
+  {
+    "openness": 1,
+    "mouth_alpha_min": 253
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "model": "earthlog-correspondent-c-experimental-01",
+  "audio": "state\\verification\\2026-10-21-mouth-fix\\frozen-gui\\speech.wav",
+  "duration": 10.61625,
+  "fps": 30,
+  "size": [
+    480,
+    720
+  ],
+  "turn": true,
+  "fixed_turn": 0.0,
+  "mouth_method": "RMS音量开合；不是音素对齐",
+  "output_audio": false,
+  "note": "角色MOV与棋盘预览均静音，剪映中叠回同一口播音轨。"
+}

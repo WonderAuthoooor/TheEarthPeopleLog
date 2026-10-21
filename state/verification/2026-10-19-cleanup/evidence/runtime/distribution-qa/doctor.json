@@ -1,0 +1,13 @@
+{
+  "frozen": true,
+  "version": "0.2.0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "qt": "6.9.3",
+  "av": "16.1.0",
+  "pillow": "12.3.0",
+  "ffmpeg": "D:\\work\\TheEarthPeopleLog\\dist\\EarthPeopleLogStudio\\_internal\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+  "font": [
+    "Microsoft YaHei",
+    "Regular"
+  ]
+}

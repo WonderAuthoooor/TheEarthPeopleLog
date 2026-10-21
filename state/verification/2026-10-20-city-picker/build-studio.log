@@ -1,0 +1,154 @@
+1355 INFO: PyInstaller: 6.16.0, contrib hooks: 2026.8
+1355 INFO: Python: 3.12.14
+1428 INFO: Platform: Windows-11-10.0.26200-SP0
+1428 INFO: Python environment: C:\Users\WonderMan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python
+1431 INFO: wrote D:\work\TheEarthPeopleLog\build\0.3.1\EarthPeopleLogStudio.spec
+1445 INFO: Removing temporary files and cleaning cache in D:\work\TheEarthPeopleLog\.runtime\pyinstaller-cache\pyinstaller
+11083 INFO: Module search paths (PYTHONPATH):
+['D:\\work\\TheEarthPeopleLog\\.runtime\\python',
+ 'D:\\work\\TheEarthPeopleLog',
+ 'D:\\work\\TheEarthPeopleLog\\.runtime\\python',
+ 'D:\\work\\TheEarthPeopleLog\\scripts',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages',
+ 'D:\\work\\TheEarthPeopleLog',
+ 'D:\\work\\TheEarthPeopleLog\\.runtime\\python',
+ 'D:\\work\\TheEarthPeopleLog']
+12689 INFO: Appending 'datas' from .spec
+13075 INFO: checking Analysis
+13076 INFO: Building Analysis because Analysis-00.toc is non existent
+13076 INFO: Looking for Python shared library...
+13076 INFO: Using Python shared library: C:\Users\WonderMan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python312.dll
+13076 INFO: Running Analysis Analysis-00.toc
+13076 INFO: Target bytecode optimization level: 0
+13076 INFO: Initializing module dependency graph...
+13082 INFO: Initializing module graph hook caches...
+13109 INFO: Analyzing modules for base_library.zip ...
+16335 INFO: Processing standard module hook 'hook-encodings.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+18511 INFO: Processing standard module hook 'hook-pickle.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+19877 INFO: Processing standard module hook 'hook-heapq.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+20381 INFO: Caching module dependency graph...
+20445 INFO: Analyzing D:\work\TheEarthPeopleLog\studio_entry.py
+20573 INFO: Processing standard module hook 'hook-platform.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+20590 INFO: Processing standard module hook 'hook-PIL.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+20714 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+21768 INFO: Processing standard module hook 'hook-xml.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+21807 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+22008 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+22409 INFO: Processing standard module hook 'hook-imageio_ffmpeg.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\_pyinstaller_hooks_contrib\\stdhooks'
+22462 INFO: Processing standard module hook 'hook-av.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\_pyinstaller_hooks_contrib\\stdhooks'
+23908 INFO: Processing standard module hook 'hook-yt_dlp.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\yt_dlp\\__pyinstaller'
+24336 WARNING: collect_data_files - skipping data collection for module 'curl_cffi' as it is not a package.
+24338 WARNING: collect_data_files - skipping data collection for module 'yt_dlp_ejs' as it is not a package.
+25288 INFO: Processing standard module hook 'hook-sqlite3.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+26373 INFO: Processing standard module hook 'hook-_ctypes.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+26691 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+28791 INFO: Processing standard module hook 'hook-sysconfig.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+37421 INFO: Processing standard module hook 'hook-PySide6.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+38023 INFO: Processing standard module hook 'hook-shiboken6.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+38196 INFO: Processing standard module hook 'hook-PySide6.QtNetwork.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+39982 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+41339 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+42258 INFO: Processing standard module hook 'hook-PySide6.QtSvg.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+43522 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+44132 INFO: Processing standard module hook 'hook-PySide6.QtMultimedia.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+44721 INFO: Analyzing hidden import 'av.__main__'
+44725 INFO: Analyzing hidden import 'av.audio.plane'
+44727 INFO: Analyzing hidden import 'av.buffer'
+44729 INFO: Analyzing hidden import 'av.bytesource'
+44730 INFO: Analyzing hidden import 'av.container.pyio'
+44731 INFO: Analyzing hidden import 'av.datasets'
+44736 INFO: Analyzing hidden import 'av.filter'
+44763 INFO: Analyzing hidden import 'av.filter.link'
+44764 INFO: Analyzing hidden import 'av.opaque'
+44765 INFO: Analyzing hidden import 'av.plane'
+44767 INFO: Analyzing hidden import 'av.sidedata.encparams'
+44770 INFO: Analyzing hidden import 'av.sidedata.motionvectors'
+44773 INFO: Analyzing hidden import 'av.utils'
+44777 INFO: Analyzing hidden import 'av.video.plane'
+44779 INFO: Analyzing hidden import 'av.video.reformatter'
+44783 INFO: Analyzing hidden import 'imageio_ffmpeg.binaries'
+44784 INFO: Analyzing hidden import 'yt_dlp.__main__'
+44786 INFO: Analyzing hidden import 'yt_dlp.__pyinstaller'
+44788 INFO: Analyzing hidden import 'yt_dlp.__pyinstaller.hook-yt_dlp'
+45077 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+45082 INFO: SetuptoolsInfo: initializing cached setuptools info...
+46807 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+46816 INFO: Processing standard module hook 'hook-setuptools.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+46835 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+46913 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+46915 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+46930 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+46932 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+47094 INFO: Processing standard module hook 'hook-_osx_support.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+47101 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+47249 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+47641 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+47643 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+47681 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+47686 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+47690 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+47692 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+48147 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+48149 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+48758 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+48833 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+48872 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_safe_import_module'
+48873 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+48952 INFO: Processing standard module hook 'hook-win32ctypes.core.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+51636 INFO: Processing standard module hook 'hook-pycparser.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\_pyinstaller_hooks_contrib\\stdhooks'
+52665 INFO: Analyzing hidden import 'yt_dlp.compat._deprecated'
+52668 INFO: Analyzing hidden import 'yt_dlp.compat._legacy'
+52679 INFO: Analyzing hidden import 'yt_dlp.utils._deprecated'
+52683 INFO: Analyzing hidden import 'yt_dlp.utils._legacy'
+52695 INFO: Processing module hooks (post-graph stage)...
+52698 WARNING: Hidden import "pycparser.lextab" not found!
+52698 WARNING: Hidden import "pycparser.yacctab" not found!
+53051 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+53120 INFO: Processing standard module hook 'hook-PySide6.QtMultimediaWidgets.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+53691 INFO: Performing binary vs. data reclassification (1480 entries)
+54567 INFO: Looking for ctypes DLLs
+54715 INFO: Analyzing run-time hooks ...
+54723 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\rthooks'
+54727 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\rthooks'
+54733 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\rthooks'
+54736 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\rthooks'
+54738 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\rthooks'
+54741 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_find_module_path'
+54746 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+54814 INFO: Creating base_library.zip...
+54873 INFO: Looking for dynamic libraries
+57087 INFO: Extra DLL search directories (AddDllDirectory): ['D:\\work\\TheEarthPeopleLog\\.runtime\\python\\shiboken6', 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\av.libs']
+57087 INFO: Extra DLL search directories (PATH): []
+61852 INFO: Warnings written to D:\work\TheEarthPeopleLog\build\0.3.1\EarthPeopleLogStudio\warn-EarthPeopleLogStudio.txt
+61993 INFO: Graph cross-reference written to D:\work\TheEarthPeopleLog\build\0.3.1\EarthPeopleLogStudio\xref-EarthPeopleLogStudio.html
+62114 INFO: checking PYZ
+62114 INFO: Building PYZ because PYZ-00.toc is non existent
+62114 INFO: Building PYZ (ZlibArchive) D:\work\TheEarthPeopleLog\build\0.3.1\EarthPeopleLogStudio\PYZ-00.pyz
+63688 INFO: Building PYZ (ZlibArchive) D:\work\TheEarthPeopleLog\build\0.3.1\EarthPeopleLogStudio\PYZ-00.pyz completed successfully.
+63729 INFO: checking PKG
+63729 INFO: Building PKG because PKG-00.toc is non existent
+63729 INFO: Building PKG (CArchive) EarthPeopleLogStudio.pkg
+63788 INFO: Building PKG (CArchive) EarthPeopleLogStudio.pkg completed successfully.
+63790 INFO: Bootloader D:\work\TheEarthPeopleLog\.runtime\python\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+63790 INFO: checking EXE
+63790 INFO: Building EXE because EXE-00.toc is non existent
+63790 INFO: Building EXE from EXE-00.toc
+63791 INFO: Copying bootloader EXE to D:\work\TheEarthPeopleLog\build\0.3.1\EarthPeopleLogStudio\EarthPeopleLogStudio.exe
+63870 INFO: Copying icon to EXE
+63935 INFO: Copying 0 resources to EXE
+63935 INFO: Embedding manifest in EXE
+63998 INFO: Appending PKG archive to EXE
+64112 INFO: Fixing EXE headers
+64503 INFO: Building EXE from EXE-00.toc completed successfully.
+64522 INFO: checking COLLECT
+64523 INFO: Building COLLECT because COLLECT-00.toc is non existent
+64523 INFO: Building COLLECT COLLECT-00.toc
+69936 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+69972 INFO: Build complete! The results are available in: D:\work\TheEarthPeopleLog\dist\0.3.1
+D:\work\TheEarthPeopleLog\studio\assets\app-icon.ico
+Adding imports: ['yt_dlp.compat._legacy', 'yt_dlp.compat._deprecated', 'yt_dlp.utils._legacy', 'yt_dlp.utils._deprecated', 'Cryptodome', 'mutagen', 'brotli', 'certifi', 'secretstorage', 'curl_cffi']
+D:\work\TheEarthPeopleLog\dist\0.3.1\EarthPeopleLogStudio

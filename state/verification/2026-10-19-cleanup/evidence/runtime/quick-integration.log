@@ -1,0 +1,47 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'D:/work/TheEarthPeopleLog/.runtime/quick-qa-1792417418235868300/短新闻 工作区/projects/596fc0c4-bf4e-4f22-a27f-74932b242dac/assets/b2318f6baa146cc8878e33ec.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomiso4
+    creation_time   : 2026-10-17T11:46:58.000000Z
+  Duration: 00:00:44.74, start: 0.000000, bitrate: 1617 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1080, 1481 kb/s, SAR 1:1 DAR 1:1, 30.02 fps, 30 tbr, 9000k tbn (default)
+      Metadata:
+        handler_name    : Twitter-vork muxer
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+      Metadata:
+        handler_name    : Twitter-vork muxer
+        vendor_id       : [0][0][0][0]
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'D:/work/TheEarthPeopleLog/.runtime/quick-qa-1792417418235868300/短新闻 工作区/projects/596fc0c4-bf4e-4f22-a27f-74932b242dac/exports/20261019_第二个看点 · 技术测试_r0005_3fc595e0/preview.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 859 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 540x960, 656 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 189 kb/s (default)
+      Metadata:
+        handler_name    : Twitter-vork muxer
+        vendor_id       : [0][0][0][0]
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'D:/work/TheEarthPeopleLog/.runtime/quick-qa-1792417418235868300/短新闻 工作区/projects/596fc0c4-bf4e-4f22-a27f-74932b242dac/assets/b2318f6baa146cc8878e33ec.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomiso4
+    creation_time   : 2026-10-17T11:46:58.000000Z
+  Duration: 00:00:44.74, start: 0.000000, bitrate: 1617 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1080x1080, 1481 kb/s, SAR 1:1 DAR 1:1, 30.02 fps, 30 tbr, 9000k tbn (default)
+      Metadata:
+        handler_name    : Twitter-vork muxer
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+      Metadata:
+        handler_name    : Twitter-vork muxer
+        vendor_id       : [0][0][0][0]
+D:\work\TheEarthPeopleLog\.runtime\quick-qa-1792417418235868300\report.json

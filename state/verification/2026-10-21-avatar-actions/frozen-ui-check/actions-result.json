@@ -1,0 +1,24 @@
+{
+  "frozen": true,
+  "actions": [
+    "idle",
+    "explain",
+    "witty",
+    "think",
+    "surprise",
+    "resigned",
+    "point",
+    "wave",
+    "score",
+    "laugh",
+    "angry"
+  ],
+  "ui_buttons": true,
+  "application_shortcut_signal": true,
+  "score_default_pending": true,
+  "score_step": 0.5,
+  "export": "D:\\work\\TheEarthPeopleLog\\state\\verification\\2026-10-21-avatar-actions\\frozen-ui-check\\workspace\\exports\\20261021_103101_dd3564ed",
+  "live_export_guard": true,
+  "camera_started": false,
+  "global_hotkeys_registered": false
+}

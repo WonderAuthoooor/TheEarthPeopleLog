@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-21T21:21:17.054114+08:00",
+  "scope": "dependency files and documentation only; no client runtime tests",
+  "plugin_files_hash_verified": 8,
+  "sdk_cache_hash_verified": true,
+  "app_source_hashes_unchanged": 17,
+  "obs_runtime_test": "deferred_by_user",
+  "expression_microtuning": "deferred_by_user",
+  "local_links_checked": 34,
+  "git_diff_check_exit_code": 0,
+  "errors": [],
+  "passed": true
+}

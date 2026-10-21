@@ -1,0 +1,105 @@
+1078 INFO: PyInstaller: 6.16.0, contrib hooks: 2026.8
+1078 INFO: Python: 3.12.14
+1137 INFO: Platform: Windows-11-10.0.26200-SP0
+1137 INFO: Python environment: C:\Users\WonderMan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python
+1139 INFO: wrote D:\work\TheEarthPeopleLog\build\globe\0.2.0\EarthPeopleLogGlobe.spec
+1151 INFO: Removing temporary files and cleaning cache in D:\work\TheEarthPeopleLog\.runtime\pyinstaller-cache\pyinstaller
+6089 INFO: Module search paths (PYTHONPATH):
+['D:\\work\\TheEarthPeopleLog',
+ 'D:\\work\\TheEarthPeopleLog\\.runtime\\python',
+ 'D:\\work\\TheEarthPeopleLog\\scripts',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python',
+ 'C:\\Users\\WonderMan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages',
+ 'D:\\work\\TheEarthPeopleLog',
+ 'D:\\work\\TheEarthPeopleLog\\.runtime\\python',
+ 'D:\\work\\TheEarthPeopleLog']
+7757 INFO: Appending 'datas' from .spec
+7844 INFO: checking Analysis
+7845 INFO: Building Analysis because Analysis-00.toc is non existent
+7845 INFO: Looking for Python shared library...
+7845 INFO: Using Python shared library: C:\Users\WonderMan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python312.dll
+7845 INFO: Running Analysis Analysis-00.toc
+7845 INFO: Target bytecode optimization level: 0
+7845 INFO: Initializing module dependency graph...
+7849 INFO: Initializing module graph hook caches...
+7878 INFO: Analyzing modules for base_library.zip ...
+11240 INFO: Processing standard module hook 'hook-encodings.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+13582 INFO: Processing standard module hook 'hook-pickle.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+14708 INFO: Processing standard module hook 'hook-heapq.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+15214 INFO: Caching module dependency graph...
+15265 INFO: Analyzing D:\work\TheEarthPeopleLog\globe_entry.py
+15393 INFO: Processing standard module hook 'hook-platform.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+15410 INFO: Processing standard module hook 'hook-PIL.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+15534 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+16594 INFO: Processing standard module hook 'hook-xml.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+16625 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+16837 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+17247 INFO: Processing standard module hook 'hook-imageio_ffmpeg.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\_pyinstaller_hooks_contrib\\stdhooks'
+17302 INFO: Processing standard module hook 'hook-av.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\_pyinstaller_hooks_contrib\\stdhooks'
+18727 INFO: Processing standard module hook 'hook-PySide6.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+19331 INFO: Processing standard module hook 'hook-shiboken6.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+19521 INFO: Processing standard module hook 'hook-PySide6.QtNetwork.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+21301 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+22628 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+23517 INFO: Processing standard module hook 'hook-PySide6.QtSvg.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+23938 INFO: Processing standard module hook 'hook-_ctypes.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+24718 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+25237 INFO: Analyzing hidden import 'av.__main__'
+25240 INFO: Analyzing hidden import 'av.audio.plane'
+25243 INFO: Analyzing hidden import 'av.buffer'
+25245 INFO: Analyzing hidden import 'av.bytesource'
+25246 INFO: Analyzing hidden import 'av.container.pyio'
+25247 INFO: Analyzing hidden import 'av.datasets'
+25573 INFO: Analyzing hidden import 'av.filter'
+25600 INFO: Analyzing hidden import 'av.filter.link'
+25602 INFO: Analyzing hidden import 'av.opaque'
+25603 INFO: Analyzing hidden import 'av.plane'
+25605 INFO: Analyzing hidden import 'av.sidedata.encparams'
+25608 INFO: Analyzing hidden import 'av.sidedata.motionvectors'
+25611 INFO: Analyzing hidden import 'av.utils'
+25615 INFO: Analyzing hidden import 'av.video.plane'
+25617 INFO: Analyzing hidden import 'av.video.reformatter'
+25621 INFO: Analyzing hidden import 'imageio_ffmpeg.binaries'
+25622 INFO: Processing module hooks (post-graph stage)...
+25972 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+26093 INFO: Performing binary vs. data reclassification (388 entries)
+26464 INFO: Looking for ctypes DLLs
+26470 INFO: Analyzing run-time hooks ...
+26473 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\rthooks'
+26476 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\rthooks'
+26479 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks\\pre_find_module_path'
+26484 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PyInstaller\\hooks'
+26506 INFO: Creating base_library.zip...
+26535 INFO: Looking for dynamic libraries
+27292 INFO: Extra DLL search directories (AddDllDirectory): ['D:\\work\\TheEarthPeopleLog\\.runtime\\python\\shiboken6', 'D:\\work\\TheEarthPeopleLog\\.runtime\\python\\av.libs']
+27292 INFO: Extra DLL search directories (PATH): ['D:\\work\\TheEarthPeopleLog\\.runtime\\python\\PySide6']
+31401 INFO: Warnings written to D:\work\TheEarthPeopleLog\build\globe\0.2.0\EarthPeopleLogGlobe\warn-EarthPeopleLogGlobe.txt
+31433 INFO: Graph cross-reference written to D:\work\TheEarthPeopleLog\build\globe\0.2.0\EarthPeopleLogGlobe\xref-EarthPeopleLogGlobe.html
+31478 INFO: checking PYZ
+31478 INFO: Building PYZ because PYZ-00.toc is non existent
+31478 INFO: Building PYZ (ZlibArchive) D:\work\TheEarthPeopleLog\build\globe\0.2.0\EarthPeopleLogGlobe\PYZ-00.pyz
+31847 INFO: Building PYZ (ZlibArchive) D:\work\TheEarthPeopleLog\build\globe\0.2.0\EarthPeopleLogGlobe\PYZ-00.pyz completed successfully.
+31857 INFO: checking PKG
+31857 INFO: Building PKG because PKG-00.toc is non existent
+31858 INFO: Building PKG (CArchive) EarthPeopleLogGlobe.pkg
+31902 INFO: Building PKG (CArchive) EarthPeopleLogGlobe.pkg completed successfully.
+31904 INFO: Bootloader D:\work\TheEarthPeopleLog\.runtime\python\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+31904 INFO: checking EXE
+31904 INFO: Building EXE because EXE-00.toc is non existent
+31904 INFO: Building EXE from EXE-00.toc
+31905 INFO: Copying bootloader EXE to D:\work\TheEarthPeopleLog\build\globe\0.2.0\EarthPeopleLogGlobe\EarthPeopleLogGlobe.exe
+31984 INFO: Copying icon to EXE
+32057 INFO: Copying 0 resources to EXE
+32057 INFO: Embedding manifest in EXE
+32123 INFO: Appending PKG archive to EXE
+32208 INFO: Fixing EXE headers
+32624 INFO: Building EXE from EXE-00.toc completed successfully.
+32632 INFO: checking COLLECT
+32632 INFO: Building COLLECT because COLLECT-00.toc is non existent
+32633 INFO: Building COLLECT COLLECT-00.toc
+34687 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+34700 INFO: Build complete! The results are available in: D:\work\TheEarthPeopleLog\dist\globe\0.2.0
+D:\work\TheEarthPeopleLog\dist\globe\0.2.0\EarthPeopleLogGlobe

@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-10-21T09:49:32.814730+08:00",
+  "version": "0.2.0",
+  "all_tests": 76,
+  "avatar_tests": 18,
+  "camera_started_in_tests": false,
+  "real_user_camera_trial": false,
+  "capture_devices_enumerated": 2,
+  "source_and_frozen_sample_tracking": true,
+  "qt_video_frame_conversion_and_worker": true,
+  "frozen_live_check_exit_code": 0,
+  "frozen_offline_exit_code": 0,
+  "frozen_offline_frames": 319,
+  "mouth_roi_min_alpha": 251,
+  "source_hashes_match": true,
+  "globe_source_unchanged": true,
+  "tracking_model_hashes_match": true,
+  "not_tested": [
+    "真人摄像头灯光／动作／延迟",
+    "OBS实际窗口捕获／去底／声音同步",
+    "抖音／B站真实开播",
+    "干净Windows"
+  ],
+  "not_implemented": [
+    "挥手／手指／举牌",
+    "完整Live2D或VRM模型",
+    "虚拟摄像头／透明实时输出",
+    "自动推流"
+  ]
+}

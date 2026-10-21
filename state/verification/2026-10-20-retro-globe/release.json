@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-20T23:40:21+08:00",
+  "version": "0.2.0",
+  "exe_sha256": "3cfd5606ff98666d3a7fc1629b6e28cc7e42617405753736ba2f9208023956ee",
+  "installer_sha256": "7122f4c23cf814a21433f8c2804859abfa26362803038dcedd65079aba0db59a",
+  "source_hashes_verified": 23,
+  "offline_tests": 58,
+  "default_gui_style": "rubberhose",
+  "styles": [
+    "rubberhose",
+    "classic"
+  ],
+  "defaults": {
+    "intro_seconds": 3,
+    "transition_seconds": 1.4,
+    "text": "all off"
+  },
+  "samples": {
+    "at": "2026-10-20T23:17:28+08:00",
+    "version": "0.2.0",
+    "outputs": [
+      "D:\\work\\TheEarthPeopleLog\\工作素材\\栏目包装\\20261020_复古夸张首版\\20261020_231642_intro_6d9541ca",
+      "D:\\work\\TheEarthPeopleLog\\工作素材\\栏目包装\\20261020_复古夸张首版\\20261020_231713_transition_10797640"
+    ],
+    "combined": "D:\\work\\TheEarthPeopleLog\\工作素材\\栏目包装\\20261020_复古夸张首版\\组合预览.mp4",
+    "metadata": {
+      "duration": 4.4,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "has_video": true,
+      "has_audio": false
+    },
+    "sha256": "a70a04f07749b7d04ff73ea4edeac696efb6a33b7ae3faa9c5bb99e4a0dc5da6",
+    "note": "东京开场3秒，东京到伦敦转场1.4秒；地点技术演示，不对应实际新闻，静音无文字"
+  },
+  "verified": [
+    "geographic endpoints",
+    "pull-out then push-in",
+    "dateline short route",
+    "multiple intro spins and deformation",
+    "stable final hold",
+    "exact raw-frame continuity between adjacent clips",
+    "no default text in both styles",
+    "source and frozen GUI actual exports",
+    "retro glove and custom hand export",
+    "classic fallback export",
+    "isolated installed EXE hash matches final build",
+    "uninstall preserves user files",
+    "formal ledger unchanged"
+  ],
+  "limits": [
+    "观感和真实新闻剪映组合仍待用户判断",
+    "地图为城市附近低比例尺示意，非街道地图",
+    "首版静音且无胶片颗粒／相关开关",
+    "安装测试模式不写系统注册表或快捷方式"
+  ]
+}

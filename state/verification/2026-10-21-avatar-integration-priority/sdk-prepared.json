@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-21T21:05:46.819996+08:00",
+  "documentation": "https://docs.warudo.app/docs/modding/sdk-installation",
+  "url": "https://docs.warudo.app/sdk/Warudo-Mod-Tool-0.14.5.1.tgz",
+  "archive_relative_path": ".runtime\\warudo-sdk\\0.14.5.1\\Warudo-Mod-Tool-0.14.5.1.tgz",
+  "bytes": 43539736,
+  "sha256": "9e3f85a4b1cdc88fda9996afab73c04937e336b5108c66e61dc5b634f6a63dc3",
+  "checksum_scope": "本地计算用于后续重现；发布者未提供单独校验值，不能称为发布者哈希核验",
+  "manifest": {
+    "name": "app.warudo.modtool",
+    "version": "0.14.5",
+    "displayName": "Warudo Mod Tool",
+    "description": "A modding tool for Warudo.",
+    "unity": "2021.3",
+    "author": "HakuyaLabs",
+    "documentationUrl": "https://docs.warudo.app/docs/scripting/overview",
+    "keywords": [
+      "Warudo",
+      "Modding",
+      "Tool",
+      "HakuyaLabs"
+    ],
+    "dependencies": {
+      "com.unity.nuget.newtonsoft-json": "3.2.1",
+      "com.unity.postprocessing": "3.4.0",
+      "com.unity.inputsystem": "1.7.0",
+      "com.unity.cinemachine": "2.10.1",
+      "com.unity.render-pipelines.core": "12.1.15",
+      "com.unity.render-pipelines.universal": "12.1.15",
+      "com.unity.services.analytics": "6.0.2"
+    }
+  },
+  "required_unity": "2021.3.45f2",
+  "matching_editor_found": false,
+  "sdk_imported": false,
+  "code_executed": false,
+  "warudo_0_15_1_compatibility": "pending_actual_build_and_playback"
+}

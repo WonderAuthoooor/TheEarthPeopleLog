@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-21T20:02:09+08:00",
+  "source": "user explicit confirmation and two supplied screenshots",
+  "warudo_version": "0.15.1",
+  "model": "Seed-san",
+  "vrm_file": "avatarlab_test_624d0d554bc2.vrm",
+  "character_visible": true,
+  "static_load_test": "passed_user_confirmed_screenshot_supported",
+  "observed_settings": {
+    "enabled": true,
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "motion_capture_enabled": false,
+    "imported_expression_entries": [
+      "happy",
+      "angry",
+      "sad",
+      "relaxed",
+      "surprised"
+    ],
+    "breathing_animation_enabled": false,
+    "sway_animation_enabled": false,
+    "overlay_animations": "empty",
+    "disable_unity_retargeting": true
+  },
+  "observed_framing": "角色偏小、偏下，脚部接近／碰到主窗口底边",
+  "not_verified": [
+    "实际表情变化",
+    "呼吸／晃动动画",
+    "摄像头跟随",
+    "自制挥手的Unity／Warudo播放",
+    "相机环绕操作",
+    "OBS透明输出",
+    "剪映叠加",
+    "持续运行性能"
+  ],
+  "evidence": {
+    "user-character-settings.png": "a93cec99741735066b5c6a72a78a6f7b5dd906ee93a9d8832318960e703d3ef2",
+    "user-render-window.png": "cc7677676bf1e8fcf63d1e2925dcaa7b267464ce291644918afb8dc4f7d24b95"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "[WinError 5] 拒绝访问。: 'D:\\\\work\\\\TheEarthPeopleLog\\\\.runtime\\\\globe-source-ui\\\\animation-runs\\\\9c45d52c9b9a47728aaa1dfc15396d8f\\\\progress.json.4ab5590a302a43dbae82bd9795ef79d4.tmp' -> 'D:\\\\work\\\\TheEarthPeopleLog\\\\.runtime\\\\globe-source-ui\\\\animation-runs\\\\9c45d52c9b9a47728aaa1dfc15396d8f\\\\progress.json'"
+}

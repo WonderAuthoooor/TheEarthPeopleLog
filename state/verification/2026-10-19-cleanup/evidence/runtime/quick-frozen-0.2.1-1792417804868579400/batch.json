@@ -1,0 +1,45 @@
+{
+  "task": {
+    "id": "cbb7092d-8392-40cb-9781-d9a83d039061",
+    "project_id": "219099b1-bf2d-48fe-8b66-2dca6ec07925",
+    "revision": 4,
+    "kind": "render",
+    "state": "SUCCEEDED",
+    "digest": "b753c55fbe157f73c53e3a210cdb6bf16df8f451ac8d9edb34f1d892d763ee4c",
+    "created_at": "2026-10-19T21:50:14+08:00",
+    "updated_at": "2026-10-19T21:50:19+08:00",
+    "progress": 100.0,
+    "message": "草稿已生成 · 内容仍需审核",
+    "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-frozen-0.2.1-1792417804868579400\\快速切片 工作区\\projects\\219099b1-bf2d-48fe-8b66-2dca6ec07925\\exports\\20261019_快速片段A · 技术测试_r0004_cbb7092d"
+  },
+  "tasks": [
+    {
+      "id": "dc3d1ca2-1d37-425a-b569-9c857b0ae9c6",
+      "project_id": "219099b1-bf2d-48fe-8b66-2dca6ec07925",
+      "revision": 4,
+      "kind": "render",
+      "state": "SUCCEEDED",
+      "digest": "fb4858020cb7c07d209471411fe3f833fe9e792bfe07d8a5d496bbac4f4e0b3a",
+      "created_at": "2026-10-19T21:50:14+08:00",
+      "updated_at": "2026-10-19T21:50:23+08:00",
+      "progress": 100.0,
+      "message": "草稿已生成 · 内容仍需审核",
+      "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-frozen-0.2.1-1792417804868579400\\快速切片 工作区\\projects\\219099b1-bf2d-48fe-8b66-2dca6ec07925\\exports\\20261019_快速片段B · 技术测试_r0004_dc3d1ca2"
+    },
+    {
+      "id": "cbb7092d-8392-40cb-9781-d9a83d039061",
+      "project_id": "219099b1-bf2d-48fe-8b66-2dca6ec07925",
+      "revision": 4,
+      "kind": "render",
+      "state": "SUCCEEDED",
+      "digest": "b753c55fbe157f73c53e3a210cdb6bf16df8f451ac8d9edb34f1d892d763ee4c",
+      "created_at": "2026-10-19T21:50:14+08:00",
+      "updated_at": "2026-10-19T21:50:19+08:00",
+      "progress": 100.0,
+      "message": "草稿已生成 · 内容仍需审核",
+      "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-frozen-0.2.1-1792417804868579400\\快速切片 工作区\\projects\\219099b1-bf2d-48fe-8b66-2dca6ec07925\\exports\\20261019_快速片段A · 技术测试_r0004_cbb7092d"
+    }
+  ],
+  "notice": "已提交2个切片，逐个处理；输入未变的任务会复用。",
+  "at": "2026-10-19T21:50:24+08:00"
+}

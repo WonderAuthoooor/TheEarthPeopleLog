@@ -1,0 +1,45 @@
+{
+  "task": {
+    "id": "a7e9478a-cf98-46cf-8b17-2d87f4365dee",
+    "project_id": "b4efaf44-a500-43c9-90c7-848d6990f072",
+    "revision": 4,
+    "kind": "render",
+    "state": "SUCCEEDED",
+    "digest": "2aa94878e3059c3c607c08a3c9a2c1fc0194ac92c8c51b4a02a221f8dcac182c",
+    "created_at": "2026-10-19T22:20:44+08:00",
+    "updated_at": "2026-10-19T22:20:49+08:00",
+    "progress": 100.0,
+    "message": "草稿已生成 · 内容仍需审核",
+    "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-frozen-0.2.2-1792419636159310200\\快速切片 工作区\\projects\\b4efaf44-a500-43c9-90c7-848d6990f072\\exports\\20261019_快速片段A · 技术测试_r0004_a7e9478a"
+  },
+  "tasks": [
+    {
+      "id": "9cb9093c-85d8-418b-81bc-5df0ad44f855",
+      "project_id": "b4efaf44-a500-43c9-90c7-848d6990f072",
+      "revision": 4,
+      "kind": "render",
+      "state": "SUCCEEDED",
+      "digest": "ee66b75dd4e2d7d35076563ee09dda3bfd9780bcd2a9e98d142afa086cf94379",
+      "created_at": "2026-10-19T22:20:44+08:00",
+      "updated_at": "2026-10-19T22:20:53+08:00",
+      "progress": 100.0,
+      "message": "草稿已生成 · 内容仍需审核",
+      "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-frozen-0.2.2-1792419636159310200\\快速切片 工作区\\projects\\b4efaf44-a500-43c9-90c7-848d6990f072\\exports\\20261019_快速片段B · 技术测试_r0004_9cb9093c"
+    },
+    {
+      "id": "a7e9478a-cf98-46cf-8b17-2d87f4365dee",
+      "project_id": "b4efaf44-a500-43c9-90c7-848d6990f072",
+      "revision": 4,
+      "kind": "render",
+      "state": "SUCCEEDED",
+      "digest": "2aa94878e3059c3c607c08a3c9a2c1fc0194ac92c8c51b4a02a221f8dcac182c",
+      "created_at": "2026-10-19T22:20:44+08:00",
+      "updated_at": "2026-10-19T22:20:49+08:00",
+      "progress": 100.0,
+      "message": "草稿已生成 · 内容仍需审核",
+      "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-frozen-0.2.2-1792419636159310200\\快速切片 工作区\\projects\\b4efaf44-a500-43c9-90c7-848d6990f072\\exports\\20261019_快速片段A · 技术测试_r0004_a7e9478a"
+    }
+  ],
+  "notice": "已提交2个切片，逐个处理；输入未变的任务会复用。",
+  "at": "2026-10-19T22:20:53+08:00"
+}

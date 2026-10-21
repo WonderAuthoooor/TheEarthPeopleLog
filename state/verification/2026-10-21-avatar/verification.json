@@ -1,0 +1,45 @@
+{
+  "verified_at": "2026-10-21T08:49:08.391702+08:00",
+  "unit_tests": 65,
+  "avatar_tests": 7,
+  "demo": {
+    "frames": 319,
+    "codec": "prores",
+    "size": [
+      720,
+      1080
+    ],
+    "fps": "30",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "audio_streams": 0
+  },
+  "frozen_gui_video": {
+    "frames": 319,
+    "size": [
+      480,
+      720
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  "avatar_source_matches_build": true,
+  "globe_020_source_unchanged": true,
+  "frozen_gui_success": true,
+  "not_tested": [
+    "用户动态观感",
+    "剪映实际透明叠加",
+    "逐字口型（未实现）",
+    "干净Windows",
+    "安装器（未制作）",
+    "正式声音试听"
+  ],
+  "demo_audio": "Windows System.Speech本地技术测试句；未替换甜美解说",
+  "ledger": {
+    "schema_version": "0.1",
+    "rule_version": "v0.1",
+    "timezone": "Asia/Shanghai",
+    "baseline": 1000,
+    "entries": []
+  }
+}

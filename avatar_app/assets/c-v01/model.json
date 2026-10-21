@@ -1,0 +1,20 @@
+{
+  "id": "earthlog-correspondent-c-experimental-01",
+  "format": "earthlog-layered-2d/1",
+  "stage": "experimental",
+  "canvas": [1024, 1536],
+  "body": "body.png",
+  "head": "head-neutral.png",
+  "blink": "head-blink.png",
+  "talk": "head-talk.png",
+  "head_scale": 0.5,
+  "head_offset": [256, 0],
+  "eyes": [
+    {"target": [333, 438, 496, 518], "source": [295, 789, 502, 882]},
+    {"target": [574, 450, 733, 533], "source": [601, 812, 804, 912]}
+  ],
+  "mouth": [445, 619, 592, 704],
+  "capabilities": ["breath", "blink", "audio_energy_mouth", "small_head_warp", "independent_blink", "small_head_roll", "small_head_pitch_shift", "small_body_lean", "expression_presets", "two_bone_arms", "wave", "point", "score_card"],
+  "unsupported": ["phoneme_alignment", "large_head_turn", "live2d_import", "full_body_retargeting", "finger_tracking"],
+  "notes": "自定义2D分层绑定；眼眉嘴图集、肩肘腕骨段与预设手型。支持手势预设，不是实时手部捕捉或Cubism moc3模型。"
+}

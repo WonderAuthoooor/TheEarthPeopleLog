@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-20T22:57:59+08:00",
+  "version": "0.2.0",
+  "outputs": [
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\workspace\\animations\\20261020_225742_transition_bd16b1d1",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\intro\\outputs\\20261020_225750_intro_07daec2e",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\default-hand\\outputs\\20261020_225752_intro_b0984556",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\no-hand\\outputs\\20261020_225754_intro_fd0043e0",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\labelled\\outputs\\20261020_225755_transition_2f30a4cd",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\classic\\outputs\\20261020_225757_transition_3b86b24e"
+  ],
+  "cases": {
+    "intro": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\intro\\outputs\\20261020_225750_intro_07daec2e",
+    "default-hand": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\default-hand\\outputs\\20261020_225752_intro_b0984556",
+    "no-hand": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\no-hand\\outputs\\20261020_225754_intro_fd0043e0",
+    "labelled": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\labelled\\outputs\\20261020_225755_transition_2f30a4cd",
+    "classic": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792508257459627300\\classic\\outputs\\20261020_225757_transition_3b86b24e"
+  },
+  "checks": [
+    "independent packaged GUI and QProcess actual city transition",
+    "1252 cities and separate detailed caption",
+    "no coordinate/avatar/score UI fields",
+    "no studio or mascot assets packaged",
+    "intro hand replacement",
+    "bundled retro glove",
+    "retro camera export and classic fallback",
+    "default text-free output and opt-in labelled output",
+    "intro without hand assets",
+    "explicit legacy config error",
+    "cancel removes partial video",
+    "formal ledger unchanged",
+    "no studio database created",
+    "development paths removed"
+  ]
+}

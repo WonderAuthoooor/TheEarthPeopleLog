@@ -1,0 +1,17 @@
+{
+  "task": {
+    "id": "cb2e8848-4665-43fd-b37f-b8244de536d2",
+    "project_id": "09618719-55ea-4dd0-97ee-d6548f342af8",
+    "revision": 2,
+    "kind": "render",
+    "state": "SUCCEEDED",
+    "digest": "25076660f763ad8a064dbaa812146cd0a910c7bcaabba3db0e5fc950e848cc3a",
+    "created_at": "2026-10-18T18:11:24+08:00",
+    "updated_at": "2026-10-18T18:11:32+08:00",
+    "progress": 100.0,
+    "message": "草稿已生成 · 内容仍需审核",
+    "output": "D:\\work\\TheEarthPeopleLog\\.studio\\projects\\09618719-55ea-4dd0-97ee-d6548f342af8\\exports\\20261018_先核对口径，再看这张图_r0002_cb2e8848"
+  },
+  "notice": "已排队 · r2。可以继续编辑，任务使用提交时的快照。",
+  "at": "2026-10-18T18:11:32+08:00"
+}

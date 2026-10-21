@@ -1,0 +1,8 @@
+test_collision_and_incomplete_install_are_rejected (test_warudo_prepare.WarudoPrepareTests.test_collision_and_incomplete_install_are_rejected) ... ok
+test_copy_is_verified_and_repeat_reuses_without_modifying_other_models (test_warudo_prepare.WarudoPrepareTests.test_copy_is_verified_and_repeat_reuses_without_modifying_other_models) ... ok
+test_failed_publication_leaves_no_vrm_or_partial (test_warudo_prepare.WarudoPrepareTests.test_failed_publication_leaves_no_vrm_or_partial) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.424s
+
+OK

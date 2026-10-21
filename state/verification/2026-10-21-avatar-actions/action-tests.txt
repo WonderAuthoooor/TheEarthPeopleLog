@@ -1,0 +1,12 @@
+test_clip_enters_and_returns_idle (test_avatar_actions.ActionTests.test_clip_enters_and_returns_idle) ... ok
+test_expressions_and_low_mouth_do_not_cut_face (test_avatar_actions.ActionTests.test_expressions_and_low_mouth_do_not_cut_face) ... ok
+test_interrupt_transition_is_continuous_and_lengths_fixed (test_avatar_actions.ActionTests.test_interrupt_transition_is_continuous_and_lengths_fixed) ... ok
+test_invalid_action_score_fail_before_writes (test_avatar_actions.ActionTests.test_invalid_action_score_fail_before_writes) ... ok
+test_score_validation_and_no_ledger_mutation (test_avatar_actions.ActionTests.test_score_validation_and_no_ledger_mutation) ... ok
+test_default_off_conflict_releases_only_owned_keys (test_avatar_actions.HotkeyTests.test_default_off_conflict_releases_only_owned_keys) ... ok
+test_dispatch_and_unregister (test_avatar_actions.HotkeyTests.test_dispatch_and_unregister) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.679s
+
+OK

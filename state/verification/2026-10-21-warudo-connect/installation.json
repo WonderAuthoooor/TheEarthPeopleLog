@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-21T19:50:57+08:00",
+  "user_supplied_path": "D:/app/steam/steamapps/common/Warudo",
+  "exe_present": true,
+  "steam_app_id": "2079120",
+  "steam_build_id": "24066794",
+  "steam_state_flags": "4",
+  "data_folder": "Warudo_Data/StreamingAssets",
+  "model_import": "file_prepared_runtime_load_pending",
+  "desktop_automation": "reset and retry failed: MXC launcher Z: guest access policy error1272",
+  "scope": "目录与文件核实，不表示客户端运行验收"
+}

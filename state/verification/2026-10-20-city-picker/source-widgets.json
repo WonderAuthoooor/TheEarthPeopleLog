@@ -1,0 +1,8 @@
+{
+  "cities": 1252,
+  "coordinate_fields_removed": true,
+  "english_completer_selection": true,
+  "unknown_city_blocked": true,
+  "detail_text_does_not_change_city": true,
+  "legacy_import_snapped_to_city": true
+}

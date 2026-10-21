@@ -1,0 +1,3 @@
+-r requirements-pipeline.txt
+PySide6==6.9.3
+PyInstaller==6.16.0

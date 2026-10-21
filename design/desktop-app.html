@@ -1,0 +1,167 @@
+<div id="earth-log-desktop-design">
+  <div class="viz-carousel" aria-label="地球人日志桌面应用设计" data-previous-label="上一个方案" data-next-label="下一个方案">
+    <section data-variant="一屏工作台" aria-label="一屏工作台设计"><div id="earth-workbench" class="ep-app" aria-label="地球人日志工作台"></div></section>
+    <section data-variant="分步向导" aria-label="分步向导设计" hidden><div id="earth-wizard" class="ep-app" aria-label="地球人日志分步向导"></div></section>
+  </div>
+</div>
+<style>
+#earth-log-desktop-design {width:100%;color-scheme:light dark;}
+#earth-log-desktop-design .ep-app {--ep-bg:light-dark(#f5f6f7,#151b20);--ep-panel:light-dark(#ffffff,#1d252c);--ep-text:light-dark(#172c35,#e8f0f2);--ep-muted:light-dark(#526872,#a4bac5);--ep-line:light-dark(#d8e1e6,#35424b);--ep-accent:light-dark(#087a6c,#65d9bd);--ep-accent-text:light-dark(#ffffff,#112d25);--ep-soft:light-dark(#e9f5f1,#243e36);--ep-preview:light-dark(#faf6ed,#253039);--ep-inset:light-dark(#e9eef1,#28353e);--ep-amber:light-dark(#875214,#e6bb76);font:14px/1.5 'Segoe UI','Microsoft YaHei UI',sans-serif;color:var(--ep-text);background:var(--ep-bg);border:1px solid var(--ep-line);border-radius:14px;overflow:clip;min-height:850px;}
+#earth-log-desktop-design .ep-app * {box-sizing:border-box;}
+#earth-log-desktop-design .ep-top {display:flex;align-items:center;gap:10px;padding:14px 110px 14px 18px;background:var(--ep-panel);border-bottom:1px solid var(--ep-line);flex-wrap:wrap;}
+#earth-log-desktop-design .ep-brand {font-weight:600;font-size:17px;display:flex;gap:8px;align-items:center;}
+#earth-log-desktop-design .ep-brand i {color:var(--ep-accent);}
+#earth-log-desktop-design .ep-tag {font-size:12px;color:var(--ep-muted);border-left:1px solid var(--ep-line);padding-left:10px;}
+#earth-log-desktop-design .ep-body {display:grid;grid-template-columns:145px minmax(0,1fr);}
+#earth-log-desktop-design .ep-side {padding:17px 12px;border-right:1px solid var(--ep-line);background:var(--ep-panel);display:flex;flex-direction:column;gap:7px;}
+#earth-log-desktop-design .ep-side-title {font-size:12px;color:var(--ep-muted);padding:4px 8px;}
+#earth-log-desktop-design .ep-button {font:inherit;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 11px;min-height:37px;border:1px solid var(--ep-line);border-radius:7px;background:var(--ep-panel);color:var(--ep-text);text-align:center;max-width:100%;white-space:normal;}
+#earth-log-desktop-design .ep-button:disabled {opacity:.55;}
+#earth-log-desktop-design .ep-button.primary {background:var(--ep-accent);border-color:var(--ep-accent);color:var(--ep-accent-text);}
+#earth-log-desktop-design .ep-button.quiet {border-color:transparent;background:transparent;}
+#earth-log-desktop-design .ep-side .ep-button {justify-content:flex-start;}
+#earth-log-desktop-design .ep-side .active {background:var(--ep-soft);color:var(--ep-accent);border-color:transparent;}
+#earth-log-desktop-design .ep-side-note {margin-top:auto;padding:15px 6px 2px;font-size:12px;color:var(--ep-muted);}
+#earth-log-desktop-design .ep-main {padding:18px;min-width:0;}
+#earth-log-desktop-design .ep-heading {display:flex;align-items:flex-start;gap:12px;justify-content:space-between;flex-wrap:wrap;margin-bottom:17px;}
+#earth-log-desktop-design .ep-heading h2 {font:600 20px/1.4 'Segoe UI','Microsoft YaHei UI',sans-serif;margin:0 0 5px;}
+#earth-log-desktop-design .ep-muted {color:var(--ep-muted);font-size:12px;}
+#earth-log-desktop-design .ep-heading-actions {display:flex;gap:6px;flex-wrap:wrap;}
+#earth-log-desktop-design .ep-studio {display:grid;grid-template-columns:minmax(0,1fr) 244px;gap:15px;align-items:start;}
+#earth-log-desktop-design .ep-editor,#earth-log-desktop-design .ep-preview-area {min-width:0;}
+#earth-log-desktop-design .ep-tabs {display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--ep-line);padding-bottom:9px;margin-bottom:16px;}
+#earth-log-desktop-design .ep-tabs .active {background:var(--ep-soft);border-color:var(--ep-soft);color:var(--ep-accent);}
+#earth-log-desktop-design .ep-card {padding:14px;background:var(--ep-panel);border:1px solid var(--ep-line);border-radius:9px;margin-bottom:12px;}
+#earth-log-desktop-design .ep-card h3 {font-size:14px;font-weight:600;margin:0 0 10px;}
+#earth-log-desktop-design .ep-label {display:block;font-size:13px;margin:10px 0 5px;}
+#earth-log-desktop-design .ep-input,#earth-log-desktop-design .ep-textarea,#earth-log-desktop-design .ep-select {width:100%;font:inherit;padding:8px 9px;border:1px solid var(--ep-line);border-radius:6px;background:var(--ep-bg);color:var(--ep-text);min-width:0;}
+#earth-log-desktop-design .ep-textarea {resize:vertical;min-height:108px;}
+#earth-log-desktop-design .ep-row {display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+#earth-log-desktop-design .ep-row > .ep-input {flex:1 1 160px;}
+#earth-log-desktop-design .ep-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+#earth-log-desktop-design .ep-file {display:flex;gap:10px;align-items:center;padding:11px 0;border-top:1px solid var(--ep-line);}
+#earth-log-desktop-design .ep-file-info {min-width:0;flex:1;overflow-wrap:anywhere;}
+#earth-log-desktop-design .ep-file-icon {background:var(--ep-inset);border-radius:6px;padding:10px;color:var(--ep-accent);display:flex;}
+#earth-log-desktop-design .ep-badge {font-size:12px;padding:2px 7px;border-radius:5px;background:var(--ep-soft);color:var(--ep-accent);}
+#earth-log-desktop-design .ep-check {display:flex;align-items:center;gap:7px;font-size:13px;margin:9px 0;}
+#earth-log-desktop-design .ep-phone {aspect-ratio:9/16;background:var(--ep-preview);border:1px solid var(--ep-line);border-radius:9px;display:flex;flex-direction:column;gap:12px;padding:18px 13px;}
+#earth-log-desktop-design .ep-phone-brand {color:var(--ep-accent);font-size:12px;font-weight:600;}
+#earth-log-desktop-design .ep-phone-title {font-size:17px;font-weight:600;overflow-wrap:anywhere;min-height:46px;}
+#earth-log-desktop-design .ep-video-placeholder {aspect-ratio:1;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;background:var(--ep-inset);color:var(--ep-muted);border-radius:5px;font-size:12px;}
+#earth-log-desktop-design .ep-preview-comment {font-size:12px;padding:8px;border-left:3px solid var(--ep-accent);background:var(--ep-panel);}
+#earth-log-desktop-design .ep-caption {font-size:13px;text-align:center;margin-top:auto;overflow-wrap:anywhere;}
+#earth-log-desktop-design .ep-phone-foot {font-size:11px;color:var(--ep-muted);}
+#earth-log-desktop-design .ep-preview-label {display:flex;justify-content:space-between;gap:6px;margin:0 0 8px;font-size:12px;color:var(--ep-muted);}
+#earth-log-desktop-design .ep-range {width:100%;accent-color:var(--ep-accent);margin:12px 0 0;}
+#earth-log-desktop-design .ep-timing {display:flex;justify-content:space-between;font-size:12px;color:var(--ep-muted);font-variant-numeric:tabular-nums;}
+#earth-log-desktop-design .ep-notice {padding:10px 12px;border-radius:6px;color:var(--ep-amber);background:var(--ep-panel);border:1px solid var(--ep-line);font-size:12px;}
+#earth-log-desktop-design .ep-footer {padding:12px 18px;border-top:1px solid var(--ep-line);background:var(--ep-panel);display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--ep-muted);}
+#earth-log-desktop-design .ep-status {min-height:18px;margin-top:10px;color:var(--ep-accent);font-size:12px;}
+#earth-log-desktop-design .ep-plan {padding:14px;background:var(--ep-panel);border:1px solid var(--ep-accent);border-radius:8px;margin-bottom:16px;}
+#earth-log-desktop-design .ep-plan[hidden],#earth-log-desktop-design [data-panel][hidden] {display:none;}
+#earth-log-desktop-design .ep-list {padding-left:20px;font-size:13px;margin:8px 0;}
+#earth-log-desktop-design .ep-wizard .ep-body {display:block;}
+#earth-log-desktop-design .ep-wizard .ep-side {display:none;}
+#earth-log-desktop-design .ep-wizard .ep-tabs .ep-button {flex:1;}
+#earth-log-desktop-design .ep-wizard .ep-next {display:flex;justify-content:flex-end;margin-top:12px;}
+#earth-log-desktop-design .ep-workbench .ep-next {display:none;}
+#earth-log-desktop-design .ep-queue-step {padding:9px 0;border-bottom:1px solid var(--ep-line);display:flex;justify-content:space-between;gap:8px;}
+#earth-log-desktop-design .ep-compact .ep-main {padding:12px;}
+#earth-log-desktop-design .ep-compact .ep-card {padding:10px;}
+@media(max-width:800px){#earth-log-desktop-design .ep-body {display:block;}#earth-log-desktop-design .ep-side{flex-direction:row;border-right:0;border-bottom:1px solid var(--ep-line);padding:8px;flex-wrap:wrap;}#earth-log-desktop-design .ep-side-title,#earth-log-desktop-design .ep-side-note{display:none;}#earth-log-desktop-design .ep-studio {grid-template-columns:minmax(0,1fr) 224px;}}
+@media(max-width:600px){#earth-log-desktop-design .ep-app {min-height:1300px;}#earth-log-desktop-design .ep-studio{grid-template-columns:1fr;}#earth-log-desktop-design .ep-preview-area{width:100%;max-width:260px;justify-self:center;}#earth-log-desktop-design .ep-main{padding:12px;}#earth-log-desktop-design .ep-top{padding-right:100px;}#earth-log-desktop-design .ep-brand{font-size:15px;}#earth-log-desktop-design .ep-grid{grid-template-columns:1fr;}}
+@media(pointer:coarse){#earth-log-desktop-design .ep-button{min-height:44px;}#earth-log-desktop-design .ep-input,#earth-log-desktop-design .ep-textarea,#earth-log-desktop-design .ep-select{font-size:16px;}}
+</style>
+<script>
+(() => {
+const root = document.getElementById('earth-log-desktop-design');
+const controls = { compact: false, showCaption: true };
+const store = {};
+const steps = ['素材','文稿与配音','评论','导出'];
+function build(id, mode) {
+  const app = root.querySelector('#'+id);
+  app.classList.add('ep-'+mode);
+  app.innerHTML = `
+  <header class="ep-top"><div class="ep-brand"><i data-lucide="orbit" aria-hidden="true"></i>地球人日志工作室</div><span class="ep-tag">桌面应用 · 交互原型</span></header>
+  <div class="ep-body"><nav class="ep-side" aria-label="应用导航"><div class="ep-side-title">创作空间</div><button type="button" class="ep-button active cursor-interaction" data-nav="project"><i data-lucide="folder-open" aria-hidden="true"></i>当前项目</button><button type="button" class="ep-button quiet cursor-interaction" data-nav="queue"><i data-lucide="list-checks" aria-hidden="true"></i>任务队列</button><button type="button" class="ep-button quiet cursor-interaction" data-nav="settings"><i data-lucide="settings" aria-hidden="true"></i>工作区设置</button><div class="ep-side-note">本地素材优先<br>配置接口后可使用AI</div></nav>
+  <main class="ep-main"><div class="ep-heading"><div><h2>贫困人口图表 · 试剪</h2><div class="ep-muted">素材已导入 · 统计口径待核查</div></div><div class="ep-heading-actions"><button type="button" class="ep-button cursor-interaction" data-action="save">保存</button><button type="button" class="ep-button primary cursor-interaction" data-action="plan">生成草稿</button></div></div>
+  <section class="ep-plan" data-plan hidden aria-label="操作计划"><strong>本次生成计划</strong><ul class="ep-list"><li>使用本地视频和已导入音频</li><li>导出竖屏MP4、字幕与独立素材</li><li>本次计划不调用付费接口</li></ul><div class="ep-muted">界面原型，不会执行生成或写入文件。</div><button type="button" class="ep-button cursor-interaction" data-action="close-plan">返回编辑</button></section>
+  <section data-workspace="editor"><div class="ep-studio"><div class="ep-editor"><div class="ep-tabs" role="tablist" aria-label="制作步骤">${steps.map((label,i)=>`<button type="button" id="${id}-tab-${i}" class="ep-button cursor-interaction ${i===0?'active':''}" role="tab" aria-selected="${i===0}" aria-controls="${id}-panel-${i}" data-tab="${i}">${mode==='wizard'?(i+1)+' · ':''}${label}</button>`).join('')}</div>
+  <section id="${id}-panel-0" role="tabpanel" aria-labelledby="${id}-tab-0" data-panel="0"><div class="ep-card"><h3>添加素材</h3><label class="ep-label" for="${id}-url">X 原帖链接</label><div class="ep-row"><input id="${id}-url" class="ep-input" value="https://x.com/…/status/…" aria-label="X原帖链接"><button type="button" class="ep-button cursor-interaction" data-action="download">获取视频</button></div><div class="ep-file"><div class="ep-file-icon"><i data-lucide="film" aria-hidden="true"></i></div><div class="ep-file-info">原视频.mp4<div class="ep-muted">示例素材 · 44.74秒 · 1080×1080</div></div><span class="ep-badge">已导入</span></div><button type="button" class="ep-button quiet cursor-interaction" data-action="local">＋ 导入本地素材</button></div>
+  <div class="ep-card"><h3>画面与选段</h3><label class="ep-label" for="${id}-title">中文标题</label><input class="ep-input" id="${id}-title" data-title value="各国极端贫困人口数量" maxlength="40"><div class="ep-grid"><label class="ep-label">选段起点（秒）<input class="ep-input" type="number" min="0" max="43" step="0.1" value="0" data-start></label><label class="ep-label">片段时长（秒）<input class="ep-input" type="number" min="1" max="44.74" step="0.1" value="8" data-duration></label></div><label class="ep-label" for="${id}-layout">竖屏排版</label><select class="ep-select" id="${id}-layout" data-layout><option value="full">保留完整画面</option><option value="large">放大画面预览</option></select></div></section>
+  <section id="${id}-panel-1" role="tabpanel" aria-labelledby="${id}-tab-1" data-panel="1" hidden><div class="ep-card"><h3>口播文稿</h3><label class="ep-label" for="${id}-script">每段独立试听、修改和生成</label><textarea class="ep-textarea" id="${id}-script" data-script>先核对数据来源，再讨论图表结论。</textarea><div class="ep-row"><button type="button" class="ep-button cursor-interaction" data-action="writing">写稿建议</button><span class="ep-muted">配置AI接口后可用</span></div></div><div class="ep-card"><h3>配音</h3><label class="ep-label" for="${id}-voice">配音方式</label><select class="ep-select" id="${id}-voice" data-voice><option value="import">导入剪映「甜美解说」音频</option><option value="api">使用已配置的配音接口</option></select><div class="ep-row" style="margin-top:12px"><button type="button" class="ep-button cursor-interaction" data-action="audio">导入音频</button><span class="ep-muted" data-audio-status>音频待导入</span></div><label class="ep-check"><input type="checkbox" checked data-captions>显示口播字幕</label><div class="ep-notice">准确SRT可直接使用；估时字幕需试听校准。</div></div></section>
+  <section id="${id}-panel-2" role="tabpanel" aria-labelledby="${id}-tab-2" data-panel="2" hidden><div class="ep-card"><h3>评论截图</h3><div class="ep-muted">选择ShareX保存的原始截图，译文独立呈现。</div><label class="ep-label" for="${id}-image">本地截图（仅在原型内预览）</label><input class="ep-input" id="${id}-image" type="file" accept="image/png,image/jpeg,image/webp" data-image><label class="ep-label" for="${id}-comment-url">原评论定位链接</label><input class="ep-input" id="${id}-comment-url" placeholder="粘贴评论链接"><label class="ep-label" for="${id}-translation">译文 / 观察员备注</label><textarea class="ep-textarea" id="${id}-translation" data-comment maxlength="56">观察员备注：先看统计口径，再看排名。</textarea><label class="ep-check"><input type="checkbox" data-show-comment>在预览中显示备注</label></div></section>
+  <section id="${id}-panel-3" role="tabpanel" aria-labelledby="${id}-tab-3" data-panel="3" hidden><div class="ep-card"><h3>输出设置</h3><label class="ep-label" for="${id}-quality">视频质量</label><select class="ep-select" id="${id}-quality"><option>1080×1920 · 30帧</option><option>540×960 · 快速预览</option></select><label class="ep-check"><input type="checkbox" checked>带字幕成片</label><label class="ep-check"><input type="checkbox" checked>无字幕视频＋独立SRT</label><label class="ep-check"><input type="checkbox" checked>保留原片、评论截图与配音</label></div><div class="ep-card"><h3>文明观察</h3><span class="ep-badge">待评</span><div class="ep-muted" style="margin-top:8px">数据来源和统计口径尚未核查。</div></div><button type="button" class="ep-button cursor-interaction" data-action="recover">查看中断恢复设计</button></section>
+  <div class="ep-next"><button type="button" class="ep-button primary cursor-interaction" data-action="next">下一步</button></div></div>
+  <aside class="ep-preview-area" aria-label="画面预览"><div class="ep-preview-label"><span>竖屏预览</span><span>9:16</span></div><div class="ep-phone"><div class="ep-phone-brand">地球人日志</div><div class="ep-phone-title" data-preview-title>各国极端贫困人口数量</div><div class="ep-video-placeholder" data-screen><i data-lucide="clapperboard" aria-hidden="true"></i><span>视频画面占位</span><span>来源与统计口径待核查</span></div><div class="ep-preview-comment" data-preview-comment hidden></div><div class="ep-caption" data-preview-caption>先核对数据来源，再讨论图表结论。</div><div class="ep-phone-foot">文明观察：待评 · 内部草稿</div></div><label class="ep-label" for="${id}-seek">预览位置</label><input id="${id}-seek" class="ep-range" type="range" min="0" max="8" step="0.1" value="0" data-seek><div class="ep-timing"><span data-position>00:00.0</span><span data-end>00:08.0</span></div></aside></div></section>
+  <section data-workspace="queue" hidden><div class="ep-card"><h3>任务队列 · 恢复状态演示</h3><div class="ep-queue-step"><span>素材导入</span><span>已保留</span></div><div class="ep-queue-step"><span>口播与字幕</span><span>已保留</span></div><div class="ep-queue-step"><span>视频导出</span><span data-queue-state>中断 · 待继续</span></div><div class="ep-notice" style="margin:12px 0">从导出步骤重新开始，保留之前的素材与配音。</div><button type="button" class="ep-button primary cursor-interaction" data-action="resume">继续该步骤（演示）</button><button type="button" class="ep-button cursor-interaction" data-action="back">返回编辑</button></div></section>
+  <section data-workspace="settings" hidden><div class="ep-card"><h3>工作区设置</h3><label class="ep-label" for="${id}-directory">素材与项目目录</label><input id="${id}-directory" class="ep-input" value="D:\\地球人日志工作区"><label class="ep-check"><input type="checkbox" checked>编辑后自动保存</label><label class="ep-check"><input type="checkbox" checked>项目快照与恢复记录</label><div class="ep-muted">接口密钥在正式应用中使用系统凭证存储；此原型不收集密钥。</div><button type="button" class="ep-button cursor-interaction" data-action="back" style="margin-top:12px">返回编辑</button></div></section>
+  <div class="ep-status" aria-live="polite" data-status>界面设计演示，不执行下载、收费或生成文件。</div></main></div>
+  <footer class="ep-footer"><span>项目保存在本机 · 先审稿，再生成</span><span>交互原型 / 正式安装包待开发</span></footer>`;
+  const state = { tab:0, title:'各国极端贫困人口数量', caption:'先核对数据来源，再讨论图表结论。', comment:'观察员备注：先看统计口径，再看排名。', showComment:false, duration:8, pos:0, image:null };
+  store[id] = {app,state};
+  const q = selector => app.querySelector(selector);
+  const message = text => {q('[data-status]').textContent=text;};
+  function tab(index) {
+    state.tab=Math.max(0,Math.min(3,index));
+    app.querySelectorAll('[data-tab]').forEach(button=>{const active=+button.dataset.tab===state.tab;button.classList.toggle('active',active);button.setAttribute('aria-selected',String(active));});
+    app.querySelectorAll('[data-panel]').forEach(panel=>panel.hidden=+panel.dataset.panel!==state.tab);
+    q('[data-action="next"]').textContent=state.tab===3?'查看生成计划':'下一步';
+  }
+  function workspace(name) {app.querySelectorAll('[data-workspace]').forEach(p=>p.hidden=p.dataset.workspace!==name);}
+  function paint() {
+    q('[data-preview-title]').textContent=state.title || '未填写标题';
+    q('[data-preview-caption]').textContent=state.caption;
+    q('[data-preview-caption]').hidden=!controls.showCaption || !q('[data-captions]').checked;
+    q('[data-preview-comment]').textContent=state.comment;
+    q('[data-preview-comment]').hidden=!state.showComment;
+    q('[data-seek]').max=state.duration;
+    state.pos=Math.min(state.pos,state.duration);
+    q('[data-position]').textContent='00:'+state.pos.toFixed(1).padStart(4,'0');
+    q('[data-end]').textContent='00:'+state.duration.toFixed(1).padStart(4,'0');
+    q('[data-screen]').style.aspectRatio=q('[data-layout]').value==='large'?'4/5':'1';
+    app.classList.toggle('ep-compact',controls.compact);
+  }
+  app.addEventListener('click',event=>{
+    const target=event.target.closest('button');if(!target)return;
+    if(target.dataset.tab!==undefined){workspace('editor');tab(+target.dataset.tab);persist();}
+    if(target.dataset.nav){workspace(target.dataset.nav==='project'?'editor':target.dataset.nav);}
+    const action=target.dataset.action;
+    if(action==='save')message('原型内的编辑已保留；未写入正式应用或磁盘。');
+    if(action==='plan'){q('[data-plan]').hidden=false;message('已展示生成前确认计划；本原型不会执行任务。');}
+    if(action==='close-plan')q('[data-plan]').hidden=true;
+    if(action==='download')message('正式应用将获取原帖视频；本原型不访问X。现有工具已有单帖下载功能。');
+    if(action==='local')message('正式应用支持拖入本地素材；此处仅演示布局。');
+    if(action==='writing')message('正式应用将根据已核实材料给出建议；本原型不调用AI接口。');
+    if(action==='audio')message('正式应用可导入剪映音频；本原型不读取音频文件。');
+    if(action==='recover')workspace('queue');
+    if(action==='back')workspace('editor');
+    if(action==='resume'){q('[data-queue-state]').textContent='已加入恢复队列（演示）';message('恢复操作演示：只处理导出步骤，不重新生成已完成的配音。');}
+    if(action==='next'){if(state.tab<3)tab(state.tab+1);else q('[data-plan]').hidden=false;persist();}
+  });
+  q('[data-title]').addEventListener('input',event=>{state.title=event.target.value;paint();});
+  q('[data-script]').addEventListener('input',event=>{state.caption=event.target.value;paint();});
+  q('[data-comment]').addEventListener('input',event=>{state.comment=event.target.value;paint();});
+  q('[data-show-comment]').addEventListener('change',event=>{state.showComment=event.target.checked;paint();});
+  q('[data-duration]').addEventListener('input',event=>{const value=Number(event.target.value);if(Number.isFinite(value)&&value>=1&&value<=44.74){state.duration=value;paint();}});
+  q('[data-start]').addEventListener('input',event=>{if(Number(event.target.value)+state.duration>44.74)message('选段超出原片，请缩短时长或调整起点。');});
+  q('[data-layout]').addEventListener('change',paint);
+  q('[data-captions]').addEventListener('change',paint);
+  q('[data-seek]').addEventListener('input',event=>{state.pos=Number(event.target.value);paint();});
+  q('[data-voice]').addEventListener('change',event=>message(event.target.value==='api'?'正式应用将先显示接口状态与预计用量。':'保留现有甜美解说音色，可导入已导出音频。'));
+  q('[data-image]').addEventListener('change',event=>{
+    const file=event.target.files[0];if(!file)return;
+    if(!['image/png','image/jpeg','image/webp'].includes(file.type)){message('请选择PNG、JPEG或WebP图片。');return;}
+    const reader=new FileReader();reader.onload=()=>{let image=q('[data-screenshot-preview]');if(!image){image=document.createElement('img');image.dataset.screenshotPreview='true';image.alt='用户选择的本地截图预览';image.style.maxWidth='100%';image.style.maxHeight='100px';q('[data-preview-comment]').before(image);}image.src=reader.result;message('截图仅在此原型中本地预览，不上传，也不写入正式任务。');};reader.readAsDataURL(file);
+  });
+  function persist(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{desktopDesign:'地球人日志工作室',activeSteps:Object.fromEntries(Object.entries(store).map(([k,v])=>[k,steps[v.state.tab]]))},privateContent:{tabs:Object.fromEntries(Object.entries(store).map(([k,v])=>[k,v.state.tab]))}}).catch(()=>{});}
+  const saved=window.openai?.widgetState?.privateContent?.tabs?.[id];if(Number.isInteger(saved))tab(saved);
+  window.addEventListener('openai:set_globals',event=>{const savedTab=event.detail?.globals?.widgetState?.privateContent?.tabs?.[id];if(Number.isInteger(savedTab))tab(savedTab);});
+  store[id].paint=paint;
+  paint();
+}
+build('earth-workbench','workbench');build('earth-wizard','wizard');
+if(globalThis.lucide)lucide.createIcons({attrs:{width:17,height:17}});
+if(globalThis.Tweak){const tweaks=new Tweak({container:root,onChange:()=>Object.values(store).forEach(item=>item.paint())});tweaks.addToggle(controls,'compact',{label:'紧凑间距'});tweaks.addToggle(controls,'showCaption',{label:'预览中显示口播字幕'});}
+})();
+</script>

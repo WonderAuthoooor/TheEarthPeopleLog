@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-19T21:43:53+08:00",
+  "outputs": [
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-qa-1792417418235868300\\短新闻 工作区\\projects\\596fc0c4-bf4e-4f22-a27f-74932b242dac\\exports\\20261019_第二个看点 · 技术测试_r0005_3fc595e0",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\quick-qa-1792417418235868300\\短新闻 工作区\\projects\\596fc0c4-bf4e-4f22-a27f-74932b242dac\\exports\\20261019_快速切片 · 内部技术测试_r0005_19c5a495"
+  ],
+  "checks": [
+    "quick GUI",
+    "all ranges validate before queue",
+    "two actual queued clips",
+    "covers and posting copy",
+    "original audio",
+    "preset reuse",
+    "batch autosave/reopen"
+  ]
+}

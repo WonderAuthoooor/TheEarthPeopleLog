@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-21T18:50:22.421146+08:00",
+  "uninstall_registry_apps": [
+    {
+      "name": "OBS Studio",
+      "version": "",
+      "location": "D:\\app\\steam\\steamapps\\common\\OBS Studio",
+      "entry": "D:\\app\\steam\\steam\\games\\c807ea593df8d2a40cda2b0a934555d70f7581d1.ico"
+    },
+    {
+      "name": "Unity 6000.5.5f1",
+      "version": "6000.5.5f1",
+      "location": "",
+      "entry": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.5f1\\Editor\\Unity.exe"
+    },
+    {
+      "name": "Unity Hub 3.19.5",
+      "version": "3.19.5",
+      "location": "",
+      "entry": "D:\\app\\unityhub\\Unity Hub\\Unity Hub.exe,0"
+    },
+    {
+      "name": "Steam",
+      "version": "2.10.91.91",
+      "location": "",
+      "entry": "D:\\app\\steam\\uninstall.exe"
+    },
+    {
+      "name": "剪映专业版",
+      "version": "11.6.0.14552",
+      "location": "",
+      "entry": "D:\\app\\JianyingPro\\uninst.exe"
+    }
+  ],
+  "steam_libraries": [
+    {
+      "root": "D:\\app\\steam",
+      "manifest_count": 6,
+      "relevant_apps": [
+        {
+          "name": "OBS Studio",
+          "app_id": "1905180",
+          "build_id": "24744241",
+          "directory": "OBS Studio",
+          "state_flags": "4"
+        }
+      ]
+    }
+  ],
+  "unity_standard_editors": [
+    "6000.5.5f1"
+  ],
+  "warudo": "not_found_in_checked_registry_and_registered_steam_libraries",
+  "vroid": "not_found_in_checked_registry_and_registered_steam_libraries",
+  "obs": {
+    "path": "D:/app/steam/steamapps/common/OBS Studio/bin/64bit/obs64.exe",
+    "file_version": "32.2.2",
+    "version_evidence": "Windows FileVersionInfo",
+    "spout_in_bundled_plugin_directory": false,
+    "user_plugin_directory_exists": false
+  },
+  "warudo_sdk_requirement": {
+    "unity": "2021.3.45f2",
+    "observed_local": "6000.5.5f1",
+    "compatible_editor_found": false,
+    "source": "https://docs.warudo.app/docs/modding/sdk-installation",
+    "client_test": "pending"
+  },
+  "desktop_automation": {
+    "status": "unavailable",
+    "tried": "node_repl @oai/sky initialization, reset then retry",
+    "failure": "MXC launcher cannot enumerate Z:; Windows unauthenticated guest access policy error 1272; kernel exits before app inventory",
+    "app_ui_test_performed": false
+  },
+  "limits": "有界盘点，不排除其他未登记便携安装；未收集Steam用户标识／凭据／日志，不等于已运行客户端验收"
+}

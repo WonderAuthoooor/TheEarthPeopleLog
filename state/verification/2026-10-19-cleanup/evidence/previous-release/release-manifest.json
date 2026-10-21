@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "verified_at": "2026-10-18T18:14:31+08:00",
+  "exe_sha256": "c5f029bb9e2dfc17ebbd64af9b3b131c34595c08f4cb50f0a93e5b4403e5408c",
+  "installer_sha256": "bec6e0e9f1e89ebcda2f57ccf55dd70ea4ff3a13f1e6e8457a3318e21ee13825",
+  "installer_bytes": 139390572,
+  "test_reports": [
+    ".runtime/distribution-qa/report.json",
+    ".runtime/distribution-qa/gui-export.json",
+    ".runtime/installer-qa/report.json"
+  ],
+  "clean_windows_tested": false
+}

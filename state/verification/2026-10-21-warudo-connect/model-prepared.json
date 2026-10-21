@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "install": "D:\\app\\steam\\steamapps\\common\\Warudo",
+  "character_path": "D:\\app\\steam\\steamapps\\common\\Warudo\\Warudo_Data\\StreamingAssets\\Characters\\AvatarLab_Test_624d0d554bc2.vrm",
+  "sha256": "624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23",
+  "vrm_version": "1.0",
+  "display_name": "Seed-san",
+  "authors": [
+    "VirtualCast, Inc."
+  ],
+  "existing_identical_reused": false,
+  "file_copy_verified": true,
+  "warudo_load_verified": false,
+  "camera_enabled": false,
+  "note": "仅放入可选模型副本；不修改场景／首选项，不代表运行器已加载，不是正式C"
+}

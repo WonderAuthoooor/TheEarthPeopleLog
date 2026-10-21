@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-19T22:24:14+08:00",
+  "protected_data_files_verified": 175,
+  "removed_generated_targets": [
+    {
+      "path": "dist\\0.2.1",
+      "files": 1661,
+      "bytes": 421931015
+    },
+    {
+      "path": "dist\\EarthPeopleLogStudio-0.2.1-Setup.exe",
+      "files": 1,
+      "bytes": 139401450
+    },
+    {
+      "path": "build",
+      "files": 18,
+      "bytes": 36653650
+    },
+    {
+      "path": ".runtime\\studio-notices-v02",
+      "files": 35,
+      "bytes": 213592
+    },
+    {
+      "path": ".runtime\\quick-frozen-0.2.2-1792419636159310200",
+      "files": 74,
+      "bytes": 18227128
+    },
+    {
+      "path": ".runtime\\installer-qa-0.2.2",
+      "files": 3,
+      "bytes": 771
+    },
+    {
+      "path": ".runtime\\build-studio-0.2.2.log",
+      "files": 1,
+      "bytes": 14820
+    },
+    {
+      "path": ".runtime\\build-installer-0.2.2.log",
+      "files": 1,
+      "bytes": 69
+    },
+    {
+      "path": ".runtime\\quick-frozen-0.2.2.log",
+      "files": 1,
+      "bytes": 87
+    },
+    {
+      "path": ".runtime\\installer-qa-0.2.2.log",
+      "files": 1,
+      "bytes": 67
+    },
+    {
+      "path": "studio\\__pycache__",
+      "files": 4,
+      "bytes": 32553
+    },
+    {
+      "path": "pipeline\\__pycache__",
+      "files": 3,
+      "bytes": 65870
+    },
+    {
+      "path": "tests\\__pycache__",
+      "files": 4,
+      "bytes": 45441
+    }
+  ]
+}

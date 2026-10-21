@@ -1,0 +1,21 @@
+{
+  "source_sha256": {
+    "avatar3d\\__init__.py": "31e4febabd1cff10fb86f7e21f021f97e4874244eca3f90c6eee32b797df3f87",
+    "avatar3d\\app.py": "72f4d2fe51c8ae01b0bed82946c3aabc3106cdfa0e930fc058afa5070b41c0d8",
+    "avatar3d\\backend.py": "8c9e494834c9f3a9a52f4196701c593bd1e52862e2e175d2ee55612fe23ebfb6",
+    "avatar3d\\blender_worker.py": "71d408ebd119ec72f4ea1d644743fc46dbdac137fd4f9fdfa7d1ab573b9d08d1",
+    "avatar3d\\contracts.py": "43b3fce2aeefc83193d89389567927abf0382f612efdd8bed7c4aebc54600439",
+    "avatar3d\\jobs.py": "78902c6d46f02f908ef543e85f4cb614ba3bf86946f95492389c8cd8b6add2ac",
+    "avatar3d\\models.py": "49f695a96e793348411bc0bf4bdc486e889f20bd433be22c50029e9c90469bfb",
+    "avatar3d\\motion.py": "07f98a2ba118720940bf0d6b61323134ab0d68a0a822275e7947714cee98fbad",
+    "avatar3d\\service.py": "e8f0b7f280b668fb3d1c7648cabac759826c6bee40de80b4749ebf2679616d29",
+    "avatar3d_entry.py": "b3d3eb8bee07d302a8fa7f17eba62099bddd76dc94e27dd958b0b1bd8aa06b6d"
+  },
+  "documents_sha256": {
+    "docs/AVATAR.md": "f6a1a1b8def1861414e7473bcbdbad3e484ca44064afafe9900cb5f8beb0066d",
+    "state/STATUS.md": "ea51c647fc4bcbf2f5176839b78766a8decb7273f1552e34551f7480887c08e9",
+    "state/TASKS.md": "172d838b93657f325fbf7b09d228579c8690aa8767c73a0eaec0740f2354f3b2",
+    "state/DECISIONS.md": "114eb85b9374f8df44338204324fb455910d0eee875ad51b4a9b65db1a918b79",
+    "README.md": "45a59a5c32a12492490777413c49a65146a50b04f4994629943b8b80abb6b1da"
+  }
+}

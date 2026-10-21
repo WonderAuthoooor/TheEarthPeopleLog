@@ -1,0 +1,24 @@
+{
+  "verified_at": "2026-10-21T09:21:45.804734+08:00",
+  "version": "0.1.1",
+  "avatar_tests": 8,
+  "mouth_parameter_cases": 44,
+  "canvas_widths": [
+    360,
+    480,
+    720,
+    1080
+  ],
+  "frozen_gui_exit_code": 0,
+  "frozen_frames": 319,
+  "frozen_face_roi_min_alpha": 251,
+  "source_hashes_match": true,
+  "globe_020_source_unchanged": true,
+  "original_defect": "低开合逆缩放外推到负取样坐标，面部出现透明缺口",
+  "not_claimed": [
+    "完整Live2D模型",
+    "用户动态观感已认可",
+    "实际剪映导入",
+    "正式音色试听"
+  ]
+}

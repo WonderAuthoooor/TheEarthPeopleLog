@@ -1,0 +1,13 @@
+test_alpha_and_independent_features (__main__.AvatarTests.test_alpha_and_independent_features) ... ok
+test_audio_silence_and_energy (__main__.AvatarTests.test_audio_silence_and_energy) ... ok
+test_cancel_no_completed_video (__main__.AvatarTests.test_cancel_no_completed_video) ... ok
+test_invalid_options_do_not_write (__main__.AvatarTests.test_invalid_options_do_not_write) ... ok
+test_mouth_transition_keeps_face_opaque (__main__.AvatarTests.test_mouth_transition_keeps_face_opaque) ... ok
+test_real_video_alpha_and_preview (__main__.AvatarTests.test_real_video_alpha_and_preview) ... ok
+test_supported_actions_truthful (__main__.AvatarTests.test_supported_actions_truthful) ... ok
+test_turn_does_not_move_body (__main__.AvatarTests.test_turn_does_not_move_body) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 12.900s
+
+OK

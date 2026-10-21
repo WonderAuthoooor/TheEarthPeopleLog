@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-21T21:20:22+08:00",
+  "user_requirements": [
+    "表情细节微调后置",
+    "OBS插件加载稍后验证"
+  ],
+  "expression_smoothing_gate": false,
+  "next_priority": [
+    "自制动作跨端接入",
+    "OBS透明输出与剪辑素材"
+  ],
+  "obs_test_status": "deferred_by_user",
+  "automation_created": false,
+  "app_version": "0.1.2"
+}

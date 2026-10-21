@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-21T19:06:29.625069+08:00",
+  "version": "0.1.2",
+  "scope": "M1 partial; local FBX exchange, not Warudo/client certification",
+  "targeted_tests": {
+    "count": 21,
+    "passed": true,
+    "log": "focused-tests.txt"
+  },
+  "source_and_frozen_gui_export": true,
+  "build_hashes_matched": 17,
+  "wave_roundtrip": {
+    "schema": 1,
+    "blender_version": "4.5.13 LTS",
+    "checked_frames": 18,
+    "checked_bones": 51,
+    "source_fps": 12.0,
+    "reimport_fps": 12.0,
+    "reimport_key_range": [
+      1.0,
+      18.0
+    ],
+    "timing_passed": true,
+    "frame_errors": [
+      {
+        "frame": 1,
+        "max_head_error_m": 9.751885749767813e-07
+      },
+      {
+        "frame": 2,
+        "max_head_error_m": 9.751885749767813e-07
+      },
+      {
+        "frame": 3,
+        "max_head_error_m": 9.751885749767813e-07
+      },
+      {
+        "frame": 4,
+        "max_head_error_m": 1.037448620265453e-06
+      },
+      {
+        "frame": 5,
+        "max_head_error_m": 1.1780181403854385e-06
+      },
+      {
+        "frame": 6,
+        "max_head_error_m": 1.1236367301719608e-06
+      },
+      {
+        "frame": 7,
+        "max_head_error_m": 1.2278999872107638e-06
+      },
+      {
+        "frame": 8,
+        "max_head_error_m": 1.077166407479596e-06
+      },
+      {
+        "frame": 9,
+        "max_head_error_m": 1.0565764821582535e-06
+      },
+      {
+        "frame": 10,
+        "max_head_error_m": 1.0320239225502034e-06
+      },
+      {
+        "frame": 11,
+        "max_head_error_m": 1.0299888740309385e-06
+      },
+      {
+        "frame": 12,
+        "max_head_error_m": 1.0660892367671268e-06
+      },
+      {
+        "frame": 13,
+        "max_head_error_m": 1.065665423611174e-06
+      },
+      {
+        "frame": 14,
+        "max_head_error_m": 1.184558661325094e-06
+      },
+      {
+        "frame": 15,
+        "max_head_error_m": 1.0933838086035335e-06
+      },
+      {
+        "frame": 16,
+        "max_head_error_m": 1.1783980962438818e-06
+      },
+      {
+        "frame": 17,
+        "max_head_error_m": 9.751885749767813e-07
+      },
+      {
+        "frame": 18,
+        "max_head_error_m": 9.751885749767813e-07
+      }
+    ],
+    "max_head_position_error_m": 1.2278999872107638e-06,
+    "max_tail_position_error_m": 0.10324647092317753,
+    "max_direction_error_degrees": 0.0,
+    "max_deformation_rotation_error_degrees": 0.0,
+    "position_tolerance_m": 0.001,
+    "direction_tolerance_degrees": 0.1,
+    "tail_length_note": "无叶骨FBX会重建末端尾长；不用于重建角色网格，头位置、方向及相对休息姿势的旋转单独检查",
+    "passed": true,
+    "scope": "Blender FBX往返，不代表Unity Humanoid或Warudo已验证"
+  },
+  "sample_and_source_preserved": true,
+  "local_links_checked": 61,
+  "git_diff_check_exit_code": 0,
+  "warudo_unity_obs_jianying_client_checks": "pending",
+  "formal_character_C": "not_created",
+  "errors": [],
+  "passed": true
+}

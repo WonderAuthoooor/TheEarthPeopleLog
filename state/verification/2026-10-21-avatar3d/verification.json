@@ -1,0 +1,25 @@
+{
+  "frozen_gui_export": true,
+  "frozen_frames": 6,
+  "size": [
+    320,
+    480
+  ],
+  "alpha_checked": true,
+  "source_wave_frames": 18,
+  "baked_motion_reloaded": true,
+  "side_view": true,
+  "source_hashes_match": true,
+  "old_avatar_and_globe_unchanged": true,
+  "ledger_empty": true,
+  "sample_folder": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\20261021_3D骨骼技术验证",
+  "model": "Seed-san by VirtualCast, Inc.",
+  "not_character_c": true,
+  "not_tested": [
+    "真人摄像头与直播",
+    "实时骨架拖拽",
+    "正式C形象",
+    "干净Windows安装",
+    "目标剪映透明合成"
+  ]
+}

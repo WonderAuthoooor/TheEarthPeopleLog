@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-21T20:08:37.698544+08:00",
+  "scope": "user-confirmed static load, screenshot review and document checks only; no software tests rerun",
+  "evidence_hashes_checked": 2,
+  "local_links_checked": 31,
+  "git_diff_check_exit_code": 0,
+  "errors": [],
+  "passed": true
+}

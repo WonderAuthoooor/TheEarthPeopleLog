@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://storage.googleapis.com/mediapipe-assets/portrait.jpg",
+    "file": "portrait.jpg"
+  },
+  {
+    "url": "https://storage.googleapis.com/mediapipe-assets/pose.jpg",
+    "file": "pose.jpg"
+  }
+]

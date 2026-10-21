@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-20T20:57:31+08:00",
+  "version": "0.3.0",
+  "offline_tests": 37,
+  "source_and_bundled_assets_verified": 23,
+  "manual_widgets": [
+    "daily stories JSON import",
+    "12 target locations after import",
+    "origin/target event place selection",
+    "replacement robot hand",
+    "mascot mode"
+  ],
+  "sample_metadata": {
+    "intro": "1080x1920 / 30fps / 5s",
+    "transition": "1080x1920 / 30fps / 3s",
+    "mascot": "1080x1920 / 30fps / 6s / ProRes4444 alpha",
+    "combined_preview": "540x960 / 30fps / 14s / placeholder news"
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "schedule": "每天09:00 Asia/Shanghai",
+    "first_scheduled_run_verified": false
+  },
+  "news": {
+    "count": 3,
+    "original_videos_watched": false,
+    "news_videos_downloaded": false,
+    "trend_ranking_verified": false,
+    "published": false
+  },
+  "limits": [
+    "未验证剪映实际版本导入Alpha MOV",
+    "无真实整期新闻成片或发布",
+    "无干净Windows验收",
+    "未做首次按日调度验收"
+  ],
+  "protected_existing_files_verified": 175,
+  "installer_verified": true
+}

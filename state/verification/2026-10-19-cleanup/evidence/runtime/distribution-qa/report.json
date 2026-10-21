@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-18T18:11:33+08:00",
+  "environment": "PATH仅Windows系统目录，移除Python/Codex引用；本机仍安装开发工具，不等于干净机器",
+  "doctor": {
+    "frozen": true,
+    "version": "0.2.0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "qt": "6.9.3",
+    "av": "16.1.0",
+    "pillow": "12.3.0",
+    "ffmpeg": "D:\\work\\TheEarthPeopleLog\\dist\\EarthPeopleLogStudio\\_internal\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "font": [
+      "Microsoft YaHei",
+      "Regular"
+    ]
+  },
+  "output": "D:\\work\\TheEarthPeopleLog\\.studio\\projects\\09618719-55ea-4dd0-97ee-d6548f342af8\\exports\\20261018_先核对口径，再看这张图_r0002_9f1c350c",
+  "metadata": {
+    "duration": 8.0,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "has_video": true,
+    "has_audio": true
+  },
+  "checks": [
+    "frozen runtime",
+    "bundled FFmpeg",
+    "1080p actual export",
+    "Qt GUI launch/capture/exit"
+  ]
+}

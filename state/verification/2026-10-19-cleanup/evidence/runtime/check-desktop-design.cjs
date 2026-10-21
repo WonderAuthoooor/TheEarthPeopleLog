@@ -1,0 +1,52 @@
+const fs = require('fs');
+const vm = require('vm');
+const {pathToFileURL} = require('url');
+const {chromium} = require('C:/Users/WonderMan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const source = 'C:/Users/WonderMan/.codex/visualizations/2026/10/11/01a1296e-1522-71c0-94b8-a496517c844f/earth-log-desktop.html';
+const fragment = fs.readFileSync(source,'utf8');
+for (const match of fragment.matchAll(/<script>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]);
+(async()=>{
+ const browser=await chromium.launch({headless:true,channel:'chrome'});
+ const page=await browser.newPage({viewport:{width:1024,height:1100},colorScheme:'light'});
+ const errors=[];page.on('pageerror',error=>errors.push(error.message));
+ await page.goto(pathToFileURL('D:/work/TheEarthPeopleLog/.runtime/desktop-design-preview.html').href);
+ const frame=page.frameLocator('iframe');
+ await frame.locator('#earth-workbench [data-title]').waitFor();
+ await frame.locator('#earth-workbench [data-title]').fill('可编辑中文标题测试');
+ if(await frame.locator('#earth-workbench [data-preview-title]').textContent()!=='可编辑中文标题测试')throw Error('Title not linked');
+ await frame.locator('#earth-workbench [data-tab="1"]').click();
+ await frame.locator('#earth-workbench [data-script]').fill('口播编辑可以同步到右侧预览。');
+ if(await frame.locator('#earth-workbench [data-preview-caption]').textContent()!=='口播编辑可以同步到右侧预览。')throw Error('Caption not linked');
+ await frame.locator('#earth-workbench [data-tab="2"]').click();
+ await frame.locator('#earth-workbench [data-show-comment]').check();
+ if(!await frame.locator('#earth-workbench [data-preview-comment]').isVisible())throw Error('Comment missing');
+ await frame.locator('#earth-workbench [data-tab="3"]').click();
+ await frame.locator('#earth-workbench [data-action="recover"]').click();
+ await frame.locator('#earth-workbench [data-action="resume"]').click();
+ if(!(await frame.locator('#earth-workbench [data-queue-state]').textContent()).includes('演示'))throw Error('Recovery state missing');
+ await frame.locator('#earth-workbench [data-workspace="queue"] [data-action="back"]').click();
+ await frame.locator('#earth-workbench [data-action="plan"]').click();
+ if(!await frame.locator('#earth-workbench [data-plan]').isVisible())throw Error('Plan missing');
+ await frame.locator('#earth-workbench [data-action="close-plan"]').click();
+ await frame.locator('#earth-workbench [data-tab="0"]').click();
+ await frame.locator('#earth-workbench [data-title]').fill('各国极端贫困人口数量');
+ await page.screenshot({path:'D:/work/TheEarthPeopleLog/.runtime/desktop-design-1024.png',fullPage:true});
+ for(const width of [736,320]){
+   await page.setViewportSize({width,height:1600});
+   const overflow=await frame.locator('body').evaluate(body=>body.scrollWidth>body.clientWidth+1);
+   if(overflow)throw Error('Horizontal overflow at '+width);
+   await page.screenshot({path:`D:/work/TheEarthPeopleLog/.runtime/desktop-design-${width}.png`,fullPage:true});
+ }
+ await page.setViewportSize({width:1024,height:1100});
+ await page.emulateMedia({colorScheme:'dark'});
+ await page.screenshot({path:'D:/work/TheEarthPeopleLog/.runtime/desktop-design-dark.png',fullPage:true});
+ // Inspect wizard state independently of the host carousel controller.
+ await frame.locator('[data-variant="一屏工作台"]').evaluate(el=>el.hidden=true);
+ await frame.locator('[data-variant="分步向导"]').evaluate(el=>el.hidden=false);
+ await frame.locator('#earth-wizard [data-action="next"]').click();
+ if(!await frame.locator('#earth-wizard [data-panel="1"]').isVisible())throw Error('Wizard step missing');
+ await page.screenshot({path:'D:/work/TheEarthPeopleLog/.runtime/desktop-design-wizard.png',fullPage:true});
+ if(errors.length)throw Error(errors.join('\n'));
+ console.log('PASS: syntax, editable preview, tabs, comment, recovery demo, export plan, wizard, 1024/736/320 widths, light/dark; no runtime errors.');
+ await browser.close();
+})().catch(error=>{console.error(error.stack);process.exit(1);});

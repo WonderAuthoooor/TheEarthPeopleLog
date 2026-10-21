@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-21T20:20:38+08:00",
+  "source": "用户明确确认有轻微起伏；截图支持两个开关已开启，静态图片本身不能证明运动",
+  "warudo_version": "0.15.1",
+  "model": "Seed-san",
+  "breathing_enabled": true,
+  "breathing_amplitude": 0.1,
+  "breathing_speed": 0.25,
+  "sway_enabled": true,
+  "sway_amplitude": 0.25,
+  "combined_idle_motion": "passed_user_observed",
+  "isolated_breath_and_sway_tests": "not_performed",
+  "expression_test": "pending",
+  "custom_wave_unity_warudo": "pending",
+  "obs_alpha": "pending",
+  "evidence_sha256": "585a03bf436b2404f31e4e0b497f5a572d5efd22614d876addfd6dff6f70200f"
+}

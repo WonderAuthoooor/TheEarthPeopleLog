@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-20T22:25:11+08:00",
+  "version": "0.1.1",
+  "exe_sha256": "a79717ca20a7180eb116e079a6f0e9aaa232f5f8dbf660eff3a2b5e9a964a0a7",
+  "installer_sha256": "3a5b08d3bd728a9369034a50b5a8c18395fb92342b4a58b04520fba5275b5a1f",
+  "source_hashes_verified": 20,
+  "offline_tests": 49,
+  "text_options": {
+    "title": false,
+    "subtitle": false,
+    "status": false,
+    "location": false,
+    "nearby": false,
+    "footer": false
+  },
+  "verified": [
+    "default frame renders no text throughout intro and transition",
+    "each text layer renders independently",
+    "saved toggles restore",
+    "old preferences default all off",
+    "source and frozen GUI actual exports",
+    "packaged opt-in text export",
+    "isolated installed EXE matches final build",
+    "cancel and ledger unchanged"
+  ],
+  "sample": "工作素材/栏目包装/20261020_纯净地点版/20261020_221400_transition_9159c117/transition.mp4",
+  "limits": [
+    "实际剪映组合／手机观感仍待用户试用",
+    "隔离安装测试不写系统快捷方式或注册表",
+    "旧程序仍运行时未终止，关闭后重开项目快捷方式使用新版"
+  ]
+}

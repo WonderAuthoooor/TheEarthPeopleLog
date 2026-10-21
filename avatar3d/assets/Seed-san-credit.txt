@@ -1,0 +1,5 @@
+Seed-san model by VirtualCast, Inc.
+Source: https://github.com/vrm-c/vrm-specification/tree/master/samples/Seed-san
+VRM Public License 1.0: https://vrm.dev/licenses/1.0/
+See the included license and the VRM embedded metadata.
+Technical fixture only; not Earth People Log character C.

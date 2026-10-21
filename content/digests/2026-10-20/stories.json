@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-20T20:34:29+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "researching",
+  "count": 3,
+  "selection_note": "近期视频选题候选，非全球热搜榜；本轮三条已达到最小数量，不凑未经核实的题目。",
+  "stories": [
+    {
+      "event_id": "2026-10-20-jaxa-mmx-launch",
+      "title": "日本MMX探测器发射，迈出火星卫星采样之旅第一步",
+      "event_date": "2026-10-20T04:41:03+09:00",
+      "reported_date": "2026-10-20",
+      "freshness": "当天发生",
+      "location": {
+        "name": "日本 · 种子岛航天中心",
+        "lat": 30.4,
+        "lon": 130.97,
+        "precision": "发射场近似定位",
+        "basis": "JAXA发射结果公告确认种子岛；经纬度为低比例尺动画示意，不是发射台测量坐标"
+      },
+      "facts": [
+        "JAXA公告确认H3第10号机发射MMX，并确认探测器分离、进入预定轨道。",
+        "发射成功不等于已抵达火星或已取回样本。"
+      ],
+      "unknowns": [
+        "后续飞行与任务成果需持续复核；发射会后记者会链接已找到，视频未观看。"
+      ],
+      "sources": [
+        {
+          "title": "JAXA发射结果公告",
+          "url": "https://global.jaxa.jp/press/2026/10/20261020-1_e.html",
+          "opened": true,
+          "kind": "primary"
+        },
+        {
+          "title": "Space.com发射报道与回放入口",
+          "url": "https://www.space.com/astronomy/mars/japan-launching-bold-sample-return-mission-to-mars-moon-phobos-today-watch-it-live",
+          "opened": false,
+          "kind": "secondary_search_lead"
+        }
+      ],
+      "media": [
+        {
+          "title": "JAXA发射后记者会（公告直接链接，非发射直播）",
+          "url": "https://www.youtube.com/live/QLuZtNOXrDo",
+          "status": "由原始公告指向；视频页工具无法抓取，未观看/下载"
+        },
+        {
+          "title": "MMX官方图库与任务介绍动画",
+          "url": "https://www.mmx.jaxa.jp/gallery/",
+          "status": "图库页面已打开；历史CG须标示任务演示，不当作当天现场"
+        },
+        {
+          "title": "官方图库中的任务介绍动画",
+          "url": "https://www.youtube.com/watch?v=u3SBNgwVVCk",
+          "status": "ID来自官方图库缩略图；未打开观看，非当天发射画面"
+        }
+      ],
+      "shot_ideas": [
+        "发射升空和探测器分离画面需另核对原视频；现阶段不能给真实时码。",
+        "任务介绍动画可用于解释采样路径，标注CG/任务演示。"
+      ],
+      "observation_draft": "地球人的取样范围，又准备往外扩一圈。",
+      "editorial_priority": "优先，动态画面与地点清楚",
+      "heat_evidence": "多个来源近期报道；未取得平台热榜或可比热度数据，不宣称全球热搜排名",
+      "download_tested": false,
+      "rights_status": "未核实具体素材商用范围，链接不代表授权",
+      "video_watched": false,
+      "score": {
+        "status": "pending",
+        "score": null,
+        "reason": "候选选题阶段，尚未完成影响评估"
+      }
+    },
+    {
+      "event_id": "2026-10-14-monorace-paper",
+      "title": "一只眼睛也能高速竞速：MonoRace研究近期公布",
+      "event_date": "2026-10-14",
+      "reported_date": "2026-10-16；后续媒体报道2026-10-19",
+      "freshness": "研究新进展／旧赛事回顾：比赛是2025年，不能称今天刚赢",
+      "location": {
+        "name": "阿联酋 · 阿布扎比",
+        "lat": 24.45,
+        "lon": 54.38,
+        "precision": "比赛城市示意，未精确定位赛场",
+        "basis": "TU Delft公告确认2025年阿布扎比赛事；论文机构在荷兰代尔夫特，转场必须说明比赛地"
+      },
+      "facts": [
+        "TU Delft介绍MonoRace使用单摄像头、IMU与机载控制系统，参加2025年阿布扎比赛事。",
+        "本轮新闻点为2026年10月论文及技术解释的新进展，不是首次发生人机竞速。"
+      ],
+      "unknowns": [
+        "推广到日常机器人仍属于研究方展望；视频原始日期和CG/叠加部分需逐段检查。"
+      ],
+      "sources": [
+        {
+          "title": "TU Delft官方研究介绍（荷兰语）",
+          "url": "https://www.tudelft.nl/2026/tu-delft/de-wetenschap-achter-s-werelds-snelste-autonome-racedrone",
+          "opened": true,
+          "kind": "primary"
+        },
+        {
+          "title": "Science Robotics论文DOI",
+          "url": "https://doi.org/10.1126/scirobotics.aee9250",
+          "opened": false,
+          "kind": "primary_publication_locator"
+        },
+        {
+          "title": "Live Science近期报道",
+          "url": "https://www.livescience.com/technology/robotics/the-worlds-fastest-ai-powered-racing-drone-outflies-the-best-human-drone-pilots",
+          "opened": true,
+          "kind": "secondary"
+        }
+      ],
+      "media": [
+        {
+          "title": "TU Delft官方文章嵌入视频",
+          "url": "https://www.youtube.com/watch?v=wGUVdoZGSvc",
+          "status": "URL从官方文章HTML提取；未观看，不能据此给切点时码"
+        }
+      ],
+      "shot_ideas": [
+        "优先选真实穿门竞速；训练模拟器和识别叠加须标注，不当作无人机裸眼实拍。"
+      ],
+      "observation_draft": "它只带一只眼睛，人类选手却得多留一个心眼。",
+      "editorial_priority": "画面优先；务必讲清2025比赛与2026研究的时间差",
+      "heat_evidence": "多个来源近期报道；未取得平台热榜或可比热度数据，不宣称全球热搜排名",
+      "download_tested": false,
+      "rights_status": "未核实具体素材商用范围，链接不代表授权",
+      "video_watched": false,
+      "score": {
+        "status": "pending",
+        "score": null,
+        "reason": "候选选题阶段，尚未完成影响评估"
+      }
+    },
+    {
+      "event_id": "2026-10-20-gcp-london-disruption",
+      "title": "伦敦云服务区域故障：电力事件影响多项Google Cloud服务",
+      "event_date": "2026-10-20T06:08:00+00:00",
+      "reported_date": "2026-10-20；已核对官方04:58 PDT更新",
+      "freshness": "当天事件，恢复状态持续变化，发布前再查",
+      "location": {
+        "name": "英国 · 伦敦",
+        "lat": 51.51,
+        "lon": -0.13,
+        "precision": "服务区域所在城市示意，非机房位置",
+        "basis": "Google事件页明确London (europe-west2)，不推测具体数据中心地址"
+      },
+      "facts": [
+        "Google官方事件页记录europe-west2区域多项服务受影响，并将故障关联到europe-west2-b的电力事件。",
+        "已读取的更新称电力事件得到缓解，服务正在恢复；不得将预计恢复时间写成已恢复。"
+      ],
+      "unknowns": [
+        "本轮未独立核实所有受影响企业或损失数字；发布前必须重新核查恢复进展。",
+        "最后一次工具复查未能打开详情页，恢复状态仍需发布前复核。"
+      ],
+      "sources": [
+        {
+          "title": "Google Cloud事件详情与时间线",
+          "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+          "opened": true,
+          "kind": "primary"
+        },
+        {
+          "title": "Google Cloud总体状态页",
+          "url": "https://status.cloud.google.com/",
+          "opened": true,
+          "kind": "primary"
+        }
+      ],
+      "media": [
+        {
+          "title": "官方状态时间线，可自行录屏或截图",
+          "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+          "status": "可读网页；未发现已核实官方事故现场视频，不用无关机房视频假装现场"
+        }
+      ],
+      "shot_ideas": [
+        "状态页相关区域和更新条目；自行演示云服务依赖关系。"
+      ],
+      "observation_draft": "名字叫云，电源还是在地上。",
+      "editorial_priority": "解释型备选，素材动态性较弱",
+      "heat_evidence": "多个来源近期报道；未取得平台热榜或可比热度数据，不宣称全球热搜排名",
+      "download_tested": false,
+      "rights_status": "未核实具体素材商用范围，链接不代表授权",
+      "video_watched": false,
+      "score": {
+        "status": "pending",
+        "score": null,
+        "reason": "候选选题阶段，尚未完成影响评估"
+      }
+    }
+  ]
+}

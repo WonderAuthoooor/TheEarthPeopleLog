@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "blender_version": "4.5.13 LTS",
+  "checked_frames": 6,
+  "checked_bones": 51,
+  "source_fps": 12.0,
+  "reimport_fps": 12.0,
+  "reimport_key_range": [
+    1.0,
+    6.0
+  ],
+  "timing_passed": true,
+  "frame_errors": [
+    {
+      "frame": 1,
+      "max_head_error_m": 9.751885749767813e-07
+    },
+    {
+      "frame": 2,
+      "max_head_error_m": 9.751885749767813e-07
+    },
+    {
+      "frame": 3,
+      "max_head_error_m": 9.751885749767813e-07
+    },
+    {
+      "frame": 4,
+      "max_head_error_m": 9.751885749767813e-07
+    },
+    {
+      "frame": 5,
+      "max_head_error_m": 9.751885749767813e-07
+    },
+    {
+      "frame": 6,
+      "max_head_error_m": 9.751885749767813e-07
+    }
+  ],
+  "max_head_position_error_m": 9.751885749767813e-07,
+  "max_tail_position_error_m": 0.10324647092317753,
+  "max_direction_error_degrees": 0.0,
+  "max_deformation_rotation_error_degrees": 0.0,
+  "position_tolerance_m": 0.001,
+  "direction_tolerance_degrees": 0.1,
+  "tail_length_note": "无叶骨FBX会重建末端尾长；不用于重建角色网格，头位置、方向及相对休息姿势的旋转单独检查",
+  "passed": true,
+  "scope": "Blender FBX往返，不代表Unity Humanoid或Warudo已验证"
+}

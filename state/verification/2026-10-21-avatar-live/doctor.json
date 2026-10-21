@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "frozen": true,
+  "capabilities": [
+    "breath",
+    "blink",
+    "audio_energy_mouth",
+    "small_head_warp",
+    "independent_blink",
+    "small_head_roll",
+    "small_head_pitch_shift",
+    "small_body_lean"
+  ],
+  "globe_required": false,
+  "studio_required": false,
+  "tracking_backend": "MediaPipe 0.10.31",
+  "tracking_models_present": true,
+  "camera_started": false
+}

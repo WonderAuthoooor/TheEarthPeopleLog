@@ -1,0 +1,7 @@
+{
+  "schema_version": "0.1",
+  "rule_version": "v0.1",
+  "timezone": "Asia/Shanghai",
+  "baseline": 1000,
+  "entries": []
+}

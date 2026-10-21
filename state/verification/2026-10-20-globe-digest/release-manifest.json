@@ -1,0 +1,23 @@
+{
+  "version": "0.3.0",
+  "verified_at": "2026-10-20T20:57:31+08:00",
+  "exe_sha256": "5786abb2ac0aea87489e56f57fa031f0f3bdd47d8b3df862d46c307b44d98d3d",
+  "installer_sha256": "6bcbba110919295363c454e3ab31415f44dc1dbfcccf606f4f44aacc6ace2902",
+  "installer_bytes": 139629943,
+  "checks": [
+    "37 offline checks",
+    "source GUI daily locations and component selection",
+    "final frozen GUI -> worker actual animation",
+    "transition and alpha MOV decode",
+    "replacement hand and copied components",
+    "cancel removes partial output and score ledger unchanged",
+    "legacy frozen quick batch exports",
+    "isolated install/run/uninstall preserves data"
+  ],
+  "sample_preview": "工作素材/栏目包装/20261020_卡通首版/栏目包装预览.mp4",
+  "news_package": "content/digests/2026-10-20/stories.json",
+  "automation_id": "automation",
+  "first_scheduled_run_verified": false,
+  "clean_windows_tested": false,
+  "published": false
+}

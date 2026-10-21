@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-20T22:13:30+08:00",
+  "version": "0.1.1",
+  "outputs": [
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792505592016620500\\workspace\\animations\\20261020_221316_transition_dea15f9a",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792505592016620500\\intro\\outputs\\20261020_221324_intro_bca174a9",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792505592016620500\\no-hand\\outputs\\20261020_221326_intro_cbe378f5",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792505592016620500\\labelled\\outputs\\20261020_221327_transition_1ecdf90d"
+  ],
+  "checks": [
+    "independent packaged GUI and QProcess actual city transition",
+    "1252 cities and separate detailed caption",
+    "no coordinate/avatar/score UI fields",
+    "no studio or mascot assets packaged",
+    "intro hand replacement",
+    "default text-free output and opt-in labelled output",
+    "intro without hand assets",
+    "explicit legacy config error",
+    "cancel removes partial video",
+    "formal ledger unchanged",
+    "no studio database created",
+    "development paths removed"
+  ]
+}

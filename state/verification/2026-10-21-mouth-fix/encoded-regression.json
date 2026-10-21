@@ -1,0 +1,32 @@
+{
+  "old": {
+    "frames": 319,
+    "face_roi_min_alpha": 0,
+    "frames_with_face_holes": [
+      4,
+      12,
+      38,
+      39,
+      45,
+      49,
+      96,
+      133,
+      139,
+      140,
+      141,
+      190,
+      191,
+      225,
+      244,
+      245,
+      271,
+      277,
+      283
+    ]
+  },
+  "fixed": {
+    "frames": 319,
+    "face_roi_min_alpha": 251,
+    "frames_with_face_holes": []
+  }
+}

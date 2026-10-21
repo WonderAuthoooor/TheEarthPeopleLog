@@ -1,0 +1,99 @@
+{
+  "product": "EarthPeopleLogGlobe",
+  "version": "0.2.0",
+  "built_at": "2026-10-20T22:57:36+08:00",
+  "exe_sha256": "3cfd5606ff98666d3a7fc1629b6e28cc7e42617405753736ba2f9208023956ee",
+  "source_hashes": {
+    "globe_app\\__init__.py": "d03eacad88bd7a33d49f0a635660e8241fa832e06a3d288fe742cf46833c1b42",
+    "globe_app\\app.py": "96c2a6f7acda5ebe189c22179dbd7bc366beb5f5eaaca726e533eef9df4b9566",
+    "globe_app\\assets\\app-icon.ico": "366edfa91b093859f6027b8dd09667fb7299ca3e140102c7d74329cddc2238bc",
+    "globe_app\\assets\\app-icon.png": "1163d05cce07a0fb893fefe05b3954c0031c61e0da5bab69142c85e02e76ce49",
+    "globe_app\\assets\\app-icon.svg": "0ff8edab105b6700d93b638af8f970ff52ebd709c00d51ddf3e223539feb17af",
+    "globe_app\\dialog.py": "a1041478fca80d9f9eb5e7c2c54886d3ded32f545c21338ded4bf51ebc48a772",
+    "globe_entry.py": "8be843a56778f4a14c77007627b47ccc7fe9bea0cb7c2511feade597d9ffc1a2",
+    "pipeline\\__init__.py": "232536761dcb9cecea1c5f245c178232b3cb4fc9e09bd672a4972e6db316b353",
+    "pipeline\\__main__.py": "3ffc20361129c2a4835e015092cede20b4848ac42b3b274d281ff458ec0352b5",
+    "pipeline\\assets\\hands\\alien.svg": "03c0e28a960617cde93b1833107e2cc895419cd383e9c0a2ec086d063df0bf78",
+    "pipeline\\assets\\hands\\robot.svg": "b3e37f868ec2cd55e6015ba94f17fc2523177489f9bf8569e46559ec792168d1",
+    "pipeline\\assets\\hands\\rubber_glove.svg": "71188f71843269c08f1edf216e689649432593241d1fb0c93fa4c08fa638fb6e",
+    "pipeline\\assets\\locations-source.json": "cec81532656816c3eac0a5092695d4846be411e3a38d5d835be30484b8a70005",
+    "pipeline\\assets\\locations.json": "9082b7e780bf687a02db268981344a51d6a7fa71d2cacf083d1ca9921a77ab8e",
+    "pipeline\\assets\\NOTICE.md": "8e29a0cace39f187bc52b0650cea92fb12d18f87fdca7d62e5f6aca5edcdf354",
+    "pipeline\\cities.py": "38f05f3e94ae3395055320838c92fa28fc43be7837b6cbd53160aab200655334",
+    "pipeline\\core.py": "f39e9d6af45d2ea89e378c0f471073f62b6a182cd0887bf6320671f27c541cfd",
+    "pipeline\\globe.py": "587fd7f88eaf214dd7e3d7ae75581ef9822283064f6ae030dcddac844231618f",
+    "pipeline\\globe_motion.py": "25aa81470424136d3b576127669811c1b40465a8474ea4b6bbb85c395b3ff374",
+    "pipeline\\globe_retro.py": "04235d92f1fa7e4b735a3a9c31d57bf9b06d1955c426627dd3368f76961c3da7",
+    "pipeline\\gui.py": "1bf3d60dd7bbcb5ab935dc3196c6eb915b3a834ec4f4e522b0e8722f4d9f4884",
+    "pipeline\\processes.py": "52d421215f24581cd3188b703b191baa1797ca0aecebba80799cc5f2a3b2b458",
+    "pipeline\\providers.py": "ac38629cb7cccfa4df151683dbd3aed4c1aab79feabf6ceccd16d6b4230f8eda"
+  },
+  "build_inputs": [
+    {
+      "build_archive": "altgraph-0.17.5-py2.py3-none-any.whl",
+      "sha256": "f3a22400bce1b0c701683820ac4f3b159cd301acab067c51c653e06961600597"
+    },
+    {
+      "build_archive": "av-16.1.0-cp312-cp312-win_amd64.whl",
+      "sha256": "f49243b1d27c91cd8c66fdba90a674e344eb8eb917264f36117bf2b6879118fd"
+    },
+    {
+      "build_archive": "imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl",
+      "sha256": "02fa47c83703c37df6bfe4896aab339013f62bf02c5ebf2dce6da56af04ffc0a"
+    },
+    {
+      "build_archive": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "build_archive": "pefile-2023.2.7-py3-none-any.whl",
+      "sha256": "da185cd2af68c08a6cd4481f7325ed600a88f6a813bad9dea07ab3ef73d8d8d6"
+    },
+    {
+      "build_archive": "pillow-12.3.0-cp312-cp312-win_amd64.whl",
+      "sha256": "a2b55dd6b2a4c4b7d87ffa56bdb33fdc5fdb9a462173861a7bc097f17d91cb09"
+    },
+    {
+      "build_archive": "pyinstaller-6.16.0-py3-none-win_amd64.whl",
+      "sha256": "bc10eb1a787f99fea613509f55b902fbd2d8b73ff5f51ff245ea29a481d97d41"
+    },
+    {
+      "build_archive": "pyinstaller_hooks_contrib-2026.8-py3-none-any.whl",
+      "sha256": "6d21d65323ea4467753afc21f52d7d0e69416ae8101dd88269bf273ad48db084"
+    },
+    {
+      "build_archive": "pyside6-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "71b41b9ebd1c044c3777f2b32278d3919f07bda4f15c504bc165b643bc3cec01"
+    },
+    {
+      "build_archive": "pyside6_addons-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "0aece2a81ccf16ef9b750b09601b6876aa116bbc700e848ce82df42906f04c5c"
+    },
+    {
+      "build_archive": "pyside6_essentials-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "21f98077c135864473089e59a6a0bd828e64c6644b3dd7267b102da4a2ee8f21"
+    },
+    {
+      "build_archive": "pywin32_ctypes-0.2.3-py3-none-any.whl",
+      "sha256": "8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8"
+    },
+    {
+      "build_archive": "setuptools-84.0.0-py3-none-any.whl",
+      "sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670"
+    },
+    {
+      "build_archive": "shiboken6-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "f1498176d2d5bcade7d662e1fc5143980fb008b6c78b966289d29a4ae86cd0c6"
+    },
+    {
+      "build_archive": "yt_dlp-2026.8.19-py3-none-any.whl",
+      "sha256": "1d57897e94c6665a0a6f9bc54b34e584284e32c034ffab3a7df25d8f7b24eedf"
+    }
+  ],
+  "excluded": [
+    "studio",
+    "avatar runtime",
+    "mascot assets",
+    "yt_dlp"
+  ]
+}

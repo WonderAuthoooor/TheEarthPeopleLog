@@ -1,0 +1,42 @@
+{
+  "config": {
+    "mode": "intro",
+    "style": "rubberhose",
+    "origin": {
+      "name": "地球观察站",
+      "lat": 15,
+      "lon": -20
+    },
+    "target": {
+      "id": "ne-1159151609",
+      "name": "日本 · 东京",
+      "city": "东京",
+      "country": "日本",
+      "country_code": "JP",
+      "lat": 35.687,
+      "lon": 139.7495,
+      "precision": "附近城市示意，不代表详细地址精确位置",
+      "aliases": [
+        "东京",
+        "Tokyo",
+        "日本",
+        "Japan",
+        "JP"
+      ],
+      "city_aliases": [
+        "东京",
+        "Tokyo"
+      ],
+      "city_name": "日本 · 东京",
+      "city_id": "ne-1159151609"
+    },
+    "width": 1080,
+    "fps": 30,
+    "duration": 3,
+    "show_hand": true
+  },
+  "output_root": "D:\\work\\TheEarthPeopleLog\\工作素材\\栏目包装\\20261020_复古夸张首版",
+  "progress_file": "D:\\work\\TheEarthPeopleLog\\.runtime\\retro-samples\\intro-progress.json",
+  "result_file": "D:\\work\\TheEarthPeopleLog\\.runtime\\retro-samples\\intro-result.json",
+  "cancel_file": "D:\\work\\TheEarthPeopleLog\\.runtime\\retro-samples\\intro-cancel"
+}

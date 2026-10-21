@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-21T20:54:24.054831+08:00",
+  "source": "https://github.com/Off-World-Live/obs-spout2-plugin/releases/tag/1.12.0",
+  "version": "1.12.0",
+  "archive_sha256": "6c5a31d6f30a44277b1955d4f85a1da1c0baa97a13075594d2bbca475104ee8a",
+  "obs_root": "D:\\app\\steam\\steamapps\\common\\OBS Studio",
+  "obs_version": "32.2.2",
+  "files": [
+    {
+      "relative_path": "obs-plugins/64bit/Spout.dll",
+      "sha256": "c096406f983a2b1f56fc1d5cca54098ad7243708b52cd34cc2333bc72abf9ccc",
+      "reused_existing": false
+    },
+    {
+      "relative_path": "obs-plugins/64bit/SpoutDX.dll",
+      "sha256": "7584f98b51cc80d50d7255eab51ddef4b954ab4bb28c3e5b6f43cb680f82b3bc",
+      "reused_existing": false
+    },
+    {
+      "relative_path": "obs-plugins/64bit/SpoutLibrary.dll",
+      "sha256": "f9cad1eb9934257f47f4219f74dd83cbb781b2b0689e9faf2a76cd7fa75a406c",
+      "reused_existing": false
+    },
+    {
+      "relative_path": "obs-plugins/64bit/win-spout.dll",
+      "sha256": "b998df1c4c609d1ef27ca0561203fd1e196d7ed6fbca7eda45a4b0dd13d3dadd",
+      "reused_existing": false
+    },
+    {
+      "relative_path": "data/obs-plugins/win-spout/locale/en-US.ini",
+      "sha256": "74b440766e7146d263b870dd4a0ae742d6b7be9c446d379e84a15355f21f62c2",
+      "reused_existing": false
+    },
+    {
+      "relative_path": "data/obs-plugins/win-spout/locale/es-ES.ini",
+      "sha256": "617160d91d02fb651030de3e1083212fcd898790419375771ee88fadc0abe7b7",
+      "reused_existing": false
+    },
+    {
+      "relative_path": "data/obs-plugins/win-spout/locale/pt-BR.ini",
+      "sha256": "092613cc4103bf14604ab2d97a421b44c37ebbb34603dbbb5f7eb1ef4a2cd311",
+      "reused_existing": false
+    },
+    {
+      "relative_path": "data/obs-plugins/win-spout/locale/zh-CN.ini",
+      "sha256": "b180a1247e6f58e1d61f702b6b0a27ed1bcb6eaf9d9464dc2f6b9aea18904a06",
+      "reused_existing": false
+    }
+  ],
+  "file_install_verified": true,
+  "obs_plugin_load_verified": false,
+  "warudo_alpha_signal_verified": false,
+  "note": "官方便携包布局，仅新增插件及本地化文件；未运行OBS、未修改场景／配置，不包含调试PDB"
+}

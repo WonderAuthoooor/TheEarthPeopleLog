@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792504639218391200\\workspace\\animations\\20261020_215723_transition_c2b51f0f",
+  "message": "已生成：D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792504639218391200\\workspace\\animations\\20261020_215723_transition_c2b51f0f。将MP4放在剪映开场或相邻新闻之间。",
+  "at": "2026-10-20T21:57:31+08:00",
+  "city_count": 1252,
+  "coordinate_fields": false,
+  "avatar_fields": false,
+  "config": {
+    "mode": "transition",
+    "origin": {
+      "aliases": [
+        "伦敦",
+        "London",
+        "英国",
+        "United Kingdom",
+        "GB"
+      ],
+      "city": "伦敦",
+      "city_aliases": [
+        "伦敦",
+        "London"
+      ],
+      "country": "英国",
+      "country_code": "GB",
+      "id": "ne-1159151577",
+      "lat": 51.5019,
+      "lon": -0.1187,
+      "name": "英国 · 伦敦",
+      "precision": "附近城市示意，不代表详细地址精确位置"
+    },
+    "target": {
+      "name": "日本 · 东京 · 新闻现场（测试地点）",
+      "lat": 35.687,
+      "lon": 139.7495,
+      "city_name": "日本 · 东京",
+      "city_id": "ne-1159151609",
+      "precision": "按附近城市估算，非详细地址精确定位"
+    },
+    "width": 540,
+    "fps": 30,
+    "duration": 1.0,
+    "show_hand": true,
+    "schema_version": 2,
+    "height": 960
+  }
+}

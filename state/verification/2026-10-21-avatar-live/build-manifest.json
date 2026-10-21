@@ -1,0 +1,87 @@
+{
+  "product": "EarthPeopleLogAvatar",
+  "version": "0.2.0",
+  "built_at": "2026-10-21T09:43:26.759605+08:00",
+  "source_hashes": {
+    "avatar_entry.py": "d08ed32e8571e7d22d86591be67ca647509d735d68b51e785cdd88b11352490f",
+    "avatar_app\\app.py": "21fb0ca5a84f4f462891bdf7f91f95b9a0caa1eb11f24d989897336aebef523b",
+    "avatar_app\\export.py": "afc7212dc77e9206d907477ef319bfd1e25fe03048d66f1588b2a2d75b696905",
+    "avatar_app\\live.py": "6fa743093060b9192b12bffbccdb2a2ad804786b6b554e227bba56bee194c312",
+    "avatar_app\\rig.py": "eee3d8e0da8026c718f55bb476ab6085809e771d93c9759ec53872319f0ae2ff",
+    "avatar_app\\selfcheck.py": "ea1a02b5478b7b51284905a468d9e42d9d3dd9e453acd5b93cc80cf58636705b",
+    "avatar_app\\tracking.py": "1f22b9c51c9c49f019ea1be41b6f3a87221e89aec96e1293a32ef4cebccc17a3",
+    "avatar_app\\__init__.py": "54d86510bbcf92101dc9e8aa0507ab2c21754738db3eec67145e99188479950b",
+    "avatar_app\\assets\\app-icon.ico": "366edfa91b093859f6027b8dd09667fb7299ca3e140102c7d74329cddc2238bc",
+    "avatar_app\\assets\\c-v01\\body.png": "db0d3ae2426d97bcf68a6f6de474d1ccb6244167f502694bc4263f92a015528d",
+    "avatar_app\\assets\\c-v01\\generation.json": "8786f385b4de56a86fc3e909f4073ecafe0ee467f3d7f06d71f50160304deb6b",
+    "avatar_app\\assets\\c-v01\\head-blink.png": "a86c008d16878aaed91b7b788d294f34a400db83421463cd4c6bcb95fffb89e5",
+    "avatar_app\\assets\\c-v01\\head-neutral.png": "d9ad24e6d2b68e449241aaade2a45497de49851430438b8d711e8b1511c433d3",
+    "avatar_app\\assets\\c-v01\\head-talk.png": "b0319c5fe56856b72677c6d5a3514720bca7345ab5ccbb8aec0460bf4c274a9f",
+    "avatar_app\\assets\\c-v01\\master.png": "89e0cbfb61cb6664c8ec92bd4f2ffee06931cbcfc705f296a1851fadfee95a94",
+    "avatar_app\\assets\\c-v01\\model.json": "c90e135583d43809c0027731fdace69f1e5afa70e5284d6d6f197ce103ab132a",
+    "avatar_app\\assets\\tracking\\face_landmarker.task": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "avatar_app\\assets\\tracking\\models-source.json": "8b6393f9afe0a4db355723662b011ed8b0ac43a464341ac338efb26d71461fe0",
+    "avatar_app\\assets\\tracking\\pose_landmarker_lite.task": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a"
+  },
+  "exe_sha256": "59030a62600d7632a5f8028b1d569b000260b481f8fc868d4213a04b6ff5c6e3",
+  "excluded": [
+    "studio",
+    "globe_app",
+    "pipeline"
+  ],
+  "build_inputs": [
+    {
+      "archive": "absl_py-2.5.1-py3-none-any.whl",
+      "sha256": "721200f2f0e9960f2ca9dc3a2a706b201f5f75d812c158f059cbbe29eeafbdb8"
+    },
+    {
+      "archive": "cffi-2.1.1-cp312-cp312-win_amd64.whl",
+      "sha256": "f53e442b08449d42821fa4a4fba000095af9f62742a500f978a9f557ec44339a"
+    },
+    {
+      "archive": "flatbuffers-25.12.19-py2.py3-none-any.whl",
+      "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4"
+    },
+    {
+      "archive": "mediapipe-0.10.31-py3-none-win_amd64.whl",
+      "sha256": "2f0b97e85101d2d0e326f49fd9b490d6f649a33af4331b2d4873cf1c5a1c627e"
+    },
+    {
+      "archive": "numpy-2.3.5-cp312-cp312-win_amd64.whl",
+      "sha256": "86945f2ee6d10cdfd67bcb4069c1662dd711f7e2a4343db5cecec06b87cf31aa"
+    },
+    {
+      "archive": "pycparser-3.11-py3-none-any.whl",
+      "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80"
+    },
+    {
+      "archive": "sounddevice-0.5.6-py3-none-win_amd64.whl",
+      "sha256": "7f4162f514f007b0bf25a3ccfed3f1705bc2ec311888a90232729eec4f57a4f4"
+    },
+    {
+      "archive": "av-16.1.0-cp312-cp312-win_amd64.whl",
+      "sha256": "f49243b1d27c91cd8c66fdba90a674e344eb8eb917264f36117bf2b6879118fd"
+    },
+    {
+      "archive": "pillow-12.3.0-cp312-cp312-win_amd64.whl",
+      "sha256": "a2b55dd6b2a4c4b7d87ffa56bdb33fdc5fdb9a462173861a7bc097f17d91cb09"
+    },
+    {
+      "archive": "pyside6-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "71b41b9ebd1c044c3777f2b32278d3919f07bda4f15c504bc165b643bc3cec01"
+    },
+    {
+      "archive": "pyside6_addons-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "0aece2a81ccf16ef9b750b09601b6876aa116bbc700e848ce82df42906f04c5c"
+    },
+    {
+      "archive": "pyside6_essentials-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "21f98077c135864473089e59a6a0bd828e64c6644b3dd7267b102da4a2ee8f21"
+    },
+    {
+      "archive": "shiboken6-6.9.3-cp39-abi3-win_amd64.whl",
+      "sha256": "f1498176d2d5bcade7d662e1fc5143980fb008b6c78b966289d29a4ae86cd0c6"
+    }
+  ],
+  "scope": "内部试验版，尚未完成对外分发／干净机器验收"
+}

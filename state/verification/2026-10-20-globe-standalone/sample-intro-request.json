@@ -1,0 +1,41 @@
+{
+  "config": {
+    "mode": "intro",
+    "width": 1080,
+    "fps": 30,
+    "duration": 5,
+    "origin": {
+      "name": "地球观察站",
+      "lat": 15,
+      "lon": -20
+    },
+    "target": {
+      "id": "ne-1159151605",
+      "name": "中华人民共和国 · 上海",
+      "city": "上海",
+      "country": "中华人民共和国",
+      "country_code": "CN",
+      "lat": 31.2184,
+      "lon": 121.4346,
+      "precision": "附近城市示意，不代表详细地址精确位置",
+      "aliases": [
+        "上海",
+        "Shanghai",
+        "中华人民共和国",
+        "China",
+        "CN"
+      ],
+      "city_aliases": [
+        "上海",
+        "Shanghai"
+      ],
+      "city_name": "中华人民共和国 · 上海",
+      "city_id": "ne-1159151605"
+    },
+    "show_hand": true
+  },
+  "output_root": "D:\\work\\TheEarthPeopleLog\\工作素材\\栏目包装\\20261020_独立地点版",
+  "progress_file": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-delivery-samples\\intro-progress.json",
+  "result_file": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-delivery-samples\\intro-result.json",
+  "cancel_file": "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-delivery-samples\\intro-cancel"
+}

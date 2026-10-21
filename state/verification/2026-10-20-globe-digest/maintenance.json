@@ -1,0 +1,196 @@
+{
+  "at": "2026-10-20T20:57:31+08:00",
+  "removed_generated_targets": [
+    {
+      "path": "build",
+      "files": 18,
+      "bytes": 36748745
+    },
+    {
+      "path": "dist\\0.2.2",
+      "files": 1664,
+      "bytes": 421971364
+    },
+    {
+      "path": "dist\\EarthPeopleLogStudio-0.2.2-Setup.exe",
+      "files": 1,
+      "bytes": 139496522
+    },
+    {
+      "path": ".runtime\\studio-notices-v02",
+      "files": 35,
+      "bytes": 213592
+    },
+    {
+      "path": ".runtime\\globe-source-ui",
+      "files": 16,
+      "bytes": 152459
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v2",
+      "files": 18,
+      "bytes": 563832
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v3",
+      "files": 18,
+      "bytes": 563832
+    },
+    {
+      "path": ".runtime\\globe-frozen-1792500394939508300",
+      "files": 52,
+      "bytes": 1220462
+    },
+    {
+      "path": ".runtime\\globe-frozen-1792500791872387000",
+      "files": 52,
+      "bytes": 1282498
+    },
+    {
+      "path": ".runtime\\quick-frozen-0.3.0-1792500442348961100",
+      "files": 74,
+      "bytes": 17940338
+    },
+    {
+      "path": ".runtime\\installer-qa-0.3.0",
+      "files": 3,
+      "bytes": 771
+    },
+    {
+      "path": "工作素材\\栏目包装\\20261020_卡通首版\\20261020_203325_mascot_44a08efc",
+      "files": 8,
+      "bytes": 22978303
+    },
+    {
+      "path": ".runtime\\build-installer-0.3.0-final.log",
+      "files": 1,
+      "bytes": 69
+    },
+    {
+      "path": ".runtime\\build-installer-0.3.0.log",
+      "files": 1,
+      "bytes": 69
+    },
+    {
+      "path": ".runtime\\build-studio-0.3.0-final.log",
+      "files": 1,
+      "bytes": 15046
+    },
+    {
+      "path": ".runtime\\build-studio-0.3.0-release.log",
+      "files": 1,
+      "bytes": 15046
+    },
+    {
+      "path": ".runtime\\build-studio-0.3.0-stable.log",
+      "files": 1,
+      "bytes": 15046
+    },
+    {
+      "path": ".runtime\\build-studio-0.3.0-verified.log",
+      "files": 1,
+      "bytes": 14780
+    },
+    {
+      "path": ".runtime\\build-studio-0.3.0.log",
+      "files": 1,
+      "bytes": 14722
+    },
+    {
+      "path": ".runtime\\globe-frozen-final.log",
+      "files": 1,
+      "bytes": 81
+    },
+    {
+      "path": ".runtime\\globe-frozen.log",
+      "files": 1,
+      "bytes": 81
+    },
+    {
+      "path": ".runtime\\globe-mascot-final.log",
+      "files": 1,
+      "bytes": 107
+    },
+    {
+      "path": ".runtime\\globe-render.log",
+      "files": 1,
+      "bytes": 324
+    },
+    {
+      "path": ".runtime\\globe-source-ui-report.json",
+      "files": 1,
+      "bytes": 140
+    },
+    {
+      "path": ".runtime\\globe-source-ui-report.png",
+      "files": 1,
+      "bytes": 73467
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v2-report.json",
+      "files": 1,
+      "bytes": 140
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v2-report.png",
+      "files": 1,
+      "bytes": 73477
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v2.log",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v3-report.json",
+      "files": 1,
+      "bytes": 361
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v3-report.png",
+      "files": 1,
+      "bytes": 106307
+    },
+    {
+      "path": ".runtime\\globe-source-ui-v3.log",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": ".runtime\\globe-source-ui.log",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": ".runtime\\installer-qa-0.3.0-final.log",
+      "files": 1,
+      "bytes": 67
+    },
+    {
+      "path": ".runtime\\installer-qa-0.3.0.log",
+      "files": 1,
+      "bytes": 67
+    },
+    {
+      "path": ".runtime\\quick-frozen-0.3.0.log",
+      "files": 1,
+      "bytes": 87
+    },
+    {
+      "path": "pipeline\\__pycache__",
+      "files": 4,
+      "bytes": 96238
+    },
+    {
+      "path": "studio\\__pycache__",
+      "files": 7,
+      "bytes": 147599
+    },
+    {
+      "path": "tests\\__pycache__",
+      "files": 5,
+      "bytes": 52540
+    }
+  ],
+  "protected_existing_files_verified": 175
+}

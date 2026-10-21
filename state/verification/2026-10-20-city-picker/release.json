@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-20T21:25:12+08:00",
+  "version": "0.3.1",
+  "source_hashes_verified": 25,
+  "exe_sha256": "340cce35476682f39a232aaaffd4137c6c1b03adfd8226919a70a476409488e7",
+  "installer_sha256": "ccfc4cb44ad9a196e0dfe92e61192eec25f291e590cdb7804701617cc3617178",
+  "city_count": 1252,
+  "automation": {
+    "id": "automation",
+    "status": "PAUSED",
+    "news_collection": "用户主动向聊天发起时执行"
+  },
+  "checks": [
+    "source city search and English completion",
+    "unknown city rejected",
+    "detail text independent of city location",
+    "legacy location import snaps to catalog city",
+    "frozen GUI and MP4 actual export",
+    "alpha mascot and component replacement",
+    "cancel and ledger unchanged",
+    "isolated installer/uninstaller preserves user data"
+  ],
+  "limits": [
+    "剪映实际导入与观感仍待用户试用",
+    "近似已收录城市，不是详细地址地理编码",
+    "旧0.3.0仍由用户运行，未终止或删除",
+    "无对外发布、新闻视频下载或收费调用"
+  ],
+  "offline_tests": 42
+}

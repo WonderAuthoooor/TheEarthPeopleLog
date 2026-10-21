@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-21T18:03:06.044947+08:00",
+  "scope": "documentation-only; no application tests rerun",
+  "files": [
+    "README.md",
+    "docs/AVATAR.md",
+    "state/STATUS.md",
+    "state/TASKS.md",
+    "state/DECISIONS.md",
+    "handoffs/2026-10-21-avatar-implementation-handoff.md"
+  ],
+  "local_links_checked": 59,
+  "unique_task_ids": 33,
+  "critical_paths_checked": 11,
+  "source_hashes_unchanged": 10,
+  "git_diff_check_exit_code": 0,
+  "errors": [],
+  "passed": true
+}

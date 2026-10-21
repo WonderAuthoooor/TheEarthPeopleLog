@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-20T21:24:28+08:00",
+  "test_mode": "无注册表写入/快捷方式创建，仅项目内安装目录",
+  "installer_sha256": "ccfc4cb44ad9a196e0dfe92e61192eec25f291e590cdb7804701617cc3617178",
+  "checks": [
+    "silent install",
+    "installed frozen runtime",
+    "uninstall exact packaged files",
+    "user workspace preserved"
+  ]
+}

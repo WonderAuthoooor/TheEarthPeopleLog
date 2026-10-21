@@ -1,0 +1,27 @@
+{
+  "mode": "intro",
+  "width": 1080,
+  "fps": 30,
+  "duration": 3,
+  "origin": {
+    "name": "地球观察站",
+    "lat": 15,
+    "lon": -20
+  },
+  "target": {
+    "name": "日本 · 种子岛航天中心",
+    "lat": 30.4,
+    "lon": 130.97
+  },
+  "schema_version": 2,
+  "show_hand": true,
+  "text_options": {
+    "title": false,
+    "subtitle": false,
+    "status": false,
+    "location": false,
+    "nearby": false,
+    "footer": false
+  },
+  "style": "rubberhose"
+}

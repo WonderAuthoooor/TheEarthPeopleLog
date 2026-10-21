@@ -1,0 +1,28 @@
+{
+  "version": "0.2.2",
+  "sizes": [
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    128,
+    256
+  ],
+  "icon_sha256": "366edfa91b093859f6027b8dd09667fb7299ca3e140102c7d74329cddc2238bc",
+  "packaged_asset_matches": true,
+  "executables": [
+    {
+      "path": "dist\\0.2.2\\EarthPeopleLogStudio\\EarthPeopleLogStudio.exe",
+      "sha256": "4cfb366bf8e666eb882704fb0f18edcae713ba47131e9699d3bf66c56e28e6d8",
+      "windows_icon_extraction": true
+    },
+    {
+      "path": "dist\\EarthPeopleLogStudio-0.2.2-Setup.exe",
+      "sha256": "791855f15c0b7ddd31315ddbff7b20d5d4b481c7d268f993bcd91a58ca2bf009",
+      "windows_icon_extraction": true
+    }
+  ]
+}

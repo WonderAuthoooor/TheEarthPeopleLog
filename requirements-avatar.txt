@@ -1,0 +1,6 @@
+# 独立角色工具开发依赖；本地构建见 scripts/build-avatar.py
+Pillow==12.3.0
+av==16.1.0
+numpy==2.3.5
+PySide6==6.9.3
+PyInstaller==6.16.0

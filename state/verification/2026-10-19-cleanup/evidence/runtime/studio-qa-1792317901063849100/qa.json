@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-18T18:05:26+08:00",
+  "frozen": true,
+  "workspace": "D:\\work\\TheEarthPeopleLog\\.runtime\\studio-qa-1792317901063849100\\中文 空格 工作区",
+  "output": "D:\\work\\TheEarthPeopleLog\\.runtime\\studio-qa-1792317901063849100\\中文 空格 工作区\\projects\\29d772e0-954a-4190-b6f9-a06a4366fad4\\exports\\20261018_先核对口径，再看这张图_r0003_1f1aa6ec",
+  "checks": [
+    "actual render",
+    "cache reuse",
+    "corrupt cache repair",
+    "cooperative cancellation",
+    "worker crash recovery",
+    "Chinese space path"
+  ]
+}

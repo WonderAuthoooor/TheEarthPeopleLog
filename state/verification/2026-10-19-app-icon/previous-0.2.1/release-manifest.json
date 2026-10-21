@@ -1,0 +1,16 @@
+{
+  "version": "0.2.1",
+  "verified_at": "2026-10-19T22:03:39+08:00",
+  "exe_sha256": "d0f1d258946f05acd421c5fbd172320b5b8bc08fd43b7a3b4f49954abecacdd8",
+  "installer_sha256": "ebe2016c4a63f676c71985574ee337bc163c8c14f6d10a26918d687a6bd79a19",
+  "installer_bytes": 139401450,
+  "checks": [
+    "29 offline checks",
+    "source GUI batch and classic regression",
+    "classic and quick UI at 100/150/200%",
+    "frozen GUI two 1080p clips with covers and copy",
+    "isolated install/run/uninstall preserves user data"
+  ],
+  "clean_windows_tested": false,
+  "published": false
+}

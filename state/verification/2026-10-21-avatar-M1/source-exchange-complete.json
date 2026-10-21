@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "files": {
+    "animation.fbx": "b6970284b386197ba7a62f1df19e2dc9bcf548e24401f25f3be2712b08f797fd",
+    "character.vrm": "624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23",
+    "manifest.json": "368593a264ad4a96058effd8dc394c34e9a94cd0f545f5d90b5e2f9c6248aa2b",
+    "model-metadata.json": "3f548b871874e91ee7e70b4687be891c2bbd74e61f4c202912b4885f387e3fd9",
+    "poster.png": "8a243e8f075b67621b6489ab17c4ab783160e66aec11ca0ca0ae4daf3dc0ddbd",
+    "preview.mp4": "5ecaea6db2fb017eae9b4587dc517c374de8cf9e4d8a770cd700f085f72e590d",
+    "roundtrip.json": "6c27a29993d68eb4bcc7465e0d4b336fc98a24b5729b06c51ab02ab461380c6e",
+    "source.blend": "4aab144d937e4cbca76d76b7bdd4d86fd17853290be5b8853581ba882279c421",
+    "transparent.mov": "9f313806d07b8dfb81da7012dbdc84038593b38a3889dd18ff01311759221a13",
+    "使用说明.txt": "13c45f229488fc4c66344512edcb4bf9b71dcdfe99dd6485fc1369a57d1668eb"
+  }
+}

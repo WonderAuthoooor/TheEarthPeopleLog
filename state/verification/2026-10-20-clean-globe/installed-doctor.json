@@ -1,0 +1,8 @@
+{
+  "product": "EarthPeopleLogGlobe",
+  "version": "0.1.1",
+  "frozen": true,
+  "ffmpeg": "D:\\work\\TheEarthPeopleLog\\.runtime\\installer-qa-globe-0.1.1\\app\\_internal\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+  "workspace_separate": true,
+  "avatar_required": false
+}

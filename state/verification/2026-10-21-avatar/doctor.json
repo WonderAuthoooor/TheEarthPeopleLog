@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "frozen": true,
+  "capabilities": [
+    "breath",
+    "blink",
+    "audio_energy_mouth",
+    "small_head_warp"
+  ],
+  "globe_required": false,
+  "studio_required": false
+}

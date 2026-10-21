@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-21T19:51:42+08:00",
+  "tests_passed": 3,
+  "target_vrm_hash_verified": true,
+  "application_source_hashes_unchanged": 17,
+  "local_links_checked": 29,
+  "runtime_load_verified": false,
+  "git_diff_check_exit_code": 0,
+  "errors": [],
+  "passed": true
+}

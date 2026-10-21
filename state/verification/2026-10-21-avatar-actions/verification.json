@@ -1,0 +1,36 @@
+{
+  "sample_folder": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\20261021_C动作库首版\\20261021_103039_41feecf6",
+  "encoded_videos": {
+    "角色透明.mov": {
+      "frames": 660,
+      "size": [
+        480,
+        720
+      ],
+      "fps": "24",
+      "codec": "prores",
+      "mouth_face_holes": 0,
+      "sha256": "c5cf113c4a8830fae58cb9f51db5e87ff530f9f10b9ea639d9a352b79b7e01a2"
+    },
+    "棋盘预览.mp4": {
+      "frames": 660,
+      "size": [
+        480,
+        720
+      ],
+      "fps": "24",
+      "codec": "h264",
+      "mouth_face_holes": 0,
+      "sha256": "26bc1ee66ec2aeffb7dc0d1769e642bd93279f9849fec7903cdf27f60cdd55c6"
+    }
+  },
+  "avatar_source_hash_match": true,
+  "globe_source_unchanged": true,
+  "ledger_unchanged": true,
+  "camera_started": false,
+  "boundaries": [
+    "真实摄像头和直播软件未实测",
+    "系统全局热键仅模拟注册冲突／消息分发检查",
+    "不是完整Live2D模型"
+  ]
+}

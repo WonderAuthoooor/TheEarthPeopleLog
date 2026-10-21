@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-20T21:57:36+08:00",
+  "version": "0.1.0",
+  "outputs": [
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792504639218391200\\workspace\\animations\\20261020_215723_transition_c2b51f0f",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792504639218391200\\intro\\outputs\\20261020_215731_intro_70eef9a1",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-independent-1792504639218391200\\no-hand\\outputs\\20261020_215733_intro_60e452d9"
+  ],
+  "checks": [
+    "independent packaged GUI and QProcess actual city transition",
+    "1252 cities and separate detailed caption",
+    "no coordinate/avatar/score UI fields",
+    "no studio or mascot assets packaged",
+    "intro hand replacement",
+    "intro without hand assets",
+    "explicit legacy config error",
+    "cancel removes partial video",
+    "formal ledger unchanged",
+    "no studio database created",
+    "development paths removed"
+  ]
+}

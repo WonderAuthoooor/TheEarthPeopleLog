@@ -1,0 +1,19 @@
+test_altered_model_not_sent_to_renderer (test_avatar3d.ThreeDTests.test_altered_model_not_sent_to_renderer) ... ok
+test_backend_failure_and_cancel_never_publish_complete (test_avatar3d.ThreeDTests.test_backend_failure_and_cancel_never_publish_complete) ... ok
+test_bad_glb_external_resources_and_bones_rejected (test_avatar3d.ThreeDTests.test_bad_glb_external_resources_and_bones_rejected) ... ok
+test_claim_once_recover_preserves_old_request_retry_new_id (test_avatar3d.ThreeDTests.test_claim_once_recover_preserves_old_request_retry_new_id) ... ok
+test_contract_rejects_nonfinite_unknown_and_future (test_avatar3d.ThreeDTests.test_contract_rejects_nonfinite_unknown_and_future) ... ok
+test_external_child_environment_does_not_inherit_python_paths (test_avatar3d.ThreeDTests.test_external_child_environment_does_not_inherit_python_paths) ... ok
+test_pose_boundaries_and_wave_motion (test_avatar3d.ThreeDTests.test_pose_boundaries_and_wave_motion) ... ok
+test_queue_oldest_job_cannot_be_hidden_by_history_limit (test_avatar3d.ThreeDTests.test_queue_oldest_job_cannot_be_hidden_by_history_limit) ... ok
+test_real_encoded_alpha_frames_and_cancel (test_avatar3d.ThreeDTests.test_real_encoded_alpha_frames_and_cancel) ... ok
+test_vrm_content_addressed_import_and_source_preserved (test_avatar3d.ThreeDTests.test_vrm_content_addressed_import_and_source_preserved) ... ok
+test_missing_sample_reports_error_instead_of_silent_click (test_avatar3d_ui.LoadUITests.test_missing_sample_reports_error_instead_of_silent_click) ... ok
+test_old_job_result_does_not_replace_newly_selected_model_picture (test_avatar3d_ui.LoadUITests.test_old_job_result_does_not_replace_newly_selected_model_picture) ... ok
+test_real_load_button_enqueues_once_and_feedback_is_visible (test_avatar3d_ui.LoadUITests.test_real_load_button_enqueues_once_and_feedback_is_visible) ... ok
+test_repeated_load_restores_verified_preview_and_restart_reuses (test_avatar3d_ui.LoadUITests.test_repeated_load_restores_verified_preview_and_restart_reuses) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 4.939s
+
+OK

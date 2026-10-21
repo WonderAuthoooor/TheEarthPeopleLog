@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-21T20:34:18+08:00",
+  "source": "user explicit report: 所有表情都测试通过，目前是仅二值为是，即表情切换很快。",
+  "warudo_version": "0.15.1",
+  "expressions": [
+    "happy",
+    "angry",
+    "sad",
+    "relaxed",
+    "surprised"
+  ],
+  "expression_trigger_test": "passed_user_reported",
+  "is_binary": true,
+  "smooth_transition_test": "pending",
+  "recommendation_not_applied": {
+    "is_binary": false,
+    "enter_duration_seconds": 0.4,
+    "exit_duration_seconds": 0.4
+  },
+  "recommendation_source": "https://docs.warudo.app/docs/assets/character#expressions",
+  "custom_motion_and_obs": "pending"
+}

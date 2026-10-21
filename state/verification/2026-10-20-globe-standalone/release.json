@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-20T22:00:21+08:00",
+  "product": "EarthPeopleLogGlobe",
+  "version": "0.1.0",
+  "exe_sha256": "244f1e5368978b5c47d3c884d2050eade1cc79cb4088db1fcb2616165e48de74",
+  "installer_sha256": "3a2474e69553689a95635a46b8db65aaac0adda16d88263c2a5b0a62ecf551d3",
+  "source_hashes_verified": 20,
+  "offline_tests": 45,
+  "city_count": 1252,
+  "workspace": ".globe",
+  "avatar_required": false,
+  "limits": [
+    "剪映实际组合与手机观看仍待用户试用",
+    "安装测试模式跳过注册表与系统快捷方式",
+    "C形象为参考图，不是可驱动模型"
+  ],
+  "delivery_samples": [
+    {
+      "path": "工作素材\\栏目包装\\20261020_独立地点版\\20261020_215351_intro_08916e3b",
+      "sha256": "52962117da5f8350af2b18a2dc6dff9fbc9501cdde3acb60dd43df524eeec812",
+      "width": 1080,
+      "height": 1920,
+      "duration": 5.0
+    },
+    {
+      "path": "工作素材\\栏目包装\\20261020_独立地点版\\20261020_215424_transition_e625eed4",
+      "sha256": "ae91cef935855904fbe7ec1d8590eb323ed03a2f1d57415c2bae88be4c9d9354",
+      "width": 1080,
+      "height": 1920,
+      "duration": 3.0
+    }
+  ],
+  "studio_regression": "实际两条快速切片／原声／封面文案／保存重开通过",
+  "selected_avatar": "C：深色发通讯员",
+  "avatar_status": "原创平面设定图已完成，分层模型／绑定／动作与独立角色程序未完成",
+  "installed_exe_matches_final_build": true
+}

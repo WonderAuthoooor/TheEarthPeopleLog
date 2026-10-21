@@ -1,0 +1,25 @@
+.coordination/
+.runtime/
+.pipeline/
+__pycache__/
+*.pyc
+.studio/
+build/
+dist/
+地球人日志工作室.lnk
+/工作素材/
+
+.globe/
+.avatar/
+地球地点动画.lnk
+地球角色工坊.lnk
+.avatar3d/
+地球三维角色工坊.lnk
+
+# 可重建的验证输出；保留报告、日志和截图。
+/state/verification/**/workspace/
+/state/verification/**/*.mov
+/state/verification/**/*.mp4
+/state/verification/**/*.wav
+/state/verification/**/*.avi
+/state/verification/**/*.blend

@@ -1,0 +1,20 @@
+{
+  "file": "preview-v1.mp4",
+  "bytes": 3302120,
+  "duration_seconds": 48.180998,
+  "streams": [
+    {
+      "type": "video",
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1"
+    },
+    {
+      "type": "audio",
+      "codec": "aac",
+      "sample_rate": 44100,
+      "channels": 2
+    }
+  ]
+}

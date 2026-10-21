@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-20T21:59:38+08:00",
+  "version": "0.1.0",
+  "installer_sha256": "3a2474e69553689a95635a46b8db65aaac0adda16d88263c2a5b0a62ecf551d3",
+  "checks": [
+    "project-local silent install",
+    "independent installed EXE doctor and final-build hash",
+    "uninstall preserves user files"
+  ],
+  "test_mode": "no registry or system shortcut writes"
+}

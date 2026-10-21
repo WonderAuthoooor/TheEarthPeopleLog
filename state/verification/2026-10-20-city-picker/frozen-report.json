@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-20T21:21:14+08:00",
+  "version": "0.3.1",
+  "outputs": [
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-frozen-1792502455445292800\\workspace\\animations\\20261020_212102_intro_755b27d9",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-frozen-1792502455445292800\\transition\\outputs\\20261020_212110_transition_ea4d6f60",
+    "D:\\work\\TheEarthPeopleLog\\.runtime\\globe-frozen-1792502455445292800\\mascot\\outputs\\20261020_212112_mascot_f183e82a"
+  ],
+  "checks": [
+    "packaged GUI -> QProcess worker actual export",
+    "bundled land and SVG renderer",
+    "transition coordinates",
+    "ProRes alpha transparent corners and opaque pixels",
+    "replaceable hand and saved components",
+    "cancel removes partial video",
+    "formal ledger unchanged",
+    "development paths removed"
+  ]
+}
