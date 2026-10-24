@@ -1,0 +1,25 @@
+{
+  "time": "2026-10-21T23:07:54.630489+08:00",
+  "project": ".avatar3d\\unity-projects\\seed-wave-v01",
+  "stage": "prepared_only",
+  "file_hashes_verified": 9,
+  "mapped_bones": 51,
+  "frames": 18,
+  "fps": 12,
+  "new_python_tests": {
+    "command": "python -X utf8 -m unittest discover -s tests -p test_avatar3d_unity_project.py -v",
+    "passed": 6,
+    "failed": 0,
+    "scope": "离线准备，非Unity执行"
+  },
+  "unity_compilation": "pending",
+  "unity_humanoid": "pending",
+  "sdk_import": "pending",
+  "warudo_playback": "pending",
+  "source_hashes": {
+    "avatar3d/unity_project.py": "9735bc75d30c460520684f11941598e7932f3b49f7aec94f00fd4d08a930ec84",
+    "avatar3d/unity/AvatarBridge.cs": "3661c111ddc447a84f8033c04612c8c554badde8582403e8b37438b135a25de6",
+    "scripts/prepare-unity-motion.py": "853960e674d39b91aad6c065bee3cc8455269eb79caf6d683fe8a7c7e6f0f73d",
+    "tests/test_avatar3d_unity_project.py": "c801c599bebc25faf726476fb821e42224ea659204c2b020761c7105c19e5b90"
+  }
+}

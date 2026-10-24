@@ -1,0 +1,6 @@
+{
+  "TargetPath": "D:\\work\\TheEarthPeopleLog\\dist\\avatar3d\\0.1.5\\EarthPeopleLogAvatar3D\\EarthPeopleLogAvatar3D.exe",
+  "Arguments": "--workspace \"D:\\work\\TheEarthPeopleLog\\.avatar3d\" --runtime \"D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d\\runtime.json\"",
+  "WorkingDirectory": "D:\\work\\TheEarthPeopleLog",
+  "IconLocation": "D:\\work\\TheEarthPeopleLog\\dist\\avatar3d\\0.1.5\\EarthPeopleLogAvatar3D\\EarthPeopleLogAvatar3D.exe,0"
+}

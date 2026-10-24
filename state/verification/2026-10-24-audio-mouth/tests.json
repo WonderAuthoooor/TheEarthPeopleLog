@@ -1,0 +1,21 @@
+{
+  "passed_unique_tests": 26,
+  "modules": [
+    "tests.test_audio_mouth",
+    "tests.test_natural_motion",
+    "tests.test_browser_preview",
+    "tests.test_avatar3d"
+  ],
+  "notes": "24项相关测试通过后，新增2项绑定／冲突检查通过；不重复计算先前运行的测试。",
+  "source_hashes": {
+    "avatar3d/audio_mouth.py": "c8564cec6508b1a4f04d74b08a1af6523d60b98d24ba3496a02b2bcfddec3ad0",
+    "avatar3d/mouth_pose.py": "77999c66046aadf6a9c2f1a7d161ff547881b751890f28ee60bc96210276559f",
+    "avatar3d/backend.py": "f3c20745d7e0421c3ac13f963ed7c1b9b9caebf341de38befe053985d915ccbd",
+    "avatar3d/blender_worker.py": "669299a6d0a480d397a59d78dbd86d323520bde48d74f90e8c2dc66282fbf303",
+    "avatar3d/browser_preview.py": "2949ea7b3371e8adfb2af96b975760c1535950ef03a80b258c330a82d828fd3d",
+    "scripts/review-audio-mouth.py": "8200f693408ea6490f5226acedc05160013d7a0be8c66cbcc639a7b9cab7d73d",
+    "scripts/check-audio-mouth-scene.py": "90c7c760fc75a5f167544d817ebe98bcaa92e06ae582ba325ef6e9ecdab58ab6",
+    "scripts/check-audio-mouth-media.py": "14a362167da16ce238bb9579d32056c5a0c39ce83f19ee4cb87ca700f48199a0",
+    "tests/test_audio_mouth.py": "6291aafea379f077961a7321c2ec30c149e6f2613a801984615964ad1a318020"
+  }
+}

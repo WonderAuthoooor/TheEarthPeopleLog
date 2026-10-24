@@ -23,3 +23,4 @@ dist/
 /state/verification/**/*.wav
 /state/verification/**/*.avi
 /state/verification/**/*.blend
+/state/verification/**/*.anim

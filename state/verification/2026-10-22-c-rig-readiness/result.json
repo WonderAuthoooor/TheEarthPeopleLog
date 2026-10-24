@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-10-22T20:29:37+08:00",
+  "output": "工作素材/虚拟形象/C角色/驱动检查-v002",
+  "report": {
+    "source_blend_sha256": "906a5e3e93e190a7ac9da124d1c312b05368576a65503002ece90f9416d6ebcf",
+    "script_sha256": "260677f595cc770f8fb268b56875f5cb0410167e1e7d6997998821368051708f",
+    "vrm_sha256": "9c0a5debe6d4180728e80c43e998e14d6cb8a7e9def4752a49c01f04275f9388",
+    "blend_sha256": "7fcdb2661ee172ad30113ea345ebfa3700b17428f31290efa13e889b12f0888e",
+    "audit": {
+      "expression_bind_counts": {
+        "preset/aa": 1,
+        "preset/angry": 1,
+        "preset/blink": 1,
+        "preset/blinkLeft": 1,
+        "preset/blinkRight": 1,
+        "preset/ee": 1,
+        "preset/happy": 1,
+        "preset/ih": 1,
+        "preset/lookDown": 0,
+        "preset/lookLeft": 0,
+        "preset/lookRight": 0,
+        "preset/lookUp": 0,
+        "preset/neutral": 1,
+        "preset/oh": 1,
+        "preset/ou": 1,
+        "preset/relaxed": 1,
+        "preset/sad": 1,
+        "preset/surprised": 1
+      },
+      "spring_chains": 8,
+      "spring_joints": 16,
+      "colliders": 22,
+      "collider_groups": 10,
+      "structure_valid": true,
+      "visual_accepted": false,
+      "sha256": "9c0a5debe6d4180728e80c43e998e14d6cb8a7e9def4752a49c01f04275f9388",
+      "humanoid_bones": 54
+    },
+    "removed_legacy_springs": [
+      "Hood-b44ec4ac59e44cc99acc6e96339eef92",
+      "HoodString-286c49e974e74b9daab3c8e5ad58af53",
+      "HoodString-c92bbdd7b9104d9e8b1bbf091b386631"
+    ],
+    "expression_vertex_delta_m": {
+      "neutral": 0.0,
+      "happy": 0.016186897652350915,
+      "angry": 0.012526950522886817,
+      "sad": 0.013078117003417138,
+      "relaxed": 0.01134645029532778,
+      "surprised": 0.029733050863333815,
+      "aa": 0.017847710069341258,
+      "ih": 0.010113447791428757,
+      "ou": 0.019078511291433564,
+      "ee": 0.012894615655493763,
+      "oh": 0.026121472796665546,
+      "blink": 0.028634681511701843,
+      "blinkLeft": 0.028634681511701843,
+      "blinkRight": 0.02863458656790643,
+      "blink_aa": 0.028634681511701843,
+      "happy_aa": 0.017151558193702947
+    },
+    "simulation": {
+      "frames": 36,
+      "fps": 12,
+      "step_hz": 60,
+      "preroll_steps": 30,
+      "repeat_max_error": 0.0,
+      "hair_transform_variation": 0.04516198858618736
+    },
+    "sample_mouth": "procedural_aa_not_audio_lipsync",
+    "visual_accepted": false,
+    "target_clients_verified": false
+  },
+  "tests_passed": 6,
+  "tests_scope": "4个结构检查测试（含多个损坏引用子案例）＋2个CLI覆盖／来源保护测试",
+  "media_check": "复用现有编码器完整解码MP4/MOV、检查帧数和MOV逐帧Alpha",
+  "failed_attempt": "v001复播误差0.010058559477329254，未标记完成；显式重置中心／惯性状态并隔离渲染帧回调后复验。",
+  "manual_acceptance": false
+}

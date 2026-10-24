@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-22T22:22:48+08:00",
+  "offline_checks": "passed",
+  "regression_tests": 15,
+  "warudo_playback": "pending",
+  "old_motion_user_feedback": "palm faces body right; elbow rotation awkward; not accepted",
+  "mod_name": "AvatarLabWave0f2db78f2c51",
+  "mod_sha256": "5e09e77948c6dc7e1ba48c1ed1e68dcdef9e9c1d809be22ec67076c4c3f98d8b",
+  "source_files": {
+    "avatar3d\\wave_pose.py": "f400eb2665ef4ce28f0ab3f636164ae32c4b1dea8ad74bed3b40a6cc0896fe5b",
+    "avatar3d\\blender_worker.py": "6bb38c7b79e783818271e1b56e6e0164e26d711b17237a7927f62a44fcb3d4f5",
+    "scripts\\check-wave-pose.py": "52bae382405ed5f6dda5e61a0041c3f1c9506e1b93cfcade82cf133d3e1dd9b8"
+  },
+  "desktop_exe_rebuilt": false
+}

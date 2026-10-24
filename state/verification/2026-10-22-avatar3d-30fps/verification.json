@@ -1,0 +1,78 @@
+{
+  "time": "2026-10-22T08:55:10.562300+08:00",
+  "version": "0.1.3",
+  "source_hashes_match": true,
+  "checks": {
+    "source": {
+      "request": {
+        "model_sha256": "624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23",
+        "action": "wave",
+        "duration": 0.5,
+        "width": 320,
+        "fps": 30,
+        "azimuth": 0,
+        "schema": 1,
+        "model": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-30fps-source\\models\\624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23.vrm",
+        "sample": true
+      },
+      "media": {
+        "角色透明.mov": {
+          "fps": 30,
+          "frames": 15,
+          "duration": 0.5,
+          "pts_checked": true,
+          "alpha_checked": true
+        },
+        "动作预览.mp4": {
+          "fps": 30,
+          "frames": 15,
+          "duration": 0.5,
+          "pts_checked": true,
+          "alpha_checked": false
+        }
+      },
+      "output_folder": ".runtime\\avatar3d-30fps-source\\jobs\\709f5ed9465f4f0e99348796f4885276"
+    },
+    "frozen": {
+      "request": {
+        "model_sha256": "624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23",
+        "action": "wave",
+        "duration": 0.5,
+        "width": 320,
+        "fps": 30,
+        "azimuth": 0,
+        "schema": 1,
+        "model": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-30fps-frozen\\models\\624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23.vrm",
+        "sample": true
+      },
+      "media": {
+        "角色透明.mov": {
+          "fps": 30,
+          "frames": 15,
+          "duration": 0.5,
+          "pts_checked": true,
+          "alpha_checked": true
+        },
+        "动作预览.mp4": {
+          "fps": 30,
+          "frames": 15,
+          "duration": 0.5,
+          "pts_checked": true,
+          "alpha_checked": false
+        }
+      },
+      "output_folder": ".runtime\\avatar3d-30fps-frozen\\jobs\\22fd65b282404f3a9e155586e8009e26"
+    }
+  },
+  "python_tests": {
+    "unique_related": 28,
+    "first_run": "27通过，新增测试fixture误用list元数据导致1错误；改为get后7项UI检查全部通过",
+    "final_failed": 0
+  },
+  "desktop_control": "两次初始化均trusted Node process exited unexpectedly; kernel reset",
+  "test_ui_method": "程序内Qt实际按钮链路与离屏窗口截图，非外部桌面操作或用户人工验收",
+  "character_c_created": false,
+  "vroid_status": "用户表示应该未安装；登记目录未找到",
+  "warudo_playback": "pending",
+  "offscreen_screenshot_limit": "离屏插件未加载正常系统字体，截图含方框，不作为原生Windows字体／美术验收通过；此轮未改变产品字体设置。"
+}

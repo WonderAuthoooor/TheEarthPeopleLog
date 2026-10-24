@@ -1,0 +1,303 @@
+{
+  "source_unchanged": true,
+  "baseline_identical": true,
+  "existing_output_rejected": true,
+  "license_metadata_preserved": true,
+  "image_checks": [
+    {
+      "variant": "A",
+      "view": "full",
+      "foreground_pixels": 80840
+    },
+    {
+      "variant": "A",
+      "view": "front",
+      "foreground_pixels": 230634
+    },
+    {
+      "variant": "A",
+      "view": "side",
+      "foreground_pixels": 175414
+    },
+    {
+      "variant": "A",
+      "view": "explain",
+      "foreground_pixels": 221758
+    },
+    {
+      "variant": "B",
+      "view": "full",
+      "foreground_pixels": 80798
+    },
+    {
+      "variant": "B",
+      "view": "front",
+      "foreground_pixels": 230300
+    },
+    {
+      "variant": "B",
+      "view": "side",
+      "foreground_pixels": 175412
+    },
+    {
+      "variant": "B",
+      "view": "explain",
+      "foreground_pixels": 221646
+    },
+    {
+      "variant": "C",
+      "view": "full",
+      "foreground_pixels": 80224
+    },
+    {
+      "variant": "C",
+      "view": "front",
+      "foreground_pixels": 226566
+    },
+    {
+      "variant": "C",
+      "view": "side",
+      "foreground_pixels": 173305
+    },
+    {
+      "variant": "C",
+      "view": "explain",
+      "foreground_pixels": 218700
+    }
+  ],
+  "unit_tests": 9,
+  "native_preview_verified": false,
+  "warudo_verified": false,
+  "manual_appearance_accepted": false,
+  "result": {
+    "schema": 1,
+    "revision": "c-collar-v1",
+    "source_sha256": "9c0a5debe6d4180728e80c43e998e14d6cb8a7e9def4752a49c01f04275f9388",
+    "camera_settings": {
+      "full_target": [
+        0,
+        0,
+        0.965842246055603
+      ],
+      "close_target": [
+        0,
+        0,
+        1.445400023460388
+      ],
+      "full_scale": 1.9001720824241637,
+      "close_scale": 0.72
+    },
+    "variants": [
+      {
+        "key": "A",
+        "label": "原版",
+        "changed_meshes": [],
+        "bounds": {},
+        "unchanged_geometry_checked": 23,
+        "skeleton_unchanged": true,
+        "binding_unchanged": true,
+        "audit": {
+          "expression_bind_counts": {
+            "preset/aa": 1,
+            "preset/angry": 1,
+            "preset/blink": 1,
+            "preset/blinkLeft": 1,
+            "preset/blinkRight": 1,
+            "preset/ee": 1,
+            "preset/happy": 1,
+            "preset/ih": 1,
+            "preset/lookDown": 0,
+            "preset/lookLeft": 0,
+            "preset/lookRight": 0,
+            "preset/lookUp": 0,
+            "preset/neutral": 1,
+            "preset/oh": 1,
+            "preset/ou": 1,
+            "preset/relaxed": 1,
+            "preset/sad": 1,
+            "preset/surprised": 1
+          },
+          "spring_chains": 8,
+          "spring_joints": 16,
+          "colliders": 22,
+          "collider_groups": 10,
+          "structure_valid": true,
+          "visual_accepted": false,
+          "sha256": "9c0a5debe6d4180728e80c43e998e14d6cb8a7e9def4752a49c01f04275f9388",
+          "humanoid_bones": 54
+        },
+        "files": {
+          "C-character.blend": "01215ccbdd9d181ab640097a8ed6262c6d7c6ae090d4c36e06a5bb4c2df85700",
+          "C-character.vrm": "9c0a5debe6d4180728e80c43e998e14d6cb8a7e9def4752a49c01f04275f9388",
+          "explain.png": "14851072ddd8e713e0a6dd5fedba250e9601ccc77bd10c3bba2562adf45ef873",
+          "front.png": "eeb052c424ab462c059b6b1e260c8cf5ca568038b35374e52be13b29bef157e6",
+          "full.png": "4622a76463779019767e2e2095f99c111c20f4d52457a7c05d34d0dc375df7c4",
+          "side.png": "5e1bcf7f5fd657bbdf027de790c58e57dd823488490f6a0d23c5c0a50ca27a8c"
+        }
+      },
+      {
+        "key": "B",
+        "label": "仅降低黑色内领",
+        "changed_meshes": [
+          "C_BlackHighNeck"
+        ],
+        "bounds": {
+          "C_BlackHighNeck": {
+            "before_z": [
+              0.9999999403953552,
+              1.4900002479553223
+            ],
+            "after_z": [
+              0.9999999403953552,
+              1.4630000591278076
+            ]
+          }
+        },
+        "unchanged_geometry_checked": 22,
+        "skeleton_unchanged": true,
+        "binding_unchanged": true,
+        "audit": {
+          "expression_bind_counts": {
+            "preset/aa": 1,
+            "preset/angry": 1,
+            "preset/blink": 1,
+            "preset/blinkLeft": 1,
+            "preset/blinkRight": 1,
+            "preset/ee": 1,
+            "preset/happy": 1,
+            "preset/ih": 1,
+            "preset/lookDown": 0,
+            "preset/lookLeft": 0,
+            "preset/lookRight": 0,
+            "preset/lookUp": 0,
+            "preset/neutral": 1,
+            "preset/oh": 1,
+            "preset/ou": 1,
+            "preset/relaxed": 1,
+            "preset/sad": 1,
+            "preset/surprised": 1
+          },
+          "spring_chains": 8,
+          "spring_joints": 16,
+          "colliders": 22,
+          "collider_groups": 10,
+          "structure_valid": true,
+          "visual_accepted": false,
+          "sha256": "d33f8db5be694a786e60462e6f626848aa0f9bb1523407c60920206f5d7808c1",
+          "humanoid_bones": 54
+        },
+        "files": {
+          "C-character.blend": "4039bd61c9ab2c8b1a011cb8b995960ec92a05e05546c1ac7945625077523f00",
+          "C-character.vrm": "d33f8db5be694a786e60462e6f626848aa0f9bb1523407c60920206f5d7808c1",
+          "explain.png": "7168b0486ffc6784294f7126097d713d683301037c573a2e5991bfa14e3d096e",
+          "front.png": "a9a90563836201dd12c97ca241dc3e0995c73bc02f016abcb69150a3b4191d98",
+          "full.png": "696fd00fa6133724ff5b83fb1b528246dd621f78e450cbd0c80eefc95359cc83",
+          "side.png": "e4aa3bb6cff11ea12a39b6ff73fb4933dccd4c11a8186d5732535825dda08134"
+        }
+      },
+      {
+        "key": "C",
+        "label": "仅降低外套立领",
+        "changed_meshes": [
+          "C_CollarTrim_-1",
+          "C_CollarTrim_1",
+          "C_StandingCollar_-1",
+          "C_StandingCollar_1"
+        ],
+        "bounds": {
+          "C_StandingCollar_-1": {
+            "before_z": [
+              1.4050002098083496,
+              1.515821099281311
+            ],
+            "after_z": [
+              1.40500009059906,
+              1.4714926481246948
+            ]
+          },
+          "C_StandingCollar_1": {
+            "before_z": [
+              1.404179334640503,
+              1.5150002241134644
+            ],
+            "after_z": [
+              1.404179334640503,
+              1.471000075340271
+            ]
+          },
+          "C_CollarTrim_-1": {
+            "before_z": [
+              1.4035513401031494,
+              1.5171476602554321
+            ],
+            "after_z": [
+              1.4035513401031494,
+              1.4722886085510254
+            ]
+          },
+          "C_CollarTrim_1": {
+            "before_z": [
+              1.4035513401031494,
+              1.5171476602554321
+            ],
+            "after_z": [
+              1.4035513401031494,
+              1.4722886085510254
+            ]
+          }
+        },
+        "unchanged_geometry_checked": 19,
+        "skeleton_unchanged": true,
+        "binding_unchanged": true,
+        "audit": {
+          "expression_bind_counts": {
+            "preset/aa": 1,
+            "preset/angry": 1,
+            "preset/blink": 1,
+            "preset/blinkLeft": 1,
+            "preset/blinkRight": 1,
+            "preset/ee": 1,
+            "preset/happy": 1,
+            "preset/ih": 1,
+            "preset/lookDown": 0,
+            "preset/lookLeft": 0,
+            "preset/lookRight": 0,
+            "preset/lookUp": 0,
+            "preset/neutral": 1,
+            "preset/oh": 1,
+            "preset/ou": 1,
+            "preset/relaxed": 1,
+            "preset/sad": 1,
+            "preset/surprised": 1
+          },
+          "spring_chains": 8,
+          "spring_joints": 16,
+          "colliders": 22,
+          "collider_groups": 10,
+          "structure_valid": true,
+          "visual_accepted": false,
+          "sha256": "2be0dccf2d62bd5789bfc5d5aadd7b064b17ed44591f768249764ae65e3ff4e2",
+          "humanoid_bones": 54
+        },
+        "files": {
+          "C-character.blend": "1a1d7ef560352b8545c4b403cee3ac7faf60d367974e7892f4654a23bb9fd45b",
+          "C-character.vrm": "2be0dccf2d62bd5789bfc5d5aadd7b064b17ed44591f768249764ae65e3ff4e2",
+          "explain.png": "0bdbc5cae48eee0de54a2b916c00d752e6596ede12e53a89592a4c2b695cd53f",
+          "front.png": "05ef93f9381c417a51eb75f7ed8c9e8152b984cbcdcaad0cb2bc04a2301dde3e",
+          "full.png": "a2e89014a3ae9fb6e3896ff82c269c47f57d9294d7484cf91cd9ac01877a096f",
+          "side.png": "a4804a552bbdaf46d806d88bc1f756e1dcdf2e94eb9ab174b4937436b5e1bfe3"
+        }
+      }
+    ],
+    "visual_accepted": false,
+    "target_runtime_verified": false
+  },
+  "generated_at": "2026-10-23T15:28:25+08:00",
+  "preview_html_sha256": "3cb983a2620b088bcad3a438012247bc19e200ef7bdf3f891e5a16418b57b15f",
+  "html_media_links_checked": 12,
+  "visual_findings": [
+    "原版肩领接缝已有露肤，降低外领使其更明显",
+    "原肩部尖角未修改",
+    "近景略裁发梢，使用全身图检查完整轮廓"
+  ]
+}

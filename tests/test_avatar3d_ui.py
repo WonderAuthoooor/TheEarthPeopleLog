@@ -62,6 +62,26 @@ class LoadUITests(unittest.TestCase):
                 self.assertEqual(w.service.jobs.list(),[])
             finally:w.close()
 
+    def test_animation_button_saves_selected_fps_but_preview_and_old_retry_keep_theirs(self):
+        with tempfile.TemporaryDirectory(dir=TEMP) as tmp,patch.object(Window,'dispatch'):
+            w=self.window(tmp)
+            try:
+                w.demo.click();preview=w.service.jobs.get(w.service.jobs.list()[0]['id'])
+                self.assertEqual(w.fps.currentData(),30)
+                self.assertEqual(preview['request']['fps'],12)
+                w.export.click()
+                newest=w.service.jobs.get(w.service.jobs.list()[0]['id'])
+                self.assertEqual(newest['request']['fps'],30)
+                w.fps.setCurrentIndex(w.fps.findData(24));w.export.click()
+                old=w.service.jobs.get(w.service.jobs.list()[0]['id'])
+                self.assertEqual(old['request']['fps'],24)
+                w.service.jobs.claim(old['id']);w.service.jobs.finish(old['id'],'failed','fixture')
+                w.fps.setCurrentIndex(w.fps.findData(30))
+                retry=w.service.jobs.retry(old['id'])
+                self.assertEqual(w.service.jobs.get(retry)['request']['fps'],24)
+                self.assertEqual(w.service.jobs.get(newest['id'])['request']['fps'],30)
+            finally:w.close()
+
     def test_exchange_button_rejects_unfinished_source_and_keeps_existing_job(self):
         with tempfile.TemporaryDirectory(dir=TEMP) as tmp,patch.object(Window,'dispatch'):
             w=self.window(tmp)
@@ -99,6 +119,23 @@ class LoadUITests(unittest.TestCase):
                 w.finished(str(folder),'')
                 self.assertFalse(w.picture.pixmap() and not w.picture.pixmap().isNull())
                 self.assertIn('其他模型',w.picture.text())
+            finally:w.close()
+
+    def test_preview_worker_blocks_overlapping_work_and_receives_cancel(self):
+        from unittest.mock import Mock
+        with tempfile.TemporaryDirectory(dir=TEMP) as tmp,patch.object(Window,'dispatch'):
+            w=self.window(tmp)
+            try:
+                w.preview_worker=Mock();w.preview_worker.isRunning.return_value=True
+                with patch.object(w.service.jobs,'next_queued') as next_job:
+                    Window.dispatch(w);next_job.assert_not_called()
+                w.cancel.click();w.preview_worker.cancel.set.assert_called_once()
+                w.play_button.click();self.assertIn('等待当前任务',w.status.text())
+                w.exchange.click();self.assertIn('等待当前任务',w.status.text())
+                w.preview_worker.isRunning.return_value=False
+                with patch('avatar3d.app.QDesktopServices.openUrl',return_value=False):
+                    w.preview_finished(str(Path(tmp)/'index.html'),'')
+                    self.assertIn('未能打开浏览器',w.status.text())
             finally:w.close()
 
 if __name__=='__main__':unittest.main()

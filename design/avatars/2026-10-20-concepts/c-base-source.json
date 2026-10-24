@@ -1,0 +1,14 @@
+{
+  "asset": "HairSample_Male.vrm",
+  "author": "VRoid Project / pixiv",
+  "mirror_submitter": "hecko",
+  "download_url": "https://opengameart.org/sites/default/files/hairsample_male.zip",
+  "listing": "https://opengameart.org/content/vroid-studio-cc0-models",
+  "official_conditions": "https://vroid.pixiv.help/hc/en-us/articles/4402614652569-Do-VRoid-Studio-s-sample-models-come-with-conditions-of-use",
+  "license": "CC0-1.0; historical beta HairSample_Male only, not all current VRoid presets",
+  "embedded_metadata_license": "CC0",
+  "archive_sha256": "ba87440272b157a443dbe2cddb375eb175bce3586a45a84779bb018a5e730129",
+  "vrm_sha256": "4af2194f90ba846f3b13c00b50b14262419062d2171d17de922bcce2f89979c7",
+  "retrieved_at": "2026-10-22T09:25:00+08:00",
+  "changes": "基础人体、脸部、头发与衣袖拓扑和骨架来自历史beta模型；代码重构外套轮廓并新增高领、饰边与配件，调整脸型、纹理和局部薄荷发束颜色，未新增完整原创发型；外观初稿不表示正式C完成。"
+}

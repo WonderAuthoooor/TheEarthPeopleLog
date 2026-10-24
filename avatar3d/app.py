@@ -10,6 +10,15 @@ from .models import import_model
 from .service import RenderService
 from .backend import Runtime,BlenderBackend
 from .motion_exchange import export_exchange,verify_exchange
+from .browser_preview import prepare as prepare_browser_preview
+
+class PreviewWorker(QThread):
+    progress=Signal(int);result=Signal(str,str)
+    def __init__(self,folder):
+        super().__init__();self.folder=folder;self.cancel=threading.Event()
+    def run(self):
+        try:self.result.emit(str(prepare_browser_preview(self.folder,self.cancel,self.progress.emit)),'')
+        except Exception as exc:self.result.emit('',str(exc))
 
 class ExchangeWorker(QThread):
     progress=Signal(int);result=Signal(str,str)
@@ -29,11 +38,14 @@ class Worker(QThread):
         except Exception as exc:self.result.emit('',str(exc))
 
 class Window(QMainWindow):
-    def __init__(self,workspace,runtime,sample,smoke=None,smoke_exchange=False):
+    def __init__(self,workspace,runtime,sample,smoke=None,smoke_exchange=False,smoke_export=False,smoke_preview=False,smoke_action='wave'):
         super().__init__();self.workspace=Path(workspace);self.runtime=Runtime.load(runtime)
         self.service=RenderService(workspace,BlenderBackend(self.runtime));self.service.jobs.recover()
-        self.worker=None;self.exchange_worker=None;self.last_exchange=None
+        self.worker=None;self.exchange_worker=None;self.preview_worker=None;self.last_exchange=None
         self.current=None;self.last_output=None;self.smoke=smoke;self.smoke_exchange=smoke_exchange
+        self.smoke_export=smoke_export;self.smoke_export_started=False
+        self.smoke_preview=smoke_preview
+        self.smoke_action=smoke_action
         self.setWindowTitle('地球人日志 · 三维角色工坊 '+__version__)
         self.setWindowIcon(QIcon(str(Path(__file__).parent/'assets/app-icon.ico')))
         root=QWidget();self.setCentralWidget(root);row=QHBoxLayout(root)
@@ -44,7 +56,7 @@ class Window(QMainWindow):
         self.model=QComboBox();self.model.currentIndexChanged.connect(self.select_model);controls.addWidget(self.model)
         choose=QPushButton('导入本地VRM模型…');choose.clicked.connect(self.choose_model);controls.addWidget(choose)
         self.demo=QPushButton('加载官方测试模型并预览');self.demo.clicked.connect(lambda:self.load_model(sample));controls.addWidget(self.demo)
-        self.info=QLabel('正式C模型尚未建成；测试模型不会替代C。');self.info.setWordWrap(True);controls.addWidget(self.info)
+        self.info=QLabel('可导入C初稿或自己的VRM；官方样例用于技术检查。');self.info.setWordWrap(True);controls.addWidget(self.info)
         self.action=QComboBox()
         for key,name in ACTIONS.items():self.action.addItem(name,key)
         controls.addWidget(self.action)
@@ -54,6 +66,10 @@ class Window(QMainWindow):
         self.width=QComboBox()
         for width in (320,480,720,1080):self.width.addItem(f'{width} × {width*3//2}',width)
         self.width.setCurrentIndex(1);controls.addWidget(self.width)
+        self.fps=QComboBox()
+        for label,value in (('30 fps · 动画导出',30),('24 fps',24)):self.fps.addItem(label,value)
+        self.fps.setToolTip('仅影响新动画任务；短姿势预览使用12fps，已有任务保留原帧率。')
+        controls.addWidget(self.fps)
         self.duration=QDoubleSpinBox();self.duration.setRange(.5,30);self.duration.setValue(3);self.duration.setSuffix(' 秒');controls.addWidget(self.duration)
         self.preview=QPushButton('生成短姿势预览');self.preview.clicked.connect(lambda:self.add_job(True));controls.addWidget(self.preview)
         self.export=QPushButton('生成动画＋透明MOV');self.export.clicked.connect(lambda:self.add_job(False));controls.addWidget(self.export)
@@ -62,7 +78,7 @@ class Window(QMainWindow):
         self.status=QLabel('先确认模型比例，再扩展动作。');self.status.setWordWrap(True);controls.addWidget(self.status)
         self.list=QListWidget();self.list.setMaximumHeight(110);controls.addWidget(self.list)
         retry=QPushButton('重试选中的失败／中断任务');retry.clicked.connect(self.retry);controls.addWidget(retry)
-        play=QPushButton('播放最近完成的动作预览');play.clicked.connect(self.play);controls.addWidget(play)
+        self.play_button=QPushButton('打开选中／最近完成的兼容预览');self.play_button.clicked.connect(self.play);controls.addWidget(self.play_button)
         self.exchange=QPushButton('导出选中动作交换包（FBX）');self.exchange.clicked.connect(self.export_motion);controls.addWidget(self.exchange)
         exchange_open=QPushButton('打开最近导出的动作交换包');exchange_open.clicked.connect(self.open_exchange);controls.addWidget(exchange_open)
         output=QPushButton('打开选中任务／诊断目录');output.clicked.connect(self.open_folder);controls.addWidget(output)
@@ -139,13 +155,14 @@ class Window(QMainWindow):
         info=self.model.currentData()
         if not info:self.status.setText('请先导入模型或加载技术测试模型。');return
         try:
-            spec=RenderSpec(info['sha256'],self.action.currentData(),.5 if preview else self.duration.value(),self.width.currentData(),12 if preview else 24,self.angle.currentData())
+            spec=RenderSpec(info['sha256'],self.action.currentData(),.5 if preview else self.duration.value(),self.width.currentData(),12 if preview else self.fps.currentData(),self.angle.currentData())
             self.service.jobs.add(spec);self.status.setText('任务已入队。模型、动作和参数已保存快照。');self.refresh();self.dispatch()
         except Exception as exc:self.status.setText(str(exc))
 
     def dispatch(self):
         if self.worker and self.worker.isRunning():return
         if self.exchange_worker and self.exchange_worker.isRunning():return
+        if self.preview_worker and self.preview_worker.isRunning():return
         ident=self.service.jobs.next_queued()
         if not ident:return
         self.current=ident;self.worker=Worker(self.service,self.current)
@@ -164,17 +181,28 @@ class Window(QMainWindow):
         self.refresh()
         if self.smoke:
             if not error:
-                count=len(self.service.jobs.list())
-                self.demo.click()
-                assert len(self.service.jobs.list())==count,'重复加载不应再排队'
-                assert self.picture.pixmap() and not self.picture.pixmap().isNull()
+                if not self.smoke_export_started:
+                    count=len(self.service.jobs.list())
+                    self.demo.click()
+                    assert len(self.service.jobs.list())==count,'重复加载不应再排队'
+                    assert self.picture.pixmap() and not self.picture.pixmap().isNull()
+                if self.smoke_export and not self.smoke_export_started:
+                    self.smoke_export_started=True
+                    self.fps.setCurrentIndex(self.fps.findData(30));self.width.setCurrentIndex(self.width.findData(320))
+                    self.duration.setValue(.5);self.action.setCurrentIndex(self.action.findData(self.smoke_action))
+                    self.export.click()
+                    return
                 if self.smoke_exchange:
                     self.exchange.click()
+                    return
+                if self.smoke_preview:
+                    QTimer.singleShot(500,self.play_button.click)
                     return
             self.grab().save(str(self.smoke/'window.png'))
             from .models import atomic_json
             atomic_json(self.smoke/'gui-result.json',{'folder':folder,'error':error,
-                'load_button_auto_preview':not bool(error),'repeated_click_reuses_preview':not bool(error)})
+                'load_button_auto_preview':not bool(error),'repeated_click_reuses_preview':not bool(error),
+                'animation_export_button':self.smoke_export_started,'selected_fps':self.fps.currentData()})
             QTimer.singleShot(500,self.close)
 
     def refresh(self):
@@ -190,13 +218,33 @@ class Window(QMainWindow):
             except Exception as exc:self.status.setText(str(exc))
 
     def play(self):
+        if any(worker and worker.isRunning() for worker in (self.worker,self.exchange_worker,self.preview_worker)):
+            self.status.setText('请等待当前任务完成，或取消后再打开兼容预览。');return
         item=self.list.currentItem()
         ident=item.data(Qt.ItemDataRole.UserRole) if item else (self.last_output.name if self.last_output else None)
         if ident:
             try:
                 folder=self.service.completed_folder(ident)
-                QDesktopServices.openUrl(QUrl.fromLocalFile(str(folder/'动作预览.mp4')))
+                self.preview_worker=PreviewWorker(folder)
+                self.preview_worker.progress.connect(self.progress.setValue)
+                self.preview_worker.result.connect(self.preview_finished)
+                self.preview_worker.start()
+                self.status.setText('正在准备兼容预览；已有缓存会复用，原始MOV不会修改。')
             except Exception as exc:self.status.setText(str(exc))
+        else:self.status.setText('请先生成动画，再打开预览。')
+
+    def preview_finished(self,page,error):
+        if self.smoke and self.smoke_preview:
+            from .models import atomic_json
+            atomic_json(self.smoke/'gui-preview-result.json',{'page':page,'error':error,
+                'animation_export_button':self.smoke_export_started,'selected_fps':self.fps.currentData(),
+                'preview_button':True,'native_browser_playback':'not verified'})
+            QTimer.singleShot(500,self.close)
+            return
+        if error:self.status.setText('兼容预览未完成：'+error+'\n原始成品保留，可重试或打开任务目录。')
+        elif QDesktopServices.openUrl(QUrl.fromLocalFile(page)):
+            self.status.setText('已请求浏览器打开预览。若视频不能播放，可展开备用动画。')
+        else:self.status.setText('系统未能打开浏览器，请从任务目录打开 browser-preview/index.html。')
 
     def open_folder(self):
         item=self.list.currentItem()
@@ -205,7 +253,8 @@ class Window(QMainWindow):
 
     def export_motion(self):
         if ((self.worker and self.worker.isRunning()) or
-                (self.exchange_worker and self.exchange_worker.isRunning())):
+                (self.exchange_worker and self.exchange_worker.isRunning()) or
+                (self.preview_worker and self.preview_worker.isRunning())):
             self.status.setText('请等待当前任务完成，或先取消当前任务，再导出动作包。');return
         item=self.list.currentItem()
         ident=item.data(Qt.ItemDataRole.UserRole) if item else (self.last_output.name if self.last_output else None)
@@ -242,7 +291,7 @@ class Window(QMainWindow):
         except Exception as exc:self.status.setText(str(exc))
 
     def cancel_active(self):
-        for worker in (self.worker,self.exchange_worker):
+        for worker in (self.worker,self.exchange_worker,self.preview_worker):
             if worker and worker.isRunning():worker.cancel.set()
 
     def smoke_start(self,sample):
@@ -253,7 +302,7 @@ class Window(QMainWindow):
 
     def closeEvent(self,event):
         self.timer.stop()
-        for worker in (self.worker,self.exchange_worker):
+        for worker in (self.worker,self.exchange_worker,self.preview_worker):
             if worker and worker.isRunning():
                 worker.cancel.set()
                 if not worker.wait(15000):self.status.setText('正在停止本任务，请稍候再关闭。');event.ignore();self.timer.start(300);return

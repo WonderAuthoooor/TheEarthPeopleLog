@@ -7,7 +7,12 @@ if not getattr(sys,'frozen',False):sys.path[:0]=[str(ROOT/'.runtime/python'),str
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--workspace',type=Path);parser.add_argument('--runtime',type=Path)
     parser.add_argument('--smoke',type=Path,help=argparse.SUPPRESS)
-    parser.add_argument('--smoke-exchange',action='store_true',help=argparse.SUPPRESS);args=parser.parse_args()
+    parser.add_argument('--smoke-exchange',action='store_true',help=argparse.SUPPRESS)
+    parser.add_argument('--smoke-export',action='store_true',help=argparse.SUPPRESS)
+    parser.add_argument('--smoke-preview',action='store_true',help=argparse.SUPPRESS)
+    parser.add_argument('--smoke-action',choices=('wave','idle','explain'),default='wave',help=argparse.SUPPRESS);args=parser.parse_args()
+    if args.smoke_export and (not args.smoke or args.smoke_exchange):parser.error('smoke-export requires smoke and cannot combine with smoke-exchange')
+    if args.smoke_preview and (not args.smoke or args.smoke_exchange):parser.error('smoke-preview requires smoke and cannot combine with smoke-exchange')
     from PySide6.QtWidgets import QApplication,QMessageBox
     from PySide6.QtCore import QLockFile
     from avatar3d.app import Window
@@ -17,7 +22,7 @@ def main():
     if not lock.tryLock(100):QMessageBox.warning(None,'工作区已打开','请切回已打开的三维角色工坊；同一工作区只允许运行一个实例。');return 2
     try:
         runtime=args.runtime or ROOT/'.runtime/avatar3d/runtime.json'
-        window=Window(workspace,runtime,Path(__file__).parent/'avatar3d/assets/Seed-san.vrm',args.smoke,args.smoke_exchange)
+        window=Window(workspace,runtime,Path(__file__).parent/'avatar3d/assets/Seed-san.vrm',args.smoke,args.smoke_exchange,args.smoke_export,args.smoke_preview,args.smoke_action)
         window.show();return app.exec()
     except Exception as exc:QMessageBox.critical(None,'三维工坊无法启动',str(exc));return 1
     finally:lock.unlock()

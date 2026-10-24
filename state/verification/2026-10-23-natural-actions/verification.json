@@ -1,0 +1,89 @@
+{
+  "time": "2026-10-23T14:21:06+08:00",
+  "version": "0.1.5",
+  "tests": {
+    "motion_curves": 3,
+    "render_contracts_encoding": 10,
+    "qt_ui": 8,
+    "motion_exchange": 5,
+    "passed": true
+  },
+  "source_model_unchanged": true,
+  "source_sha256": "9c0a5debe6d4180728e80c43e998e14d6cb8a7e9def4752a49c01f04275f9388",
+  "media": [
+    {
+      "folder": "工作素材\\虚拟形象\\C角色\\基础动作-v001\\动画\\idle",
+      "file": "角色透明.mov",
+      "frames": 36,
+      "fps": 12,
+      "duration": 3.0
+    },
+    {
+      "folder": "工作素材\\虚拟形象\\C角色\\基础动作-v001\\动画\\idle",
+      "file": "动作预览.mp4",
+      "frames": 36,
+      "fps": 12,
+      "duration": 3.0
+    },
+    {
+      "folder": "工作素材\\虚拟形象\\C角色\\基础动作-v001\\动画\\idle",
+      "file": "browser-preview/preview.webm",
+      "frames": 36,
+      "fps": 12,
+      "duration": 3.0
+    },
+    {
+      "folder": "工作素材\\虚拟形象\\C角色\\基础动作-v001\\动画\\explain",
+      "file": "角色透明.mov",
+      "frames": 36,
+      "fps": 12,
+      "duration": 3.0
+    },
+    {
+      "folder": "工作素材\\虚拟形象\\C角色\\基础动作-v001\\动画\\explain",
+      "file": "动作预览.mp4",
+      "frames": 36,
+      "fps": 12,
+      "duration": 3.0
+    },
+    {
+      "folder": "工作素材\\虚拟形象\\C角色\\基础动作-v001\\动画\\explain",
+      "file": "browser-preview/preview.webm",
+      "frames": 36,
+      "fps": 12,
+      "duration": 3.0
+    },
+    {
+      "folder": ".runtime\\avatar3d-015-frozen\\jobs\\3bcd6a2147c94083b21ccf1dad8e9b8f",
+      "file": "角色透明.mov",
+      "frames": 15,
+      "fps": 30,
+      "duration": 0.5
+    },
+    {
+      "folder": ".runtime\\avatar3d-015-frozen\\jobs\\3bcd6a2147c94083b21ccf1dad8e9b8f",
+      "file": "动作预览.mp4",
+      "frames": 15,
+      "fps": 30,
+      "duration": 0.5
+    },
+    {
+      "folder": ".runtime\\avatar3d-015-frozen\\jobs\\3bcd6a2147c94083b21ccf1dad8e9b8f",
+      "file": "browser-preview/preview.webm",
+      "frames": 15,
+      "fps": 30,
+      "duration": 0.5
+    }
+  ],
+  "html_references_valid": true,
+  "build_hashes_match": true,
+  "frozen_buttons": {
+    "page": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-015-frozen\\jobs\\3bcd6a2147c94083b21ccf1dad8e9b8f\\browser-preview\\index.html",
+    "error": "",
+    "animation_export_button": true,
+    "selected_fps": 30,
+    "preview_button": true,
+    "native_browser_playback": "not verified"
+  },
+  "native_browser_warudo_obs": "not tested"
+}

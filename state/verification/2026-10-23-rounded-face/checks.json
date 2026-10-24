@@ -1,0 +1,439 @@
+{
+  "source_unchanged": true,
+  "baseline_identical": true,
+  "license_metadata_preserved": true,
+  "image_checks": [
+    {
+      "variant": "A",
+      "view": "full",
+      "foreground_pixels": 80844
+    },
+    {
+      "variant": "A",
+      "view": "front",
+      "foreground_pixels": 220532
+    },
+    {
+      "variant": "A",
+      "view": "three-quarter",
+      "foreground_pixels": 221097
+    },
+    {
+      "variant": "A",
+      "view": "profile",
+      "foreground_pixels": 207197
+    },
+    {
+      "variant": "A",
+      "view": "happy",
+      "foreground_pixels": 220593
+    },
+    {
+      "variant": "A",
+      "view": "blink-aa",
+      "foreground_pixels": 220589
+    },
+    {
+      "variant": "E",
+      "view": "full",
+      "foreground_pixels": 80854
+    },
+    {
+      "variant": "E",
+      "view": "front",
+      "foreground_pixels": 220771
+    },
+    {
+      "variant": "E",
+      "view": "three-quarter",
+      "foreground_pixels": 221263
+    },
+    {
+      "variant": "E",
+      "view": "profile",
+      "foreground_pixels": 205795
+    },
+    {
+      "variant": "E",
+      "view": "happy",
+      "foreground_pixels": 220781
+    },
+    {
+      "variant": "E",
+      "view": "blink-aa",
+      "foreground_pixels": 220780
+    },
+    {
+      "variant": "F",
+      "view": "full",
+      "foreground_pixels": 80873
+    },
+    {
+      "variant": "F",
+      "view": "front",
+      "foreground_pixels": 221135
+    },
+    {
+      "variant": "F",
+      "view": "three-quarter",
+      "foreground_pixels": 221674
+    },
+    {
+      "variant": "F",
+      "view": "profile",
+      "foreground_pixels": 205781
+    },
+    {
+      "variant": "F",
+      "view": "happy",
+      "foreground_pixels": 221171
+    },
+    {
+      "variant": "F",
+      "view": "blink-aa",
+      "foreground_pixels": 221171
+    }
+  ],
+  "preview_html_sha256": "a3b2504503972d068ec3d62de3df0c580bcbd17348fee781ec97edad356c980b",
+  "native_preview_verified": false,
+  "warudo_verified": false,
+  "manual_appearance_accepted": false,
+  "result": {
+    "schema": 1,
+    "revision": "c-rounded-v2",
+    "source_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+    "camera_settings": {
+      "full_target": [
+        0,
+        0,
+        0.9658420028686523
+      ],
+      "close_target": [
+        0,
+        -0.015,
+        1.6329533100128173
+      ],
+      "full_scale": 1.9001718034744262,
+      "close_scale": 0.42
+    },
+    "variants": [
+      {
+        "key": "A",
+        "label": "当前肩领修复版",
+        "changed_meshes": [],
+        "bounds": {},
+        "unchanged_geometry_checked": 23,
+        "skeleton_unchanged": true,
+        "binding_unchanged": true,
+        "topology_changed_meshes": [],
+        "repair_report": null,
+        "audit": {
+          "expression_bind_counts": {
+            "preset/aa": 1,
+            "preset/angry": 1,
+            "preset/blink": 1,
+            "preset/blinkLeft": 1,
+            "preset/blinkRight": 1,
+            "preset/ee": 1,
+            "preset/happy": 1,
+            "preset/ih": 1,
+            "preset/lookDown": 0,
+            "preset/lookLeft": 0,
+            "preset/lookRight": 0,
+            "preset/lookUp": 0,
+            "preset/neutral": 1,
+            "preset/oh": 1,
+            "preset/ou": 1,
+            "preset/relaxed": 1,
+            "preset/sad": 1,
+            "preset/surprised": 1
+          },
+          "spring_chains": 8,
+          "spring_joints": 16,
+          "colliders": 22,
+          "collider_groups": 10,
+          "structure_valid": true,
+          "visual_accepted": false,
+          "sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+          "humanoid_bones": 54
+        },
+        "face_report": null,
+        "posed_coverage": {},
+        "files": {
+          "blink-aa.png": "d4d7e85709acafe05d9e9666c15d79a3bf5acad9cea0ca03d929517e073d78b7",
+          "C-character.blend": "a7cb78d6a8bd0966fbbeac30c008618eb1d6585c4000f0284efc83a2facb89ad",
+          "C-character.vrm": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+          "front.png": "f296203f9af9e72b82bb10f2b9754b29ac212abba7643c7b4e022c5198995d4c",
+          "full.png": "752526030d17ec140c1a498f6465c2676599cfa0347129438e412503b51cf5a6",
+          "happy.png": "2fc751647411a464ff9ccb7ce54c02900abad001603d3c14fd406fb1656e0403",
+          "profile.png": "8a8938f59b95e74b15cfcb706ae56d3513e2c1789ae8523984118d648a446f0b",
+          "three-quarter.png": "bfb661ca9ab5bbbf7f14ebcedf8b6ea90608a4bd3e1d816ad89378842e456e84"
+        }
+      },
+      {
+        "key": "E",
+        "label": "轻度圆润",
+        "changed_meshes": [
+          "Face"
+        ],
+        "bounds": {},
+        "unchanged_geometry_checked": 22,
+        "skeleton_unchanged": true,
+        "binding_unchanged": true,
+        "topology_changed_meshes": [],
+        "repair_report": null,
+        "audit": {
+          "expression_bind_counts": {
+            "preset/aa": 1,
+            "preset/angry": 1,
+            "preset/blink": 1,
+            "preset/blinkLeft": 1,
+            "preset/blinkRight": 1,
+            "preset/ee": 1,
+            "preset/happy": 1,
+            "preset/ih": 1,
+            "preset/lookDown": 0,
+            "preset/lookLeft": 0,
+            "preset/lookRight": 0,
+            "preset/lookUp": 0,
+            "preset/neutral": 1,
+            "preset/oh": 1,
+            "preset/ou": 1,
+            "preset/relaxed": 1,
+            "preset/sad": 1,
+            "preset/surprised": 1
+          },
+          "spring_chains": 8,
+          "spring_joints": 16,
+          "colliders": 22,
+          "collider_groups": 10,
+          "structure_valid": true,
+          "visual_accepted": false,
+          "sha256": "30b8debe736990187d9ef3e3f9adbcd141f40032739c184ac9294f73bf510664",
+          "humanoid_bones": 54
+        },
+        "face_report": {
+          "strength": 0.7,
+          "eye_centers": [
+            [
+              -0.043463417405232053,
+              -0.0897687027444605,
+              1.6042383831055438
+            ],
+            [
+              0.04244878530868741,
+              -0.08976871605779303,
+              1.6042383537917841
+            ]
+          ],
+          "shape_keys_transformed": 55,
+          "key_max_shift_m": {
+            "Basis": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_ALL_Neutral": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_ALL_Fun": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_ALL_Sorrow": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_ALL_Angry": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_ALL_Joy": 0.008945954435709808,
+            "Face.M_F00_000_00_Fcl_ALL_Surprised": 0.0089632223829985,
+            "Face.M_F00_000_00_Fcl_BRW_Fun": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_BRW_Sorrow": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_BRW_Angry": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_BRW_Joy": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_BRW_Surprised": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Close": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Close_R": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Close_L": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Fun": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Joy": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Joy_R": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Joy_L": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Angry": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Sorrow": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Surprised": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Spread": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Iris_Hide": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_EYE_Highlight_Hide": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_Natural": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_Close": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_Up": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_Down": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_A": 0.0089632223829985,
+            "Face.M_F00_000_00_Fcl_MTH_I": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_U": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_E": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_O": 0.008944882546941422,
+            "Face.M_F00_000_00_Fcl_MTH_Angry": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_Fun": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_Joy": 0.008945954435709808,
+            "Face.M_F00_000_00_Fcl_MTH_Sorrow": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_Surprised": 0.0089632223829985,
+            "Face.M_F00_000_00_Fcl_MTH_SkinFung": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_SkinFung_R": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_MTH_SkinFung_L": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Hide": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung1": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung1_Up": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung1_Low": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung2": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung2_Up": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung2_Low": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung3": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung3_Up": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Fung3_Low": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Short": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Short_Up": 0.008847942229506994,
+            "Face.M_F00_000_00_Fcl_HA_Short_Low": 0.008847942229506994
+          },
+          "max_shift_m": 0.0089632223829985,
+          "basis_min_z_before": 1.4961822032928467,
+          "basis_min_z_after": 1.5050296783447266,
+          "topology_weights_uv_preserved": true
+        },
+        "posed_coverage": {},
+        "files": {
+          "blink-aa.png": "c87cabeeaff9b075b635c1da6deb5236b83bdeff4fcc56ff6fa3aafc5126198f",
+          "C-character.blend": "80fe71754c45dc58a4e4f19c85eb3ab9041fdadb5b7966dc5480dc5cd54bd909",
+          "C-character.vrm": "30b8debe736990187d9ef3e3f9adbcd141f40032739c184ac9294f73bf510664",
+          "front.png": "b33a212dd0303ccd839fa62d74bb8b7f4fb540b7d2767ba7feaf3356af2d959f",
+          "full.png": "deab4ccabdd6af795d2cefcc612ced48c4edaa1cfac93e10a54c47f5c5196bf2",
+          "happy.png": "003f61a2880528de8df1095bb0fd088260d23e52b3e36cf6ac6961af66b28ace",
+          "profile.png": "558b5a9133ca655cad7c15147132fe9c8a486135472de9799ecdd5ed72ce7457",
+          "three-quarter.png": "36ac0029ee3cb4e859adf7544978e70c085ec3f368895cdf56312e14aed2599d"
+        }
+      },
+      {
+        "key": "F",
+        "label": "更圆润可爱",
+        "changed_meshes": [
+          "Face"
+        ],
+        "bounds": {},
+        "unchanged_geometry_checked": 22,
+        "skeleton_unchanged": true,
+        "binding_unchanged": true,
+        "topology_changed_meshes": [],
+        "repair_report": null,
+        "audit": {
+          "expression_bind_counts": {
+            "preset/aa": 1,
+            "preset/angry": 1,
+            "preset/blink": 1,
+            "preset/blinkLeft": 1,
+            "preset/blinkRight": 1,
+            "preset/ee": 1,
+            "preset/happy": 1,
+            "preset/ih": 1,
+            "preset/lookDown": 0,
+            "preset/lookLeft": 0,
+            "preset/lookRight": 0,
+            "preset/lookUp": 0,
+            "preset/neutral": 1,
+            "preset/oh": 1,
+            "preset/ou": 1,
+            "preset/relaxed": 1,
+            "preset/sad": 1,
+            "preset/surprised": 1
+          },
+          "spring_chains": 8,
+          "spring_joints": 16,
+          "colliders": 22,
+          "collider_groups": 10,
+          "structure_valid": true,
+          "visual_accepted": false,
+          "sha256": "60c2bf6815ad699c2ed12c1b1e6c12704036d8c931dbc25bb3445b3c9f242d9d",
+          "humanoid_bones": 54
+        },
+        "face_report": {
+          "strength": 1.2,
+          "eye_centers": [
+            [
+              -0.043463417405232053,
+              -0.0897687027444605,
+              1.6042383831055438
+            ],
+            [
+              0.04244878530868741,
+              -0.08976871605779303,
+              1.6042383537917841
+            ]
+          ],
+          "shape_keys_transformed": 55,
+          "key_max_shift_m": {
+            "Basis": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_ALL_Neutral": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_ALL_Fun": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_ALL_Sorrow": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_ALL_Angry": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_ALL_Joy": 0.009339897660062428,
+            "Face.M_F00_000_00_Fcl_ALL_Surprised": 0.009357849087228372,
+            "Face.M_F00_000_00_Fcl_BRW_Fun": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_BRW_Sorrow": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_BRW_Angry": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_BRW_Joy": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_BRW_Surprised": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Close": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Close_R": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Close_L": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Fun": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Joy": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Joy_R": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Joy_L": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Angry": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Sorrow": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Surprised": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Spread": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Iris_Hide": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_EYE_Highlight_Hide": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_Natural": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_Close": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_Up": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_Down": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_A": 0.009357849087228372,
+            "Face.M_F00_000_00_Fcl_MTH_I": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_U": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_E": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_O": 0.00933882778515181,
+            "Face.M_F00_000_00_Fcl_MTH_Angry": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_Fun": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_Joy": 0.009339897660062428,
+            "Face.M_F00_000_00_Fcl_MTH_Sorrow": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_Surprised": 0.009357849087228372,
+            "Face.M_F00_000_00_Fcl_MTH_SkinFung": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_SkinFung_R": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_MTH_SkinFung_L": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Hide": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung1": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung1_Up": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung1_Low": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung2": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung2_Up": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung2_Low": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung3": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung3_Up": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Fung3_Low": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Short": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Short_Up": 0.009237769984188344,
+            "Face.M_F00_000_00_Fcl_HA_Short_Low": 0.009237769984188344
+          },
+          "max_shift_m": 0.009357849087228372,
+          "basis_min_z_before": 1.4961822032928467,
+          "basis_min_z_after": 1.5054186582565308,
+          "topology_weights_uv_preserved": true
+        },
+        "posed_coverage": {},
+        "files": {
+          "blink-aa.png": "5038effac7ee256d6d5d49d7acc94c7c028a0ede810c04deae153dcb9822fe01",
+          "C-character.blend": "17a66295be2fda0012299bfb569fb7a4cfdc7bd6f83576351768bfe8f37350a4",
+          "C-character.vrm": "60c2bf6815ad699c2ed12c1b1e6c12704036d8c931dbc25bb3445b3c9f242d9d",
+          "front.png": "d82d44f97514900cba1ac59e18483b83036b26e51ddba38a24c5e8276759e915",
+          "full.png": "a06ce947d088f7dfe8f32cacf22efd71fec0be4112e5545bf486015d9d3938fd",
+          "happy.png": "266dfae445da00d78405dce75361d3621baab0731f17df87410938625a9584e0",
+          "profile.png": "90ef234d2ea8ae999f08d88a9647b06b977aa1f033e983feea3aa569872effaa",
+          "three-quarter.png": "6e145d2b504fc87ab5c17ff7277b31cc601dd208849c47f326540392b87b6a8a"
+        }
+      }
+    ],
+    "visual_accepted": false,
+    "target_runtime_verified": false
+  }
+}

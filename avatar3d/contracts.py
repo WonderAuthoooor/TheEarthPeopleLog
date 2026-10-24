@@ -3,7 +3,7 @@ from dataclasses import dataclass,asdict
 import math
 
 SCHEMA=1
-ACTIONS={'neutral':'自然站姿','bend':'屈肘讲解','wave':'挥手','hold':'持牌姿势','turntable':'三视角检查'}
+ACTIONS={'neutral':'自然站姿','idle':'轻缓待机（循环）','explain':'单手讲解','bend':'屈肘讲解（技术姿态）','wave':'挥手','hold':'持牌姿势','turntable':'三视角检查'}
 
 @dataclass(frozen=True)
 class RenderSpec:

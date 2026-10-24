@@ -1,0 +1,36 @@
+[
+  {
+    "action": "idle",
+    "frames": 36,
+    "fps": 12,
+    "bone_excursion_degrees": {
+      "spine": 0.4500001747956767,
+      "chest": 0.6500018180271622,
+      "neck": 0.6500121552490675,
+      "head": 0.29999591138934834,
+      "rightUpperArm": 1.5272767283331288e-05,
+      "rightLowerArm": 1.428636368417614e-05,
+      "rightHand": 2.8978038473416977e-05
+    },
+    "blink_max": 0.938065767288208,
+    "seam_degrees": 0.0782926070848297,
+    "passed": true
+  },
+  {
+    "action": "explain",
+    "frames": 36,
+    "fps": 12,
+    "bone_excursion_degrees": {
+      "spine": 0.44954945376046795,
+      "chest": 0.6499367063934808,
+      "neck": 0.6488332316726582,
+      "head": 1.9606563322567336,
+      "rightUpperArm": 66.85155782987259,
+      "rightLowerArm": 97.6778035284552,
+      "rightHand": 161.973241040689
+    },
+    "blink_max": 0.9437540173530579,
+    "seam_degrees": 3.415094585006593e-06,
+    "passed": true
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "time": "2026-10-23T08:24:27+08:00",
+  "version": "0.1.4",
+  "checks": {
+    "browser_preview_tests": 5,
+    "ui_tests": 8,
+    "all_passed": true
+  },
+  "frozen_button_chain": {
+    "page": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-014-frozen\\jobs\\2996234f918d4a29a8c4d48667ceeebb\\browser-preview\\index.html",
+    "error": "",
+    "animation_export_button": true,
+    "selected_fps": 30,
+    "preview_button": true,
+    "native_browser_playback": "not verified"
+  },
+  "media": {
+    "角色透明.mov": {
+      "frames": 15,
+      "fps": 30,
+      "duration": 0.5
+    },
+    "动作预览.mp4": {
+      "frames": 15,
+      "fps": 30,
+      "duration": 0.5
+    },
+    "browser-preview/preview.webm": {
+      "frames": 15,
+      "fps": 30,
+      "duration": 0.5
+    }
+  },
+  "build_source_hashes_match": true,
+  "wave_module_bundled": true,
+  "native_browser_warudo_obs": "pending user validation",
+  "initial_test_issue": "System Temp rename returned WinError6; fixtures moved to existing project-local test root; all 5 passed afterwards."
+}

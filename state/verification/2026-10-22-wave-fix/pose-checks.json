@@ -1,0 +1,30 @@
+[
+  {
+    "model": "D:/work/TheEarthPeopleLog/.avatar3d/models/624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23.vrm",
+    "frames": 90,
+    "fps": 30,
+    "palm_forward_min_dot_at_hold": 0.9968106150627136,
+    "elbow_min_max_degrees": [
+      5.069370243964872,
+      127.11860407720994
+    ],
+    "max_frame_rotation_degrees": 15.483837585209477,
+    "endpoint_error_degrees": 0.0,
+    "replay_error_degrees": 0.0,
+    "passed": true
+  },
+  {
+    "model": "D:/work/TheEarthPeopleLog/工作素材/虚拟形象/C角色/驱动检查-v002/C-character.vrm",
+    "frames": 90,
+    "fps": 30,
+    "palm_forward_min_dot_at_hold": 0.9968127012252808,
+    "elbow_min_max_degrees": [
+      5.069370243964872,
+      127.11860407720994
+    ],
+    "max_frame_rotation_degrees": 15.625319603853328,
+    "endpoint_error_degrees": 0.0,
+    "replay_error_degrees": 0.0,
+    "passed": true
+  }
+]

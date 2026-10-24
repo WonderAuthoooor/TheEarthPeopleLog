@@ -1,0 +1,12 @@
+{
+    "schema": 1,
+    "runId": "20261022T002628597Z-9018cf42",
+    "passed": true,
+    "error": "",
+    "clipSha256": "1a8b0452b3f54b4648f62183451a4dc9ff04c4248f5f0c113d5067877a776c1b",
+    "modName": "AvatarLabWave1a8b0452b3f5",
+    "modFile": "D:\\work\\TheEarthPeopleLog\\.avatar3d\\unity-projects\\seed-wave-v01\\AvatarBridge\\Builds\\20261022T002628597Z-9018cf42\\AvatarLabWave1a8b0452b3f5.warudo",
+    "modSha256": "4011b6fce65f065dc201307ee6030cc6610affcfae9264e58501f2122983e274",
+    "editorVersion": "2021.3.45f2",
+    "warudoPlayback": "pending"
+}

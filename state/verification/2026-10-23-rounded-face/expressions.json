@@ -1,0 +1,52 @@
+[
+  {
+    "model": "工作素材\\虚拟形象\\C角色\\圆润可爱-v002\\E\\C-character.vrm",
+    "sha256": "30b8debe736990187d9ef3e3f9adbcd141f40032739c184ac9294f73bf510664",
+    "shape_keys": {
+      "Face": 55
+    },
+    "expression_max_displacement_m": {
+      "happy": 0.016308087296727624,
+      "angry": 0.01329128776096804,
+      "sad": 0.013071933860058144,
+      "relaxed": 0.011333176542120727,
+      "surprised": 0.027448592510669514,
+      "aa": 0.016219891280152703,
+      "ih": 0.009998851980003508,
+      "ou": 0.01973674413744195,
+      "ee": 0.013340006735036505,
+      "oh": 0.023525018302277666,
+      "blink": 0.02994636891618082,
+      "blinkLeft": 0.02994636891618082,
+      "blinkRight": 0.029945609606583778
+    },
+    "finite_coordinates": true,
+    "visual_accepted": false,
+    "warudo_verified": false
+  },
+  {
+    "model": "工作素材\\虚拟形象\\C角色\\圆润可爱-v002\\F\\C-character.vrm",
+    "sha256": "60c2bf6815ad699c2ed12c1b1e6c12704036d8c931dbc25bb3445b3c9f242d9d",
+    "shape_keys": {
+      "Face": 55
+    },
+    "expression_max_displacement_m": {
+      "happy": 0.016605668138776616,
+      "angry": 0.01390566855470457,
+      "sad": 0.01306758694194956,
+      "relaxed": 0.011735062315871387,
+      "surprised": 0.027411806579703036,
+      "aa": 0.016212090459828174,
+      "ih": 0.01023707236574185,
+      "ou": 0.02030028023465988,
+      "ee": 0.013728693937411909,
+      "oh": 0.023455767111411018,
+      "blink": 0.0309727247487957,
+      "blinkLeft": 0.0309727247487957,
+      "blinkRight": 0.030971695069873496
+    },
+    "finite_coordinates": true,
+    "visual_accepted": false,
+    "warudo_verified": false
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "model_sha256": "0d36f697e9361002e554df02ada7023bd90fdee657a24b51af7694bf8d4cb0f4",
+  "coverage_after_reimport": {
+    "samples": 24,
+    "uncovered": 0,
+    "min_margin": 0.0020136163766068804
+  },
+  "skin_weights_valid": true,
+  "deformation": [
+    {
+      "action": "idle",
+      "fps": 30,
+      "samples": 91,
+      "max_vertex_step_m": 0.00019035130331806433,
+      "motion_excursion_m": 0.0033073248609755096,
+      "endpoint_error_m": 0.0,
+      "replay_error_m": 0.0
+    },
+    {
+      "action": "explain",
+      "fps": 30,
+      "samples": 91,
+      "max_vertex_step_m": 0.04035032597202354,
+      "motion_excursion_m": 0.4358216133382048,
+      "endpoint_error_m": 0.0,
+      "replay_error_m": 0.0
+    },
+    {
+      "action": "wave",
+      "fps": 30,
+      "samples": 91,
+      "max_vertex_step_m": 0.06325156455314859,
+      "motion_excursion_m": 0.6136940185683036,
+      "endpoint_error_m": 0.0,
+      "replay_error_m": 0.0
+    }
+  ],
+  "full_collision_verified": false,
+  "warudo_verified": false
+}

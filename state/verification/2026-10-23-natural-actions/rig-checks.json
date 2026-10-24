@@ -1,0 +1,74 @@
+[
+  {
+    "model": "D:\\work\\TheEarthPeopleLog\\avatar3d\\assets\\Seed-san.vrm",
+    "action": "idle",
+    "frames": 120,
+    "fps": 30,
+    "max_rotation_step_degrees": 0.023554870698333674,
+    "endpoint_error_degrees": 4.268868231257967e-06,
+    "motion_excursion_degrees": 0.650005271809712,
+    "replay_error_degrees": 4.268868231257967e-06,
+    "foot_shift_m": 1.4915415253242051e-07,
+    "elbow_min_max_degrees": [
+      8.840135404055436,
+      8.840135404055436
+    ],
+    "hold_palm_up_dot": null,
+    "blink_available": true,
+    "passed": true
+  },
+  {
+    "model": "D:\\work\\TheEarthPeopleLog\\avatar3d\\assets\\Seed-san.vrm",
+    "action": "explain",
+    "frames": 120,
+    "fps": 30,
+    "max_rotation_step_degrees": 9.914656793364788,
+    "endpoint_error_degrees": 4.268868231257967e-06,
+    "motion_excursion_degrees": 150.94020628224766,
+    "replay_error_degrees": 4.268868231257967e-06,
+    "foot_shift_m": 1.4915415253242051e-07,
+    "elbow_min_max_degrees": [
+      8.840135404055436,
+      75.16849943879477
+    ],
+    "hold_palm_up_dot": 0.9931860566139221,
+    "blink_available": true,
+    "passed": true
+  },
+  {
+    "model": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\C角色\\驱动检查-v002\\C-character.vrm",
+    "action": "idle",
+    "frames": 120,
+    "fps": 30,
+    "max_rotation_step_degrees": 0.02355487273237608,
+    "endpoint_error_degrees": 4.1826195783037435e-06,
+    "motion_excursion_degrees": 0.6500121552490675,
+    "replay_error_degrees": 4.1826195783037435e-06,
+    "foot_shift_m": 5.422313274759741e-07,
+    "elbow_min_max_degrees": [
+      8.840135404055436,
+      8.840135404055436
+    ],
+    "hold_palm_up_dot": null,
+    "blink_available": true,
+    "passed": true
+  },
+  {
+    "model": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\C角色\\驱动检查-v002\\C-character.vrm",
+    "action": "explain",
+    "frames": 120,
+    "fps": 30,
+    "max_rotation_step_degrees": 10.617787518444104,
+    "endpoint_error_degrees": 4.1826195783037435e-06,
+    "motion_excursion_degrees": 161.973241913042,
+    "replay_error_degrees": 4.829673654644827e-06,
+    "foot_shift_m": 5.422313274759741e-07,
+    "elbow_min_max_degrees": [
+      8.840135404055436,
+      75.16849943879477
+    ],
+    "hold_palm_up_dot": 0.993191123008728,
+    "blink_available": true,
+    "passed": true
+  }
+]

@@ -1,0 +1,169 @@
+{
+  "model_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+  "coverage_after_reimport": {
+    "samples": 336,
+    "uncovered": 0,
+    "min_margin": 0.011940748469637802,
+    "uncovered_points": []
+  },
+  "skin_weights_valid": true,
+  "deformation": [
+    {
+      "action": "idle",
+      "fps": 30,
+      "samples": 91,
+      "max_vertex_step_m": 0.00019035130331806433,
+      "motion_excursion_m": 0.0033073248609755096,
+      "endpoint_error_m": 0.0,
+      "replay_error_m": 0.0
+    },
+    {
+      "action": "explain",
+      "fps": 30,
+      "samples": 91,
+      "max_vertex_step_m": 0.04035032597202354,
+      "motion_excursion_m": 0.4358216133382048,
+      "endpoint_error_m": 0.0,
+      "replay_error_m": 0.0
+    },
+    {
+      "action": "wave",
+      "fps": 30,
+      "samples": 91,
+      "max_vertex_step_m": 0.06325156455314859,
+      "motion_excursion_m": 0.6136940185683036,
+      "endpoint_error_m": 0.0,
+      "replay_error_m": 0.0
+    }
+  ],
+  "posed_coverage": {
+    "idle@0.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "idle@0.50": {
+      "samples": 337,
+      "uncovered": 0,
+      "min_margin": 0.003851551641803494,
+      "uncovered_points": []
+    },
+    "idle@1.00": {
+      "samples": 336,
+      "uncovered": 0,
+      "min_margin": 0.003808809198889221,
+      "uncovered_points": []
+    },
+    "idle@1.50": {
+      "samples": 334,
+      "uncovered": 0,
+      "min_margin": 0.0038867004655950693,
+      "uncovered_points": []
+    },
+    "idle@2.00": {
+      "samples": 335,
+      "uncovered": 0,
+      "min_margin": 0.00401382600089098,
+      "uncovered_points": []
+    },
+    "idle@2.50": {
+      "samples": 336,
+      "uncovered": 0,
+      "min_margin": 0.004065929947177596,
+      "uncovered_points": []
+    },
+    "idle@3.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "explain@0.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "explain@0.50": {
+      "samples": 336,
+      "uncovered": 0,
+      "min_margin": 0.003851551641803494,
+      "uncovered_points": []
+    },
+    "explain@1.00": {
+      "samples": 335,
+      "uncovered": 0,
+      "min_margin": 0.003808809198889221,
+      "uncovered_points": []
+    },
+    "explain@1.50": {
+      "samples": 335,
+      "uncovered": 0,
+      "min_margin": 0.0038867004655950693,
+      "uncovered_points": []
+    },
+    "explain@2.00": {
+      "samples": 335,
+      "uncovered": 0,
+      "min_margin": 0.00401382600089098,
+      "uncovered_points": []
+    },
+    "explain@2.50": {
+      "samples": 336,
+      "uncovered": 0,
+      "min_margin": 0.004065929947177596,
+      "uncovered_points": []
+    },
+    "explain@3.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "wave@0.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "wave@0.50": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "wave@1.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "wave@1.50": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "wave@2.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "wave@2.50": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    },
+    "wave@3.00": {
+      "samples": 338,
+      "uncovered": 0,
+      "min_margin": 0.00398152754274915,
+      "uncovered_points": []
+    }
+  },
+  "full_collision_verified": false,
+  "warudo_verified": false
+}

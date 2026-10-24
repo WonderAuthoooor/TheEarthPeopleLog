@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-22T22:05:01.204203+08:00",
+  "warudo": "0.15.1",
+  "checks": {
+    "graph_references_and_unique_ids": true,
+    "source_not_modified": true,
+    "saved_scene_shortcut_conflict_rejected": true,
+    "unknown_character_rejected": true,
+    "existing_output_not_overwritten": true
+  },
+  "source_scene_sha256": "19a913fdda359eb5d9d1af14107866990847ab7895cfed1d65c616b0d9b26cf8",
+  "blueprint_sha256": "422c5a6f82bcfc5183672500d87f1c06f319c0fa599d2865205b772887572729",
+  "native_import_playback": "pending user verification",
+  "shortcut": "Ctrl+Alt+F8",
+  "animation_selection": "one-time native picker selection required",
+  "node_types": {
+    "key": "d341c82e-d6d2-4910-bdb6-2f9719470619",
+    "one_shot": "3c8f47ba-5430-4061-8506-19812b4d2ec0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-22T08:08:06.777751+08:00",
+  "editor_path": "C:/Program Files/Unity/Hub/Editor/2021.3.45f2/Editor/Unity.exe",
+  "editor_file_version": "2021.3.45f2_88f88f591b2e",
+  "unity_batch_exit": 0,
+  "project": ".avatar3d\\unity-projects\\seed-wave-v01",
+  "run_id": "20261022T000646470Z-cd1c0f2d",
+  "compilation": "passed",
+  "humanoid_avatar": "passed",
+  "mapped_bones": 51,
+  "fps": 12.0,
+  "duration_expected": 1.4166666269302368,
+  "duration_actual": 1.4166667461395264,
+  "clip_sha256": "1a8b0452b3f54b4648f62183451a4dc9ff04c4248f5f0c113d5067877a776c1b",
+  "fbx_sha256": "ac139a336bb856fef8f6e626865d88c85011fcafa3f758d75d22ef77b978d7c7",
+  "bridge_source_sha256": "3661c111ddc447a84f8033c04612c8c554badde8582403e8b37438b135a25de6",
+  "sdk_import": "pending",
+  "warudo_mod_build": "pending",
+  "warudo_playback": "pending",
+  "visual_acceptance": "pending"
+}

@@ -3,47 +3,38 @@
   "name": "深色发通讯员",
   "selection": "用户明确选择C外观方向",
   "selected_at": "2026-10-20T21:55:12+08:00",
-  "stage": "experimental_layered_2d",
-  "visual_acceptance": "rejected_by_user_body_and_arm_proportions_patchwork_2026-10-21",
-  "next_route": "3d_pipeline_implemented_sample_only_character_c_not_modeled",
+  "stage": "3d_appearance_draft",
+  "appearance_refinement": {
+    "requested_at": "2026-10-23T21:50:44+08:00",
+    "direction": "人物更圆润可爱；沿用C深色发通讯员",
+    "review_file": "../../../工作素材/虚拟形象/C角色/圆润可爱-v002/预览.html",
+    "source_model": "../../../工作素材/虚拟形象/C角色/肩领修复-v004/D/C-character.vrm",
+    "candidates": {"E": "轻度圆润", "F": "更圆润可爱"},
+    "user_selected": "A_original_face",
+    "status": "reverted_to_original_by_user",
+    "decided_at": "2026-10-23T22:43:38+08:00"
+  },
+  "visual_acceptance": "provisionally_accepted_initial_draft_by_user",
+  "next_route": "visual_feedback_then_refine_blender_source",
   "pipeline_entry": "../../../avatar3d_entry.py",
   "character_c_3d_ready": false,
   "reference_files": [
     "concepts-v1.png",
     "c-reference-v1.png"
   ],
-  "model_file": "../../../avatar_app/assets/c-v01/model.json",
-  "rig_ready": true,
+  "model_file": "../../../工作素材/虚拟形象/C角色/肩领修复-v004/D/C-character.vrm",
+  "rig_ready": false,
   "style": "精细二维动漫，深灰短发、薄荷点缀、灰黑外套与轨道标识；具体细节待模型制作统一",
   "planned_actions": {
-    "idle_blink_breath": "experimental_implemented",
-    "audio_lipsync": "RMS_energy_only_not_phonemes",
-    "head_turn": "small_mesh_yaw_roll_and_pitch_shift_only",
-    "think": "preset_2d_arms_and_local_expression",
-    "surprised": "preset_2d_arms_and_local_expression",
-    "point": "preset_2d_arms_not_camera_hand_tracking",
-    "wave": "preset_2d_arms_not_camera_hand_tracking",
-    "score_card": "manual_pending_or_confirmed_value_no_ledger_write",
-    "witty_resigned_laugh_angry": "local_expression_presets",
-    "camera_face_tracking": "experimental_mediapipe_and_Qt_input",
-    "upper_body_lean": "shoulder_slope_small_rotation_only"
+    "idle": "neutral_pose_render_verified_natural_idle_pending",
+    "talk": "pending",
+    "wave": "technical_18_frame_check_only"
   },
-  "layering_plan": [
-    "前后发片与侧发",
-    "脸部轮廓／耳／颈",
-    "左右眼白／虹膜／瞳孔／上眼皮／下眼皮／睫毛",
-    "左右眉",
-    "嘴唇／口腔／牙／舌",
-    "躯干／内搭／外套左右前襟／袖口",
-    "左右上臂／前臂／手／道具",
-    "饰品与遮挡补画"
-  ],
   "quality_gate": [
-    "中立正面不遮脸姿势",
-    "左右眼与嘴可独立驱动",
-    "转头无明显缺层／拉伸",
-    "音频口型样段",
-    "透明边缘与剪映合成实测"
+    "真实可编辑三维源文件",
+    "前／侧／背及角落尺寸对照",
+    "肩肘袖口比例与变形",
+    "用户初模造型反馈后再扩动作"
   ],
   "not_claimed": [
     "参考图本身不是PSD",
@@ -52,6 +43,88 @@
     "未验证用户本人摄像头与OBS等直播端",
     "未通过用户最终动态观感与剪映实际合成验收"
   ],
-  "updated_at": "2026-10-21T12:22:00+08:00",
-  "rig_scope": "experimental_custom_2d_only"
+  "updated_at": "2026-10-22T21:13:48+08:00",
+  "rig_scope": "base_humanoid_54_bones_with_draft_clothing_and_8_hair_springs",
+  "legacy_2d": {
+    "stage": "experimental_layered_2d",
+    "visual_acceptance": "rejected_by_user_body_and_arm_proportions_patchwork_2026-10-21",
+    "model_file": "../../../avatar_app/assets/c-v01/model.json",
+    "rig_ready": true,
+    "planned_actions": {
+      "idle_blink_breath": "experimental_implemented",
+      "audio_lipsync": "RMS_energy_only_not_phonemes",
+      "head_turn": "small_mesh_yaw_roll_and_pitch_shift_only",
+      "think": "preset_2d_arms_and_local_expression",
+      "surprised": "preset_2d_arms_and_local_expression",
+      "point": "preset_2d_arms_not_camera_hand_tracking",
+      "wave": "preset_2d_arms_not_camera_hand_tracking",
+      "score_card": "manual_pending_or_confirmed_value_no_ledger_write",
+      "witty_resigned_laugh_angry": "local_expression_presets",
+      "camera_face_tracking": "experimental_mediapipe_and_Qt_input",
+      "upper_body_lean": "shoulder_slope_small_rotation_only"
+    },
+    "layering_plan": [
+      "前后发片与侧发",
+      "脸部轮廓／耳／颈",
+      "左右眼白／虹膜／瞳孔／上眼皮／下眼皮／睫毛",
+      "左右眉",
+      "嘴唇／口腔／牙／舌",
+      "躯干／内搭／外套左右前襟／袖口",
+      "左右上臂／前臂／手／道具",
+      "饰品与遮挡补画"
+    ],
+    "quality_gate": [
+      "中立正面不遮脸姿势",
+      "左右眼与嘴可独立驱动",
+      "转头无明显缺层／拉伸",
+      "音频口型样段",
+      "透明边缘与剪映合成实测"
+    ],
+    "rig_scope": "experimental_custom_2d_only"
+  },
+  "reference_observations": {
+    "hair": "深灰短发、少量薄荷色发束；刘海避免覆盖双眼的追踪表现",
+    "face": "灰绿色眼睛、清晰眉眼和下颌；具体比例需在真实模型上对照",
+    "outfit": "黑色高领内搭、灰白外套与深色拼接、薄荷色饰边、轨道胸章；先简化五金与带扣",
+    "not_user_approved_details": "上述为既有设定图观察与制作起点，不代表用户逐项验收；背面／下装细节仍待统一"
+  },
+  "editable_source": "../../../工作素材/虚拟形象/C角色/肩领修复-v004/D/C-character.blend",
+  "draft_validation": {
+    "vrm_version": "1.0",
+    "reimport_render_frames": 6,
+    "turntable_frames": 48,
+    "wave_frames": 18,
+    "spring_physics": "8_hair_chains_fixed_60hz_replay_verified_in_Blender",
+    "target_clients": "C_model_not_tested_in_Warudo_or_Jianying"
+  },
+  "expression_capabilities": {
+    "base_drivers": 13,
+    "combined_samples": [
+      "blink_aa",
+      "happy_aa"
+    ],
+    "export_reimport_vertex_deformation_verified": true,
+    "audio_lipsync": false,
+    "camera_tracking": false,
+    "visual_accepted": true,
+    "acceptance_stage": "initial_offline_draft_provisional"
+  },
+  "provisional_acceptance": {
+    "at": "2026-10-22T21:03:35+08:00",
+    "checks": [
+      "V09",
+      "V14"
+    ],
+    "scope": "v005初稿造型与v002离线基础驱动样片；非正式成品验收"
+  },
+  "target_validation": {
+    "jianying": {
+      "check": "V07",
+      "status": "passed_by_user",
+      "scope": "驱动检查-v002三秒面部透明MOV叠加、播放和导出复看",
+      "at": "2026-10-22T21:13:48+08:00"
+    },
+    "warudo_c": "pending",
+    "obs_spout": "pending"
+  }
 }

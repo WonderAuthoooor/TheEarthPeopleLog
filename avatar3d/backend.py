@@ -53,6 +53,9 @@ class BlenderBackend:
         command=[str(self.runtime.blender),'--background','--factory-startup','--disable-autoexec','--python-exit-code','23','--python',str(entry),'--',str(folder/'backend-request.json')]
         env=os.environ.copy()
         env['BLENDER_USER_CONFIG']=str(folder/'blender-config');env['BLENDER_USER_SCRIPTS']=str(folder/'blender-scripts')
+        # 插件会写入临时VRM；使用本任务目录，避免受限系统Temp导致导入失败。
+        temporary=folder/'blender-temp';temporary.mkdir(exist_ok=True)
+        env['TEMP']=env['TMP']=str(temporary.resolve())
         with (folder/'blender.log').open('wb') as log:
             process=launch_external(command,env,log)
             started=time.monotonic()

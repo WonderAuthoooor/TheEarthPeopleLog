@@ -1,0 +1,39 @@
+{
+  "time": "2026-10-22T08:29:18.548523+08:00",
+  "editor_version": "2021.3.45f2",
+  "sdk_archive_version": "0.14.5.1",
+  "sdk_manifest_version": "0.14.5",
+  "sdk_archive_sha256": "9e3f85a4b1cdc88fda9996afab73c04937e336b5108c66e61dc5b634f6a63dc3",
+  "sdk_import_exit": 0,
+  "mod_build_exit": 0,
+  "mod_sha256": "4011b6fce65f065dc201307ee6030cc6610affcfae9264e58501f2122983e274",
+  "mod_bytes": 47383,
+  "installed_hash_verified": true,
+  "warudo_playback": "pending",
+  "visual_acceptance": "pending",
+  "related_python_tests": {
+    "passed": 15,
+    "failed": 0,
+    "scope": "SDK4／部署3／构建入口2／Unity工程6"
+  },
+  "source_hashes": {
+    "avatar3d/unity/WarudoBridge.cs": "3676ad2cf9764a8458fad53e77ad94040cb9e77fdfd44d491299604ada815bea",
+    "avatar3d/unity/WarudoAnimationBuilder.cs": "03706de8b0a6554847c8b9010e00c1b7ada298a22616ab7f0c73c8cef879dff3",
+    "avatar3d/warudo_sdk.py": "06e7efe9c3fcda2f4e12ce02c02b137b789a7fdb49a7fd6a0089668f0267b72e",
+    "avatar3d/warudo_deploy.py": "5171e05f3f1498e3f0d0a676b263f057eba5c52f173a2020efef4f2b59630704",
+    "scripts/build-warudo-animation.py": "84edb05fcf633c3b4a5c4a9b7cd1731c61a7a722e66690bd648781a969783ae4"
+  },
+  "first_failures": [
+    "UPM不能解析原tgz根布局",
+    "共享缓存EBADF",
+    "SDK嵌套VRM缺少Timeline依赖",
+    "构建脚本必须位于Editor目录"
+  ],
+  "fixes": [
+    "同一SDK校验后本地文件夹引用",
+    "仅进程环境UPM_CACHE_ROOT指向项目.runtime",
+    "补入SDK内VRM声明Timeline1.7.6",
+    "构建脚本归Editor编译集"
+  ],
+  "delivery": "工作素材\\虚拟形象\\20261022_Warudo挥手技术包"
+}

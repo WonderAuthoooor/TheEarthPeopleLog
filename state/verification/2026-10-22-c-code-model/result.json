@@ -1,0 +1,43 @@
+{
+  "vrm_version": "1.0",
+  "humanoid_bones": 54,
+  "source_hash": "1a4f985b2203ca9f48ef6b4b9adc9a20566d67e3c550ac962f48107ccadc2b4f",
+  "turntable_frames": 48,
+  "turntable_fps": 12,
+  "turntable_duration": 4,
+  "roundtrip_frames": 6,
+  "roundtrip_success": true,
+  "visual_accepted": false,
+  "checked_at": "2026-10-22T15:37:36+08:00",
+  "build_directory": "工作素材/虚拟形象/C角色/代码初模-v005",
+  "wave": {
+    "frames": 18,
+    "fps": 12,
+    "duration": 1.5,
+    "stage": "technical_pose_check_not_natural_final_motion"
+  },
+  "export": {
+    "vrm_sha256": "1a4f985b2203ca9f48ef6b4b9adc9a20566d67e3c550ac962f48107ccadc2b4f",
+    "blend_sha256": "906a5e3e93e190a7ac9da124d1c312b05368576a65503002ece90f9416d6ebcf",
+    "source_blend_sha256": "05b69e07b34e21e7b239910383f4a50d37a4164da94d4f24b8c7347bc533bfd0",
+    "stage": "appearance_draft_not_approved",
+    "vrm_version": "1.0",
+    "spring_physics": "not_migrated_or_verified",
+    "expression_conversion": "VRM addon assign_vrm1_expressions_from_vrm0",
+    "manual_acceptance": false,
+    "frames": 48,
+    "fps": 12
+  },
+  "cli_negative_tests": {
+    "passed": 2,
+    "scope": "existing_output_preservation_and_wrong_source_hash"
+  },
+  "alpha_check": "existing encoder fully decoded MOV frames and checked nontrivial alpha",
+  "unverified": [
+    "user_visual_acceptance",
+    "spring_physics",
+    "natural_actions",
+    "C_in_Warudo",
+    "C_in_Jianying"
+  ]
+}

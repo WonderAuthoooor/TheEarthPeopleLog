@@ -46,6 +46,19 @@ def main():
         changed.translation=world.translation
         p.matrix=arm.matrix_world.inverted()@changed
         bpy.context.view_layer.update()
+    from earthlog_render.wave_pose import WavePose
+    wave_pose=WavePose(arm,bones) if request['action']=='wave' else None
+    wave_checks=[]
+    from earthlog_render.natural_pose import NaturalPose
+    natural_pose=NaturalPose(arm,bones) if request['action'] in ('idle','explain') else None
+    natural_checks=[]
+    mouth_pose=None;mouth_checks=[]
+    if request.get('mouth_track'):
+        from earthlog_render.models import digest
+        from earthlog_render.mouth_pose import MouthPose
+        track_path=Path(request['mouth_track'])
+        if digest(track_path)!=request['mouth_track_sha256']:raise ValueError('口型曲线与请求快照不一致。')
+        mouth_pose=MouthPose(arm,json.loads(track_path.read_text(encoding='utf-8')))
     scene=bpy.context.scene
     scene.render.engine='BLENDER_EEVEE_NEXT';scene.eevee.taa_render_samples=16
     scene.render.resolution_x=request['width'];scene.render.resolution_y=request['width']*3//2;scene.render.resolution_percentage=100
@@ -61,6 +74,10 @@ def main():
     camera=bpy.data.objects.new('Camera',bpy.data.cameras.new('Camera'));scene.collection.objects.link(camera);scene.camera=camera
     camera.data.type='ORTHO';camera.data.ortho_scale=height*1.17
     target=Vector((hips.x,hips.y,foot+height*.52))
+    if request.get('framing')=='bust':
+        camera.data.ortho_scale=height*.50
+        target=Vector((hips.x,hips.y,head.z-height*.09))
+    elif request.get('framing','full')!='full':raise ValueError('未知构图。')
     def place_camera(degrees):
         a=math.radians(degrees);camera.location=target+Vector((math.sin(a)*height*3,-math.cos(a)*height*3,0))
         camera.rotation_euler=(target-camera.location).to_track_quat('-Z','Y').to_euler()
@@ -77,18 +94,33 @@ def main():
             p.matrix_basis=Matrix.Identity(4)
         bpy.context.view_layer.update()
         action=request['action']
-        for side in ('left','right'):
+        if natural_pose:
+            # 循环不重复最后一帧；单次讲解保留完整收手端点。
+            sample_time=t if action=='idle' else phase*request['duration']
+            natural_checks.append(natural_pose.apply(action,sample_time,request['duration'],index+1))
+        for side in (() if natural_pose else ('left','right')):
+            if action=='wave' and side=='right':
+                wave_checks.append(wave_pose.apply(phase*request['duration'],request['duration'],signs[side]))
+                for suffix in ('UpperArm','LowerArm','Hand'):
+                    bone(side+suffix).keyframe_insert('rotation_quaternion',frame=index+1)
+                continue
             upper,lower=arm_targets(action,t,request['duration'],side,signs[side])
             orient(side+'UpperArm',upper);orient(side+'LowerArm',lower);orient(side+'Hand',lower)
             for suffix in ('UpperArm','LowerArm','Hand'):
                 p=bone(side+suffix)
                 p.keyframe_insert('rotation_quaternion',frame=index+1)
+        if mouth_pose:
+            mouth_checks.append({'frame':index+1,'seconds':t,'aa':mouth_pose.apply(t,index+1)})
+            bpy.context.view_layer.update()
         place_camera(request['azimuth']+(90*math.sin(phase*2*math.pi) if action=='turntable' else 0))
         camera.keyframe_insert('location',frame=index+1);camera.keyframe_insert('rotation_euler',frame=index+1)
         scene.render.filepath=str(folder/'frames'/f'{index:05}.png')
         bpy.ops.render.render(write_still=True)
         atomic_json(folder/'progress.json',{'percent':round((index+1)/total*85)})
     # 保存烘焙后的骨骼动作与相机关键帧，作为可复用且可编辑的生成工程。
+    if wave_checks:atomic_json(folder/'wave-pose-checks.json',wave_checks)
+    if natural_checks:atomic_json(folder/'natural-pose-checks.json',natural_checks)
+    if mouth_checks:atomic_json(folder/'mouth-pose-checks.json',mouth_checks)
     scene.frame_set(1)
     bpy.ops.wm.save_as_mainfile(filepath=str(folder/'scene.blend'))
 
