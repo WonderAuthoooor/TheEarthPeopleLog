@@ -74,8 +74,11 @@ class BlenderBackend:
                     process.terminate()
                     try:process.wait(10)
                     except subprocess.TimeoutExpired:process.kill();process.wait(5)
-        expected=round(request['duration']*request['fps'])
+        indices=list(range(round(request['duration']*request['fps'])))
+        if request.get('rehearsal'):
+            from .rehearsal import selected_frames
+            indices=selected_frames(request)
         files=sorted(frames.glob('*.png'))
-        if len(files)!=expected or any(p.name!=f'{i:05}.png' for i,p in enumerate(files)):
+        if [p.name for p in files]!=[f'{i:05}.png' for i in indices]:
             raise RuntimeError('渲染帧序列不完整，未发布成品。')
         return files

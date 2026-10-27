@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "compared_muscles": 14,
+  "muscles": {
+    "Left Shoulder Down-Up": {
+      "start_error": 0.0,
+      "end_error": 0.0,
+      "old_idle": 1.5879297e-06,
+      "new_start": 1.5879297e-06
+    },
+    "Left Shoulder Front-Back": {
+      "start_error": 0.0,
+      "end_error": 0.0,
+      "old_idle": 8.004128e-07,
+      "new_start": 8.004128e-07
+    },
+    "Left Arm Down-Up": {
+      "start_error": 4.3999999999044803e-07,
+      "end_error": 4.3999999999044803e-07,
+      "old_idle": -0.6648024,
+      "new_start": -0.66480196
+    },
+    "Left Arm Front-Back": {
+      "start_error": 2.399999999846969e-07,
+      "end_error": 2.399999999846969e-07,
+      "old_idle": 0.16120419,
+      "new_start": 0.16120395
+    },
+    "Left Arm Twist In-Out": {
+      "start_error": 4.100000000006876e-06,
+      "end_error": 4.100000000006876e-06,
+      "old_idle": -0.3584931,
+      "new_start": -0.3584972
+    },
+    "Left Forearm Stretch": {
+      "start_error": 0.0,
+      "end_error": 0.0,
+      "old_idle": 0.9465245,
+      "new_start": 0.9465245
+    },
+    "Left Forearm Twist In-Out": {
+      "start_error": 4.149999999980558e-06,
+      "end_error": 4.149999999980558e-06,
+      "old_idle": 0.15037099,
+      "new_start": 0.15037514
+    },
+    "Right Shoulder Down-Up": {
+      "start_error": 0.0,
+      "end_error": 0.0,
+      "old_idle": -1.7706906e-06,
+      "new_start": -1.7706906e-06
+    },
+    "Right Shoulder Front-Back": {
+      "start_error": 0.0,
+      "end_error": 0.0,
+      "old_idle": 1.4229559e-07,
+      "new_start": 1.4229559e-07
+    },
+    "Right Arm Down-Up": {
+      "start_error": 5.00000000069889e-07,
+      "end_error": 5.00000000069889e-07,
+      "old_idle": -0.6648,
+      "new_start": -0.6648005
+    },
+    "Right Arm Front-Back": {
+      "start_error": 6.999999999091067e-08,
+      "end_error": 6.999999999091067e-08,
+      "old_idle": 0.16120435,
+      "new_start": 0.16120428
+    },
+    "Right Arm Twist In-Out": {
+      "start_error": 1.2599999999474143e-06,
+      "end_error": 1.2599999999474143e-06,
+      "old_idle": -0.35850224,
+      "new_start": -0.3585035
+    },
+    "Right Forearm Stretch": {
+      "start_error": 7.499999999938112e-07,
+      "end_error": 7.499999999938112e-07,
+      "old_idle": 0.9465228,
+      "new_start": 0.94652355
+    },
+    "Right Forearm Twist In-Out": {
+      "start_error": 1.2100000000014877e-06,
+      "end_error": 1.2100000000014877e-06,
+      "old_idle": 0.15037821,
+      "new_start": 0.15037942
+    }
+  },
+  "new_clip_sha256": "6386777db864cecd82e55dc152db8cf5b98050a77ad49fe25b4c4e599b628d94",
+  "model_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+  "warudo_playback": "pending"
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Asia/Shanghai",
+  "version": "0.1.9",
+  "exe_sha256": "551be80bad9538a70df3ddf8988ed702f8cc3ef5efee70df0ca5706b1159c052",
+  "source_manifest_verified": true,
+  "real_warudo_files_unchanged": 15,
+  "source_gui": "passed",
+  "frozen_gui": "passed",
+  "package": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\20261026_C直播素材包-v002",
+  "native_tests": "paused",
+  "installed_resources": {
+    "schema": 1,
+    "can_restore": true,
+    "scene": "Scenes/AvatarLab_C_Live_v002.json",
+    "items": [
+      {
+        "path": "CharacterAnimations/AvatarLabWave6386777db864.warudo",
+        "size": 223143,
+        "sha256": "724f5ed8320bb9365d44434f7bda22832f76f62793b98a75363fe6b91657f3bd",
+        "action": "reuse"
+      },
+      {
+        "path": "Characters/AvatarLab_C_v004D.vrm",
+        "size": 16930940,
+        "sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+        "action": "reuse"
+      },
+      {
+        "path": "CharacterAnimations/AvatarLabIdlea5c207ac973a.warudo",
+        "size": 223411,
+        "sha256": "dde3b9bfa4ff4f4ef6813474fabb1aff18de60a8f269cf04c53f4f0531b60c74",
+        "action": "reuse"
+      },
+      {
+        "path": "CharacterAnimations/AvatarLabExplaind69ac459edb6.warudo",
+        "size": 226781,
+        "sha256": "3f42f19d5291fad6dfd97d8c4fbcf4e29028ebaf775b0bb075aec6a6966cc806",
+        "action": "reuse"
+      },
+      {
+        "path": "Scenes/AvatarLab_C_Live_v002.json",
+        "size": 355815,
+        "sha256": "97a9e1a20bffe270d1ed02fa6041f7bc692e87e8a678e2fea0b9b61dda270810",
+        "action": "reuse"
+      }
+    ],
+    "native_validation": "pending"
+  }
+}

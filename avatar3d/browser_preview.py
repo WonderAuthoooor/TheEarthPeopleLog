@@ -7,7 +7,7 @@ import threading
 
 from .models import atomic_json, digest
 
-REVISION = 1
+REVISION = 2
 FILES = ('preview.webm', 'fallback.webp', 'poster.jpg', 'index.html')
 
 
@@ -16,9 +16,9 @@ def _check_cancel(cancel):
         raise InterruptedError('已取消兼容预览；原始成品保留。')
 
 
-def _page(short):
+def _page(short, audio=False):
     label = '前3秒备用动画（完整视频见上方）' if short else '完整备用动画'
-    return '''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+    page = '''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>角色动作预览</title><style>
 body{background:#18232b;color:#eef4f7;font:17px system-ui;margin:24px auto;max-width:720px;padding:0 20px}
@@ -35,6 +35,14 @@ a{color:#8eddd0}summary,button{cursor:pointer}p{line-height:1.6}</style>
 v.addEventListener('playing',()=>s.textContent='正在播放完整动作。');
 v.addEventListener('error',()=>{s.textContent='此浏览器无法播放视频，已展开备用动画。';
 document.getElementById('fallback').open=true;});</script></html>'''
+    if audio:
+        page=page.replace('controls loop muted playsinline','controls loop playsinline')
+        page=page.replace('src="preview.webm"','src="../有声预览.webm"')
+        page=page.replace('../动作预览.mp4','../有声预览.mp4')
+        page=page.replace('这是棋盘背景的检查预览。剪映合成请使用原始透明 MOV。',
+                          '这是有声检查预览。剪映使用透明MOV和配套WAV，从同一时刻开始。下方备用动画无声。')
+        page=page.replace('</html>','<p><a href="../口播.wav">配套口播WAV</a></p></html>')
+    return page
 
 
 def prepare(folder, cancel=None, progress=lambda _: None, *, complete=None):
@@ -51,6 +59,11 @@ def prepare(folder, cancel=None, progress=lambda _: None, *, complete=None):
     source_hash = digest(source)
     if source_hash != complete['files']['动作预览.mp4']:
         raise ValueError('原预览文件哈希不一致，不能生成兼容预览。')
+    audio_hashes={}
+    if complete.get('audio_sha256'):
+        for name in ('有声预览.mp4','有声预览.webm','口播.wav'):
+            audio_hashes[name]=digest(folder/name)
+            if audio_hashes[name]!=complete['files'].get(name):raise ValueError('口播预览哈希不一致。')
     expected = complete['frames']
     if not isinstance(expected, int) or not 2 <= expected <= 900:
         raise ValueError('预览只支持已完成的2—900帧动画。')
@@ -59,6 +72,7 @@ def prepare(folder, cancel=None, progress=lambda _: None, *, complete=None):
     try:
         cached = json.loads(manifest.read_text(encoding='utf-8'))
         if (cached['revision'] == REVISION and cached['source_sha256'] == source_hash
+                and cached.get('audio_hashes',{}) == audio_hashes
                 and cached['frames'] == expected and set(cached['files']) == set(FILES)
                 and all(digest(target / name) == sha for name, sha in cached['files'].items())):
             progress(100)
@@ -135,8 +149,9 @@ def prepare(folder, cancel=None, progress=lambda _: None, *, complete=None):
                     duration += animated.info.get('duration', 0)
                 if animated.n_frames > 1 and duration != sum(durations):
                     raise ValueError('备用动画时长校验失败。')
-            (staging / 'index.html').write_text(_page(count > int(fps * 3)), encoding='utf-8')
+            (staging / 'index.html').write_text(_page(count > int(fps * 3), bool(audio_hashes)), encoding='utf-8')
             result = {'revision': REVISION, 'source_sha256': source_hash, 'frames': count,
+                      'audio_hashes':audio_hashes,
                       'fps': float(fps), 'size': [width, height], 'fallback_duration_ms': sum(durations),
                       'native_browser_playback': 'not verified',
                       'files': {name: digest(staging / name) for name in FILES}}

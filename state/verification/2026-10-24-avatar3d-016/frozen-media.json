@@ -1,0 +1,17 @@
+{
+  "frames": 15,
+  "fps": 30,
+  "duration": 0.5,
+  "hashes_valid": true,
+  "audio_waveform_checks": {
+    "有声预览.mp4": {
+      "correlation": 0.9988156258914916,
+      "offset_seconds": 0.0
+    },
+    "有声预览.webm": {
+      "correlation": 0.9999421340215993,
+      "offset_seconds": 0.0
+    }
+  },
+  "human_sync_verified": false
+}

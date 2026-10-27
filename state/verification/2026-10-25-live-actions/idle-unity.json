@@ -1,0 +1,21 @@
+{
+    "schema": 1,
+    "runId": "20261025T030244544Z-4b7a2e82",
+    "time": "2026-10-25T11:02:44.5644354+08:00",
+    "editorVersion": "2021.3.45f2",
+    "fbxSha256": "631918798807e5b8281b95b58e3e4f8f80e46bf0e9e4b52dd253c701d8331eb8",
+    "modelSha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+    "passed": true,
+    "stage": "unity_humanoid_extracted",
+    "clipAsset": "Assets/AvatarBridge/Runs/20261025T030244544Z-4b7a2e82/Animation.anim",
+    "clipSha256": "a5c207ac973af7a4bc79df0583d7f352335f88ecc1c056bc2c2e59f9f9e54b76",
+    "expectedDuration": 3.0,
+    "actualDuration": 3.000000238418579,
+    "frameRate": 30.0,
+    "mappedBones": 54,
+    "actionId": "idle",
+    "loop": true,
+    "loopMaxCurveError": 0.0,
+    "error": "",
+    "warudoPlayback": "pending"
+}

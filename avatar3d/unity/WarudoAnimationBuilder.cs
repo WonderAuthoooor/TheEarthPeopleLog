@@ -19,11 +19,13 @@ namespace AvatarLab.Editor
         [Serializable] class ImportReport
         {
             public bool passed; public string editorVersion; public string clipAsset; public string clipSha256;
+            public string actionId; public bool loop;
         }
         [Serializable] class Result
         {
             public int schema = 1; public string runId; public bool passed; public string error;
             public string clipSha256; public string modName; public string modFile; public string modSha256;
+            public string actionId; public bool loop;
             public string editorVersion; public string warudoPlayback = "pending";
         }
         static string Hash(string path)
@@ -60,7 +62,13 @@ namespace AvatarLab.Editor
                 var clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(imported.clipAsset);
                 Require(clip != null && clip.isHumanMotion && !clip.legacy, "Source clip is not humanoid.");
                 result.clipSha256 = request.clipSha256;
-                result.modName = "AvatarLabWave" + request.clipSha256.Substring(0, 12);
+                result.actionId = string.IsNullOrEmpty(imported.actionId) ? "wave" : imported.actionId;
+                Require(Array.IndexOf(new[] { "neutral", "idle", "explain", "bend", "wave", "hold", "turntable" },
+                    result.actionId) >= 0, "Unknown action ID.");
+                result.loop = AnimationUtility.GetAnimationClipSettings(clip).loopTime;
+                Require(result.loop == imported.loop, "Clip loop setting differs from import report.");
+                result.modName = "AvatarLab" + char.ToUpperInvariant(result.actionId[0]) + result.actionId.Substring(1)
+                    + request.clipSha256.Substring(0, 12);
                 var folder = "Assets/AvatarBridge/Mods/" + id;
                 Directory.CreateDirectory(Path.Combine(root, folder));
                 AssetDatabase.Refresh();
@@ -71,7 +79,8 @@ namespace AvatarLab.Editor
                 profile.ModName = result.modName;
                 profile.ModAuthor = "AvatarLab";
                 profile.ModVersion = "0.1.0";
-                profile.ModDescription = "Technical skeletal wave; runtime playback and visual acceptance pending.";
+                profile.ModDescription = "Skeletal " + result.actionId + (result.loop ? " (loop)" : " (one shot)")
+                    + "; runtime playback and visual acceptance pending.";
                 profile.ModAssetsPath = folder;
                 profile.ModExportPath = output;
                 settings.ShowOutputDirectory = false;

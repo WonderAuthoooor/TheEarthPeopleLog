@@ -1,0 +1,12 @@
+{
+  "restored": true,
+  "files": {
+    "AvatarBridge/request.json": "f6760a9a772a9e6ba06ec6dbe4b0e8933d0e7ef8228ff5e18f854b7f45356304",
+    "AvatarBridge/build-request.json": "a6d8569a4ae40b550a1a36fa41dd549e01ddc52eea7e6a0c20d2d9d26e84d939",
+    "Assets/AvatarBridge/Input/animation.fbx": "ac139a336bb856fef8f6e626865d88c85011fcafa3f758d75d22ef77b978d7c7",
+    "Assets/AvatarBridge/Input/animation.fbx.meta": "2822eec9aa522fe59d5912be2a61baa01b6c5e58897ca0c4da9bd717665a9a19",
+    "Assets/AvatarBridge/Editor/AvatarBridge.cs": "3661c111ddc447a84f8033c04612c8c554badde8582403e8b37438b135a25de6",
+    "Assets/AvatarBridge/Editor/WarudoAnimationBuilder.cs": "03706de8b0a6554847c8b9010e00c1b7ada298a22616ab7f0c73c8cef879dff3",
+    "Assets/AvatarBridge/ExportSettings.asset": "5069cbc04872722e24d3d3dac3a2d3022a12ef8361f6f091a23dfde1a62a1453"
+  }
+}

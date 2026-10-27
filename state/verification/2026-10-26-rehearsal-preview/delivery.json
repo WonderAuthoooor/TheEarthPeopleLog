@@ -1,0 +1,38 @@
+{
+  "source_master_unchanged": true,
+  "source": {
+    "source": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\C角色\\连续排练-v002",
+    "master_sha256": "28c4db98385dd6103caf9f96e7f69ef388cd0b97cce7344bcc79fe3426f4471a",
+    "request_sha256": "be78a31fa872bb7c40d4bc2a18c4056c1b4800008e0b2019149603bdb57aa586",
+    "frames": 900,
+    "fps": 30,
+    "duration": 30.0
+  },
+  "media": {
+    "动作预览.mp4": {
+      "frames": 900,
+      "duration_seconds": 30.0,
+      "max_pts_error": 0.0,
+      "unique_decoded_frames": 900
+    },
+    "角色透明.mov": {
+      "frames": 900,
+      "duration_seconds": 30.0,
+      "max_pts_error": 0.0,
+      "unique_decoded_frames": 505
+    },
+    "browser-preview/preview.webm": {
+      "frames": 900,
+      "duration_seconds": 30.0,
+      "max_pts_error": 0.0003333333333337407,
+      "unique_decoded_frames": 900
+    }
+  },
+  "all_output_hashes_verified": true,
+  "resume_reused_frames": 900,
+  "timeout_removed_lock_and_no_success_marker": true,
+  "quality": "motion clay only",
+  "native_browser_playback": "not tested",
+  "manual_validation": "paused",
+  "desktop": "0.1.8 unchanged"
+}

@@ -10,6 +10,6 @@ $threeDShortcut.TargetPath = $threeDExe
 $threeDShortcut.Arguments = '--workspace "' + (Join-Path $threeDRepo '.avatar3d') + '" --runtime "' + (Join-Path $threeDRepo '.runtime/avatar3d/runtime.json') + '"'
 $threeDShortcut.IconLocation = $threeDExe + ',0'
 $threeDShortcut.WorkingDirectory = $threeDRepo
-$threeDShortcut.Description = '三维模型／骨骼动作与透明素材；正式C模型待制作'
+$threeDShortcut.Description = '三维角色动作、口播音频与透明素材'
 $threeDShortcut.Save()
 Write-Output (Join-Path $threeDRepo '地球三维角色工坊.lnk')

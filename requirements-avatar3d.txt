@@ -1,0 +1,3 @@
+# 三维桌面应用的Python构建依赖；Blender/VRM插件另由setup-avatar3d.py准备。
+-r requirements-avatar.txt
+imageio-ffmpeg==0.6.0

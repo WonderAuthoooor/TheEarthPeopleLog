@@ -1,0 +1,15 @@
+test_conflict_unknown_version_missing_hierarchy_and_tracking_are_rejected (test_warudo_scene.SceneTests.test_conflict_unknown_version_missing_hierarchy_and_tracking_are_rejected) ... ok
+test_install_is_create_new_reuses_identical_and_checks_dependency_changes (test_warudo_scene.SceneTests.test_install_is_create_new_reuses_identical_and_checks_dependency_changes) ... ok
+test_installed_asset_hash_and_loop_type_must_match (test_warudo_scene.SceneTests.test_installed_asset_hash_and_loop_type_must_match) ... ok
+test_scene_prepares_c_idle_outputs_and_head_free_hands_without_mutating_source (test_warudo_scene.SceneTests.test_scene_prepares_c_idle_outputs_and_head_free_hands_without_mutating_source) ... ok
+test_atomic_progress_retry_and_persistent_failure_preserve_previous_data (test_live_motion_pipeline.LiveMotionTests.test_atomic_progress_retry_and_persistent_failure_preserve_previous_data) ... ok
+test_existing_pipeline_or_unity_lock_prevents_mutation (test_live_motion_pipeline.LiveMotionTests.test_existing_pipeline_or_unity_lock_prevents_mutation) ... ok
+test_explain_hotkey_coexists_with_wave_and_rejects_duplicates (test_live_motion_pipeline.LiveMotionTests.test_explain_hotkey_coexists_with_wave_and_rejects_duplicates) ... ok
+test_failed_conversion_restores_inputs_settings_and_releases_owned_lock (test_live_motion_pipeline.LiveMotionTests.test_failed_conversion_restores_inputs_settings_and_releases_owned_lock) ... ok
+test_loop_requires_closed_roundtrip_and_preserves_full_period (test_live_motion_pipeline.LiveMotionTests.test_loop_requires_closed_roundtrip_and_preserves_full_period) ... ok
+test_model_switch_discards_stale_importer_then_restores_it_on_editor_failure (test_live_motion_pipeline.LiveMotionTests.test_model_switch_discards_stale_importer_then_restores_it_on_editor_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.545s
+
+OK

@@ -1,0 +1,7 @@
+REUSE 0 / 900
+Traceback (most recent call last):
+  File "D:\work\TheEarthPeopleLog\scripts\preview-avatar-rehearsal.py", line 133, in <module>
+    run(parser.parse_args())
+  File "D:\work\TheEarthPeopleLog\scripts\preview-avatar-rehearsal.py", line 63, in run
+    raise TimeoutError('渲染超时；已完成帧保留，使用--resume继续。')
+TimeoutError: 渲染超时；已完成帧保留，使用--resume继续。

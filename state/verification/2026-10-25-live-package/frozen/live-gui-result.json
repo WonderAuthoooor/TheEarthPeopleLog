@@ -1,0 +1,44 @@
+{
+  "error": "",
+  "steps": 3,
+  "plan": {
+    "schema": 1,
+    "can_restore": true,
+    "scene": "Scenes/AvatarLab_C_Live_v001.json",
+    "items": [
+      {
+        "path": "Characters/AvatarLab_C_v004D.vrm",
+        "size": 16930940,
+        "sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+        "action": "reuse"
+      },
+      {
+        "path": "CharacterAnimations/AvatarLabIdlea5c207ac973a.warudo",
+        "size": 223411,
+        "sha256": "dde3b9bfa4ff4f4ef6813474fabb1aff18de60a8f269cf04c53f4f0531b60c74",
+        "action": "reuse"
+      },
+      {
+        "path": "CharacterAnimations/AvatarLabExplaind69ac459edb6.warudo",
+        "size": 226781,
+        "sha256": "3f42f19d5291fad6dfd97d8c4fbcf4e29028ebaf775b0bb075aec6a6966cc806",
+        "action": "reuse"
+      },
+      {
+        "path": "CharacterAnimations/AvatarLabWave0f2db78f2c51.warudo",
+        "size": 111708,
+        "sha256": "5e09e77948c6dc7e1ba48c1ed1e68dcdef9e9c1d809be22ec67076c4c3f98d8b",
+        "action": "reuse"
+      },
+      {
+        "path": "Scenes/AvatarLab_C_Live_v001.json",
+        "size": 424655,
+        "sha256": "16b6fc665cc9880df63dd3622f08314024a381dab94f78e5ae48fbd518493030",
+        "action": "reuse"
+      }
+    ],
+    "native_validation": "pending"
+  },
+  "status": "全部素材已存在且一致；无需恢复。原生使用仍待验证。",
+  "native_load": "not performed"
+}

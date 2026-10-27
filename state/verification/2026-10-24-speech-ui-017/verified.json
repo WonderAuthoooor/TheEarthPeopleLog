@@ -1,0 +1,42 @@
+{
+  "gui": [
+    {
+      "kind": "source",
+      "jobs": [
+        {
+          "id": "dc9df106dfea404da2982bd4651b6cc7",
+          "frames": 15,
+          "fps": 30,
+          "alpha_pts_hashes": true
+        },
+        {
+          "id": "ca883792f69741159f74ff18fc320d31",
+          "frames": 15,
+          "fps": 30,
+          "alpha_pts_hashes": true
+        }
+      ],
+      "selected_then_all_then_reorder": true
+    },
+    {
+      "kind": "frozen",
+      "jobs": [
+        {
+          "id": "14361fb1f61149fe86b78ba720d05729",
+          "frames": 15,
+          "fps": 30,
+          "alpha_pts_hashes": true
+        },
+        {
+          "id": "86419ccce3714e1d95f2c3dfcd08032e",
+          "frames": 15,
+          "fps": 30,
+          "alpha_pts_hashes": true
+        }
+      ],
+      "selected_then_all_then_reorder": true
+    }
+  ],
+  "build_hashes_match": true,
+  "note": "合成测试音；原生浏览器和剪映人工验证未进行。"
+}

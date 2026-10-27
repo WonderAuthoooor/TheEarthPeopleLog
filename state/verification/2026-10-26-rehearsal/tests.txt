@@ -1,0 +1,23 @@
+test_default_timing_and_weights (test_rehearsal.RehearsalTests.test_default_timing_and_weights) ... ok
+test_fades_are_continuous_at_boundaries (test_rehearsal.RehearsalTests.test_fades_are_continuous_at_boundaries) ... ok
+test_invalid_overlap_order_and_durations_rejected (test_rehearsal.RehearsalTests.test_invalid_overlap_order_and_durations_rejected) ... ok
+test_sample_invalid_times (test_rehearsal.RehearsalTests.test_sample_invalid_times) ... ok
+test_sparse_render_does_not_change_baked_duration (test_rehearsal.RehearsalTests.test_sparse_render_does_not_change_baked_duration) ... ok
+test_blink_is_bounded_and_gesture_has_rest_and_hold (test_natural_motion.MotionTests.test_blink_is_bounded_and_gesture_has_rest_and_hold) ... ok
+test_loop_endpoint_and_velocity_are_continuous (test_natural_motion.MotionTests.test_loop_endpoint_and_velocity_are_continuous) ... ok
+test_new_actions_and_old_snapshots_remain_supported (test_natural_motion.MotionTests.test_new_actions_and_old_snapshots_remain_supported) ... ok
+test_altered_model_not_sent_to_renderer (test_avatar3d.ThreeDTests.test_altered_model_not_sent_to_renderer) ... ok
+test_backend_failure_and_cancel_never_publish_complete (test_avatar3d.ThreeDTests.test_backend_failure_and_cancel_never_publish_complete) ... ok
+test_bad_glb_external_resources_and_bones_rejected (test_avatar3d.ThreeDTests.test_bad_glb_external_resources_and_bones_rejected) ... ok
+test_claim_once_recover_preserves_old_request_retry_new_id (test_avatar3d.ThreeDTests.test_claim_once_recover_preserves_old_request_retry_new_id) ... ok
+test_contract_rejects_nonfinite_unknown_and_future (test_avatar3d.ThreeDTests.test_contract_rejects_nonfinite_unknown_and_future) ... ok
+test_external_child_environment_does_not_inherit_python_paths (test_avatar3d.ThreeDTests.test_external_child_environment_does_not_inherit_python_paths) ... ok
+test_pose_boundaries_and_wave_motion (test_avatar3d.ThreeDTests.test_pose_boundaries_and_wave_motion) ... ok
+test_queue_oldest_job_cannot_be_hidden_by_history_limit (test_avatar3d.ThreeDTests.test_queue_oldest_job_cannot_be_hidden_by_history_limit) ... ok
+test_real_encoded_alpha_frames_and_cancel (test_avatar3d.ThreeDTests.test_real_encoded_alpha_frames_and_cancel) ... ok
+test_vrm_content_addressed_import_and_source_preserved (test_avatar3d.ThreeDTests.test_vrm_content_addressed_import_and_source_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 8.782s
+
+OK

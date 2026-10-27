@@ -1,0 +1,28 @@
+{
+  "error": "",
+  "steps": 4,
+  "plan": null,
+  "status": "保存配置检查完成；运行效果仍按人工清单确认。",
+  "diagnostic": {
+    "schema": 1,
+    "scene": "D:\\work\\TheEarthPeopleLog\\.runtime\\live-019-source\\isolated-warudo\\Warudo_Data\\StreamingAssets\\Scenes\\AvatarLab_C_Live_v002.json",
+    "name": "AvatarLab_C_Live_v002",
+    "scene_sha256": "97a9e1a20bffe270d1ed02fa6041f7bc692e87e8a678e2fea0b9b61dda270810",
+    "configuration_ok": true,
+    "findings": [
+      {
+        "level": "pending",
+        "code": "tracking_runtime",
+        "message": "动捕未开启；摄像头跟随尚未验证。"
+      },
+      {
+        "level": "pending",
+        "code": "obs_runtime",
+        "message": "OBS 发送者、透明效果与录制仍需实际验证。"
+      }
+    ],
+    "runtime_verified": false,
+    "scope": "只读取磁盘上的已保存配置；不代表当前运行场景或设备正常"
+  },
+  "native_load": "not performed"
+}

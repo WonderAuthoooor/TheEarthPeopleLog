@@ -1,0 +1,12 @@
+test_audio_binding_worker_freezes_editing_and_text_change_marks_stale (test_speech_ui.SpeechUITests.test_audio_binding_worker_freezes_editing_and_text_change_marks_stale) ... ok
+test_cancel_worker_restores_controls_and_keeps_saved_draft (test_speech_ui.SpeechUITests.test_cancel_worker_restores_controls_and_keeps_saved_draft) ... ok
+test_conflicting_disk_edit_preserved_and_save_copy_recovers (test_speech_ui.SpeechUITests.test_conflicting_disk_edit_preserved_and_save_copy_recovers) ... ok
+test_edit_save_reorder_remove_restart_preserve_ids (test_speech_ui.SpeechUITests.test_edit_save_reorder_remove_restart_preserve_ids) ... ok
+test_empty_other_draft_does_not_block_binding_selected_segment (test_speech_ui.SpeechUITests.test_empty_other_draft_does_not_block_binding_selected_segment) ... ok
+test_shutdown_flushes_unsaved_text (test_speech_ui.SpeechUITests.test_shutdown_flushes_unsaved_text) ... ok
+test_single_worker_blocks_project_and_project_blocks_dispatch (test_speech_ui.SpeechUITests.test_single_worker_blocks_project_and_project_blocks_dispatch) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.197s
+
+OK

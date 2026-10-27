@@ -1,6 +1,6 @@
 """只读取VRM数据，不执行模型脚本；按内容哈希复制到工作区。"""
 from pathlib import Path
-import hashlib,json,os,struct,uuid
+import hashlib,json,os,struct,time,uuid
 
 REQUIRED=('hips','spine','head','leftUpperArm','leftLowerArm','leftHand','rightUpperArm','rightLowerArm','rightHand',
           'leftUpperLeg','leftLowerLeg','leftFoot','rightUpperLeg','rightLowerLeg','rightFoot')
@@ -17,7 +17,14 @@ def atomic_json(path,value):
     try:
         with temporary.open('w',encoding='utf-8') as f:
             json.dump(value,f,ensure_ascii=False,indent=2);f.flush();os.fsync(f.fileno())
-        os.replace(temporary,path)
+        # Windows短暂打开进度文件时会阻止替换；有限重试仍保留原子发布语义。
+        for attempt in range(8):
+            try:
+                os.replace(temporary,path)
+                break
+            except PermissionError:
+                if os.name != 'nt' or attempt == 7:raise
+                time.sleep(.05)
     finally:temporary.unlink(missing_ok=True)
 
 def inspect_vrm(path):

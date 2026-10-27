@@ -43,7 +43,9 @@ def run(folder,output):
         correlation,offset=max(candidates)
         if correlation<.90 or abs(offset)>.03:raise ValueError('声轨波形或同步异常：'+name)
         results[name]={'correlation':correlation,'offset_seconds':offset}
-    atomic_json(output,{'frames':record['frames'],'fps':record['fps'],'duration':record['duration'],
+    duration=record.get('duration')
+    if duration is None:duration=json.loads((folder/'request.json').read_text(encoding='utf-8'))['duration']
+    atomic_json(output,{'frames':record['frames'],'fps':record['fps'],'duration':duration,
                        'hashes_valid':True,'audio_waveform_checks':results,'human_sync_verified':False})
 
 

@@ -1,6 +1,5 @@
 """构建入口损坏输入／子进程失败／超时不得产生成功返回。"""
 from pathlib import Path
-import importlib.util
 import subprocess
 import sys
 import tempfile
@@ -10,8 +9,7 @@ from unittest.mock import Mock, patch
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from avatar3d.models import atomic_json, digest
-spec = importlib.util.spec_from_file_location('warudo_build_cli', ROOT / 'scripts/build-warudo-animation.py')
-cli = importlib.util.module_from_spec(spec); spec.loader.exec_module(cli)
+from avatar3d import warudo_build as cli
 
 
 class BuildCliTests(unittest.TestCase):

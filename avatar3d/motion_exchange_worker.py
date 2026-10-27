@@ -25,6 +25,20 @@ def main():
     bones = {key: value for key, value in request['bones'].items() if value and value in rig.pose.bones}
     if not {'hips', 'head', 'leftFoot', 'rightFoot', 'rightHand'} <= bones.keys():
         raise ValueError('人形骨骼映射不完整。')
+    if request.get('close_loop'):
+        # 只在内存中的导出副本闭合周期；不改变原工程或视频的采样帧数。
+        scene.frame_set(scene.frame_start)
+        states = {bone.name: (bone.location.copy(), bone.rotation_quaternion.copy(),
+                             bone.rotation_euler.copy(), tuple(bone.rotation_axis_angle), bone.scale.copy())
+                  for bone in rig.pose.bones}
+        scene.frame_end += 1
+        scene.frame_set(scene.frame_end)
+        for bone in rig.pose.bones:
+            bone.location, bone.rotation_quaternion, bone.rotation_euler, bone.rotation_axis_angle, bone.scale = states[bone.name]
+            rotation = ('rotation_quaternion' if bone.rotation_mode == 'QUATERNION' else
+                        'rotation_axis_angle' if bone.rotation_mode == 'AXIS_ANGLE' else 'rotation_euler')
+            for channel in ('location', rotation, 'scale'):
+                bone.keyframe_insert(data_path=channel, frame=scene.frame_end)
     frames = list(range(scene.frame_start, scene.frame_end + 1))
 
     def snapshot(arm, frame):
@@ -99,7 +113,14 @@ def main():
     timing_ok = (abs(scene.render.fps / scene.render.fps_base - source_fps) < 1e-6 and
                  abs(imported_range[0] - frames[0]) < 1e-4 and
                  abs(imported_range[1] - frames[-1]) < 1e-4)
+    start, end = snapshot(restored, frames[0]), snapshot(restored, frames[-1])
+    loop_error = max((start[key][0] - end[key][0]).length for key in bones)
+    loop_angle = max(math.degrees(min((a := start[key][2].rotation_difference(end[key][2]).angle),
+                                      2 * math.pi - a)) for key in bones)
+    loop_closed = loop_error < 1e-5 and loop_angle < .01
     report = {'schema': 1, 'blender_version': bpy.app.version_string,
+              'loop_requested': bool(request.get('close_loop')), 'loop_closed': loop_closed,
+              'loop_position_error_m': loop_error, 'loop_rotation_error_degrees': loop_angle,
               'checked_frames': len(frames), 'checked_bones': len(bones),
               'source_fps': source_fps, 'reimport_fps': scene.render.fps / scene.render.fps_base,
               'reimport_key_range': imported_range, 'timing_passed': timing_ok,
@@ -110,7 +131,8 @@ def main():
               'max_deformation_rotation_error_degrees': max_rotation_error,
               'position_tolerance_m': .001, 'direction_tolerance_degrees': .1,
               'tail_length_note': '无叶骨FBX会重建末端尾长；不用于重建角色网格，头位置、方向及相对休息姿势的旋转单独检查',
-              'passed': timing_ok and max_head_error < .001 and max_angle < .1 and max_rotation_error < .1,
+              'passed': timing_ok and max_head_error < .001 and max_angle < .1 and max_rotation_error < .1
+                        and (not request.get('close_loop') or loop_closed),
               'scope': 'Blender FBX往返，不代表Unity Humanoid或Warudo已验证'}
     (output / 'roundtrip.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     if not report['passed']:

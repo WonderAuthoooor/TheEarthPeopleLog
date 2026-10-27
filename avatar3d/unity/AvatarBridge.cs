@@ -15,7 +15,7 @@ namespace AvatarLab.Editor
         {
             public int schema; public string editorVersion; public string fbxAsset; public string fbxSha256;
             public int fps; public int frames; public float duration; public bool loop;
-            public string modelSha256; public Binding[] bindings;
+            public string modelSha256; public string actionId; public Binding[] bindings;
         }
         [Serializable] public class Report
         {
@@ -24,6 +24,7 @@ namespace AvatarLab.Editor
             public string modelSha256; public bool passed; public string stage;
             public string clipAsset; public string clipSha256; public float expectedDuration;
             public float actualDuration; public float frameRate; public int mappedBones;
+            public string actionId; public bool loop; public float loopMaxCurveError;
             public string error; public string warudoPlayback = "pending";
         }
         const string Version = "2021.3.45f2";
@@ -68,11 +69,15 @@ namespace AvatarLab.Editor
                 var request = JsonUtility.FromJson<Request>(File.ReadAllText(Path.Combine(root, "AvatarBridge", "request.json")));
                 Require(request != null && request.schema == 1 && request.editorVersion == Version && request.fbxAsset == Input,
                     "Invalid bridge request or FBX path.");
-                Require(request.fps > 0 && request.fps <= 120 && request.frames >= 2 && request.frames <= 21600 &&
+                Require(request.fps > 0 && request.fps <= 120 && request.frames >= 2 && request.frames <= 21601 &&
                     !float.IsNaN(request.duration) && !float.IsInfinity(request.duration) &&
                     Math.Abs(request.duration - (request.frames - 1f) / request.fps) < 0.00001f, "Invalid source timing.");
                 report.fbxSha256 = Hash(Path.Combine(root, Input));
                 report.modelSha256 = request.modelSha256;
+                report.actionId = string.IsNullOrEmpty(request.actionId) ? "wave" : request.actionId;
+                Require(new[] { "neutral", "idle", "explain", "bend", "wave", "hold", "turntable" }.Contains(report.actionId),
+                    "Unknown action ID.");
+                report.loop = request.loop;
                 Require(report.fbxSha256 == request.fbxSha256, "FBX checksum mismatch.");
                 report.expectedDuration = request.duration;
                 AssetDatabase.ImportAsset(Input, ImportAssetOptions.ForceSynchronousImport);
@@ -134,6 +139,18 @@ namespace AvatarLab.Editor
                 var saved = AssetDatabase.LoadAssetAtPath<AnimationClip>(report.clipAsset);
                 Require(saved != null && saved.isHumanMotion && Math.Abs(saved.length - request.duration) < 0.001f,
                     "Saved animation validation failed.");
+                Require(AnimationUtility.GetAnimationClipSettings(saved).loopTime == request.loop,
+                    "Saved loop setting changed.");
+                if (request.loop)
+                {
+                    foreach (var binding in AnimationUtility.GetCurveBindings(saved))
+                    {
+                        var curve = AnimationUtility.GetEditorCurve(saved, binding);
+                        report.loopMaxCurveError = Math.Max(report.loopMaxCurveError,
+                            Math.Abs(curve.Evaluate(0) - curve.Evaluate(saved.length)));
+                    }
+                    Require(report.loopMaxCurveError < 0.001f, "Humanoid loop endpoints are not closed.");
+                }
                 report.clipSha256 = Hash(Path.Combine(root, report.clipAsset));
                 report.stage = "unity_humanoid_extracted";
                 report.passed = true;

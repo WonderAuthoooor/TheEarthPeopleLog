@@ -1,0 +1,18 @@
+{
+  "scene": "D:\\app\\steam\\steamapps\\common\\Warudo\\Warudo_Data\\StreamingAssets\\Scenes\\AvatarLab_C_Live_v002.json",
+  "scene_sha256": "6d78834da2936a8fb6eabfbb18857fa4d2e04fb32c5265c68d2c3bc79ff0f763",
+  "animation": {
+    "schema": 1,
+    "installed_file": "D:\\app\\steam\\steamapps\\common\\Warudo\\Warudo_Data\\StreamingAssets\\CharacterAnimations\\AvatarLabWave6386777db864.warudo",
+    "sha256": "724f5ed8320bb9365d44434f7bda22832f76f62793b98a75363fe6b91657f3bd",
+    "mod_name": "AvatarLabWave6386777db864",
+    "reused": false,
+    "warudo_playback": "pending"
+  },
+  "old_resources_unchanged": true,
+  "old_resource_count": 12,
+  "assets_and_camera_preserved": true,
+  "expression_graph_preserved": true,
+  "new_scene_activated": false,
+  "warudo_retest": "pending"
+}

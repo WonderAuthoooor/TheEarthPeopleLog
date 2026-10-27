@@ -1,0 +1,65 @@
+{
+  "model_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+  "actions": [
+    {
+      "action": "idle",
+      "build": {
+        "schema": 1,
+        "action": "idle",
+        "loop": true,
+        "source_exchange": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\20261025_直播基础动作\\交换包\\idle",
+        "source_sha256": "f0e2fcbe6f9e6030ad2eed2fea4d779b995dfb39c1d904e9208b36ce8c68bcd1",
+        "build_report": "D:\\work\\TheEarthPeopleLog\\.avatar3d\\unity-projects\\seed-wave-v01\\AvatarBridge\\Builds\\20261025T030312066Z-86fafbf4\\report.json",
+        "mod": "AvatarLabIdlea5c207ac973a.warudo",
+        "mod_sha256": "dde3b9bfa4ff4f4ef6813474fabb1aff18de60a8f269cf04c53f4f0531b60c74",
+        "inputs_restored": true,
+        "warudo_playback": "pending"
+      },
+      "installation": {
+        "schema": 1,
+        "installed_file": "D:\\app\\steam\\steamapps\\common\\Warudo\\Warudo_Data\\StreamingAssets\\CharacterAnimations\\AvatarLabIdlea5c207ac973a.warudo",
+        "sha256": "dde3b9bfa4ff4f4ef6813474fabb1aff18de60a8f269cf04c53f4f0531b60c74",
+        "mod_name": "AvatarLabIdlea5c207ac973a",
+        "reused": false,
+        "warudo_playback": "pending"
+      }
+    },
+    {
+      "action": "explain",
+      "build": {
+        "schema": 1,
+        "action": "explain",
+        "loop": false,
+        "source_exchange": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\20261025_直播基础动作\\交换包\\explain",
+        "source_sha256": "f63e16df5f695cd7c9e983979160f6cae574b7d0b4600f385b24afe5c61e3207",
+        "build_report": "D:\\work\\TheEarthPeopleLog\\.avatar3d\\unity-projects\\seed-wave-v01\\AvatarBridge\\Builds\\20261025T030735984Z-517703dd\\report.json",
+        "mod": "AvatarLabExplaind69ac459edb6.warudo",
+        "mod_sha256": "3f42f19d5291fad6dfd97d8c4fbcf4e29028ebaf775b0bb075aec6a6966cc806",
+        "inputs_restored": true,
+        "warudo_playback": "pending"
+      },
+      "installation": {
+        "schema": 1,
+        "installed_file": "D:\\app\\steam\\steamapps\\common\\Warudo\\Warudo_Data\\StreamingAssets\\CharacterAnimations\\AvatarLabExplaind69ac459edb6.warudo",
+        "sha256": "3f42f19d5291fad6dfd97d8c4fbcf4e29028ebaf775b0bb075aec6a6966cc806",
+        "mod_name": "AvatarLabExplaind69ac459edb6",
+        "reused": false,
+        "warudo_playback": "pending"
+      }
+    }
+  ],
+  "scene_hashes_before": {
+    "C_Test_v001.json": "6fa2400653a579b6afaca15a5ff43e62258cfa5747835267b96f7da0dc28b509",
+    "C_Test_v001.png": "6a7f75c940e7c0bdcd48463d94ef020be1414e0934478a0e161c821cc5c592ee",
+    "DefaultScene.json": "f27fa7370817fe25e04a8759d5d3e71666a389f4fbce07fb5e0bee69e7585c14",
+    "DefaultScene.png": "0b64a7f0149294c4be36c4898f48fdcdadb64dadc0d83deba09295f1191fb999"
+  },
+  "scene_hashes_after": {
+    "C_Test_v001.json": "6fa2400653a579b6afaca15a5ff43e62258cfa5747835267b96f7da0dc28b509",
+    "C_Test_v001.png": "6a7f75c940e7c0bdcd48463d94ef020be1414e0934478a0e161c821cc5c592ee",
+    "DefaultScene.json": "f27fa7370817fe25e04a8759d5d3e71666a389f4fbce07fb5e0bee69e7585c14",
+    "DefaultScene.png": "0b64a7f0149294c4be36c4898f48fdcdadb64dadc0d83deba09295f1191fb999"
+  },
+  "scenes_unchanged": true,
+  "warudo_playback": "pending"
+}

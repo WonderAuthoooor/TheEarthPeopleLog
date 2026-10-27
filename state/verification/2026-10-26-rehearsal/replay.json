@@ -1,0 +1,12 @@
+{
+  "baked_frames": 900,
+  "fps": 30,
+  "bone_count": 91,
+  "max_adjacent_degrees": 10.49383007004766,
+  "protected_cycle_error_degrees": 0,
+  "reverse_seek_replay_error_degrees": 0,
+  "root_translation": 0,
+  "passed": true,
+  "warudo_mixing": "not tested",
+  "visual_naturalness": "pending manual review"
+}

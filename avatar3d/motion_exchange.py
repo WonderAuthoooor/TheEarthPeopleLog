@@ -18,8 +18,9 @@ def inspect_source(folder):
     folder = Path(folder).resolve()
     record = json.loads((folder / 'complete.json').read_text(encoding='utf-8'))
     request = json.loads((folder / 'request.json').read_text(encoding='utf-8'))
-    spec = RenderSpec.from_dict({key: request[key] for key in (
-        'schema', 'model_sha256', 'action', 'duration', 'fps', 'width', 'azimuth')})
+    if request.get('audio_sha256'):
+        raise ValueError('口播任务暂不提供FBX交换；请选择无音频动作任务。')
+    spec = RenderSpec.from_request(request)
     if record.get('schema') != 1 or set(record.get('files', {})) != SOURCE_FILES:
         raise ValueError('源任务完成清单无效，不能导出动作包。')
     if any(digest(folder / name) != sha for name, sha in record['files'].items()):
@@ -75,7 +76,8 @@ def export_exchange(source, model, destination, runtime, cancel, progress=lambda
         request = {'source': str(destination / 'source.blend'),
                    'source_sha256': record['files']['scene.blend'],
                    'output': str(destination), 'bones': report['humanoid_bones'],
-                   'fps': spec.fps, 'frames': record['frames']}
+                   'fps': spec.fps, 'frames': record['frames'],
+                   'close_loop': spec.action == 'idle'}
         atomic_json(destination / 'exchange-request.json', request)
         worker = Path(__file__).with_name('motion_exchange_worker.py')
         command = [str(runtime.blender), '--background', '--factory-startup', '--disable-autoexec',
@@ -108,13 +110,18 @@ def export_exchange(source, model, destination, runtime, cancel, progress=lambda
         roundtrip = json.loads((destination / 'roundtrip.json').read_text(encoding='utf-8'))
         if roundtrip.get('passed') is not True:
             raise ValueError('FBX重导入姿势检查未通过。')
-        manifest = {'schema': 1, 'action_id': spec.action, 'asset_version': '0.1.0-technical',
+        exported_frames = record['frames'] + (1 if spec.action == 'idle' else 0)
+        if (roundtrip.get('checked_frames') != exported_frames or
+                (spec.action == 'idle' and roundtrip.get('loop_closed') is not True)):
+            raise ValueError('动作交换帧数或循环闭合检查未通过。')
+        manifest = {'schema': 1, 'action_id': spec.action, 'asset_version': '0.1.1-technical',
                     'source_job_id': record['job_id'], 'model_sha256': spec.model_sha256,
                     'source_blend_sha256': record['files']['scene.blend'],
-                    'fps': spec.fps, 'frames': record['frames'],
+                    'fps': spec.fps, 'frames': exported_frames,
+                    'source_frames': record['frames'],
                     'sample_count_duration': record['frames'] / spec.fps,
-                    'clip_key_range_seconds': (record['frames'] - 1) / spec.fps,
-                    'loop': False, 'sample_only': record.get('sample_only', False),
+                    'clip_key_range_seconds': (exported_frames - 1) / spec.fps,
+                    'loop': spec.action == 'idle', 'sample_only': record.get('sample_only', False),
                     'source_bones': report['humanoid_bones'],
                     'includes': '骨骼动画；不包含表情、材质、道具曲线',
                     'validation': {'blender_fbx_roundtrip': 'passed',
@@ -128,7 +135,7 @@ def export_exchange(source, model, destination, runtime, cancel, progress=lambda
             'FBX已在Blender重导入检查，Unity／Warudo、OBS与剪映仍需实测。\n'
             'Warudo官方动画Mod流程：匹配版本Unity／SDK→FBX设Humanoid并检查映射→提取Animation Clip→构建Mod。\n'
             '不直接把FBX当作已可播放的.warudo；详见https://docs.warudo.app/docs/modding/character-animation-mod\n'
-            '骨骼外的表情／材质另行适配；首末关键帧间隔比采样帧数除帧率短一帧，不据此拉伸动作。\n', encoding='utf-8')
+            '骨骼外的表情／材质另行适配。单次动作首末关键帧范围比视频短一帧；循环待机在末端追加首帧姿势，保留完整周期，不拉伸视频。\n', encoding='utf-8')
         if cancel.is_set():
             raise InterruptedError('已取消动作包导出。')
         files = set(copies.values()) | {'character.vrm', 'model-metadata.json', 'animation.fbx', 'roundtrip.json', 'manifest.json', '使用说明.txt'}

@@ -1,0 +1,388 @@
+{
+  "schema": 1,
+  "blender_version": "4.5.13 LTS",
+  "loop_requested": false,
+  "loop_closed": true,
+  "loop_position_error_m": 7.450580596923828e-08,
+  "loop_rotation_error_degrees": 0.0,
+  "checked_frames": 90,
+  "checked_bones": 54,
+  "source_fps": 30.0,
+  "reimport_fps": 30.0,
+  "reimport_key_range": [
+    1.0,
+    90.0
+  ],
+  "timing_passed": true,
+  "frame_errors": [
+    {
+      "frame": 1,
+      "max_head_error_m": 7.795831972712204e-07
+    },
+    {
+      "frame": 2,
+      "max_head_error_m": 8.347726392220742e-07
+    },
+    {
+      "frame": 3,
+      "max_head_error_m": 1.7927279803932618e-06
+    },
+    {
+      "frame": 4,
+      "max_head_error_m": 6.433868624175424e-07
+    },
+    {
+      "frame": 5,
+      "max_head_error_m": 9.51459854265724e-07
+    },
+    {
+      "frame": 6,
+      "max_head_error_m": 7.171764365762245e-07
+    },
+    {
+      "frame": 7,
+      "max_head_error_m": 7.727081872501477e-07
+    },
+    {
+      "frame": 8,
+      "max_head_error_m": 1.1689578686627857e-06
+    },
+    {
+      "frame": 9,
+      "max_head_error_m": 7.21437837893379e-07
+    },
+    {
+      "frame": 10,
+      "max_head_error_m": 7.30612914093212e-07
+    },
+    {
+      "frame": 11,
+      "max_head_error_m": 1.3102858028996353e-06
+    },
+    {
+      "frame": 12,
+      "max_head_error_m": 5.990308500792412e-07
+    },
+    {
+      "frame": 13,
+      "max_head_error_m": 8.513246093443454e-07
+    },
+    {
+      "frame": 14,
+      "max_head_error_m": 1.5817707192558764e-06
+    },
+    {
+      "frame": 15,
+      "max_head_error_m": 1.264405455326821e-06
+    },
+    {
+      "frame": 16,
+      "max_head_error_m": 1.4246008876224898e-06
+    },
+    {
+      "frame": 17,
+      "max_head_error_m": 1.346722069703937e-06
+    },
+    {
+      "frame": 18,
+      "max_head_error_m": 1.6819180321124152e-06
+    },
+    {
+      "frame": 19,
+      "max_head_error_m": 1.5172865463921851e-06
+    },
+    {
+      "frame": 20,
+      "max_head_error_m": 1.4966582691061162e-06
+    },
+    {
+      "frame": 21,
+      "max_head_error_m": 1.2046923000459514e-06
+    },
+    {
+      "frame": 22,
+      "max_head_error_m": 2.553973828033036e-06
+    },
+    {
+      "frame": 23,
+      "max_head_error_m": 1.4526912697498728e-06
+    },
+    {
+      "frame": 24,
+      "max_head_error_m": 1.3933980140162659e-06
+    },
+    {
+      "frame": 25,
+      "max_head_error_m": 1.5295299792714524e-06
+    },
+    {
+      "frame": 26,
+      "max_head_error_m": 1.316709639690788e-06
+    },
+    {
+      "frame": 27,
+      "max_head_error_m": 2.0250233983229623e-06
+    },
+    {
+      "frame": 28,
+      "max_head_error_m": 1.5196262340524151e-06
+    },
+    {
+      "frame": 29,
+      "max_head_error_m": 1.5910086411284373e-06
+    },
+    {
+      "frame": 30,
+      "max_head_error_m": 1.6934958273381438e-06
+    },
+    {
+      "frame": 31,
+      "max_head_error_m": 1.7336654153166993e-06
+    },
+    {
+      "frame": 32,
+      "max_head_error_m": 1.559148592892686e-06
+    },
+    {
+      "frame": 33,
+      "max_head_error_m": 1.4654744688444433e-06
+    },
+    {
+      "frame": 34,
+      "max_head_error_m": 1.8081440105578318e-06
+    },
+    {
+      "frame": 35,
+      "max_head_error_m": 1.3170468684425565e-06
+    },
+    {
+      "frame": 36,
+      "max_head_error_m": 1.4942826195623488e-06
+    },
+    {
+      "frame": 37,
+      "max_head_error_m": 1.656376508663923e-06
+    },
+    {
+      "frame": 38,
+      "max_head_error_m": 1.7691638564653194e-06
+    },
+    {
+      "frame": 39,
+      "max_head_error_m": 1.4311322216442787e-06
+    },
+    {
+      "frame": 40,
+      "max_head_error_m": 1.316709639690788e-06
+    },
+    {
+      "frame": 41,
+      "max_head_error_m": 2.024146005128256e-06
+    },
+    {
+      "frame": 42,
+      "max_head_error_m": 1.2046923000459514e-06
+    },
+    {
+      "frame": 43,
+      "max_head_error_m": 9.541398640621973e-07
+    },
+    {
+      "frame": 44,
+      "max_head_error_m": 1.744390800793397e-06
+    },
+    {
+      "frame": 45,
+      "max_head_error_m": 1.8928580889940759e-06
+    },
+    {
+      "frame": 46,
+      "max_head_error_m": 2.249433808101855e-06
+    },
+    {
+      "frame": 47,
+      "max_head_error_m": 1.84220784432001e-06
+    },
+    {
+      "frame": 48,
+      "max_head_error_m": 1.4385602934535946e-06
+    },
+    {
+      "frame": 49,
+      "max_head_error_m": 1.265107707786031e-06
+    },
+    {
+      "frame": 50,
+      "max_head_error_m": 1.768661752338146e-06
+    },
+    {
+      "frame": 51,
+      "max_head_error_m": 1.4045085511145805e-06
+    },
+    {
+      "frame": 52,
+      "max_head_error_m": 1.0207023495163743e-06
+    },
+    {
+      "frame": 53,
+      "max_head_error_m": 1.5525837275542146e-06
+    },
+    {
+      "frame": 54,
+      "max_head_error_m": 1.7553036597522762e-06
+    },
+    {
+      "frame": 55,
+      "max_head_error_m": 1.4431834236148895e-06
+    },
+    {
+      "frame": 56,
+      "max_head_error_m": 1.6603932711105489e-06
+    },
+    {
+      "frame": 57,
+      "max_head_error_m": 1.2566547776644238e-06
+    },
+    {
+      "frame": 58,
+      "max_head_error_m": 2.4920159531076996e-06
+    },
+    {
+      "frame": 59,
+      "max_head_error_m": 1.1939540877348262e-06
+    },
+    {
+      "frame": 60,
+      "max_head_error_m": 1.2870325375610104e-06
+    },
+    {
+      "frame": 61,
+      "max_head_error_m": 1.3344653354429072e-06
+    },
+    {
+      "frame": 62,
+      "max_head_error_m": 1.0811303345690402e-06
+    },
+    {
+      "frame": 63,
+      "max_head_error_m": 1.144191850450782e-06
+    },
+    {
+      "frame": 64,
+      "max_head_error_m": 1.3264544656436375e-06
+    },
+    {
+      "frame": 65,
+      "max_head_error_m": 1.5387929252893431e-06
+    },
+    {
+      "frame": 66,
+      "max_head_error_m": 1.2925415302635098e-06
+    },
+    {
+      "frame": 67,
+      "max_head_error_m": 1.5511529063788778e-06
+    },
+    {
+      "frame": 68,
+      "max_head_error_m": 1.8088806754938982e-06
+    },
+    {
+      "frame": 69,
+      "max_head_error_m": 1.986945664976035e-06
+    },
+    {
+      "frame": 70,
+      "max_head_error_m": 1.386688962475281e-06
+    },
+    {
+      "frame": 71,
+      "max_head_error_m": 1.7804237641386802e-06
+    },
+    {
+      "frame": 72,
+      "max_head_error_m": 1.9159439993435657e-06
+    },
+    {
+      "frame": 73,
+      "max_head_error_m": 1.4019767625736089e-06
+    },
+    {
+      "frame": 74,
+      "max_head_error_m": 1.1006704159152143e-06
+    },
+    {
+      "frame": 75,
+      "max_head_error_m": 1.5772722509383251e-06
+    },
+    {
+      "frame": 76,
+      "max_head_error_m": 8.925783116741143e-07
+    },
+    {
+      "frame": 77,
+      "max_head_error_m": 1.461225828186424e-06
+    },
+    {
+      "frame": 78,
+      "max_head_error_m": 1.3776927389295364e-06
+    },
+    {
+      "frame": 79,
+      "max_head_error_m": 5.887137442869483e-07
+    },
+    {
+      "frame": 80,
+      "max_head_error_m": 1.451467950568905e-06
+    },
+    {
+      "frame": 81,
+      "max_head_error_m": 8.068672639537384e-07
+    },
+    {
+      "frame": 82,
+      "max_head_error_m": 6.573422253165477e-07
+    },
+    {
+      "frame": 83,
+      "max_head_error_m": 7.09029522190775e-07
+    },
+    {
+      "frame": 84,
+      "max_head_error_m": 8.120791073702999e-07
+    },
+    {
+      "frame": 85,
+      "max_head_error_m": 8.996711044059214e-07
+    },
+    {
+      "frame": 86,
+      "max_head_error_m": 1.0052763342310653e-06
+    },
+    {
+      "frame": 87,
+      "max_head_error_m": 1.0225497760950186e-06
+    },
+    {
+      "frame": 88,
+      "max_head_error_m": 8.223024584348217e-07
+    },
+    {
+      "frame": 89,
+      "max_head_error_m": 9.544089052086205e-07
+    },
+    {
+      "frame": 90,
+      "max_head_error_m": 7.865304489394832e-07
+    }
+  ],
+  "max_head_position_error_m": 2.553973828033036e-06,
+  "max_tail_position_error_m": 0.08587493237599365,
+  "max_direction_error_degrees": 0.0,
+  "max_deformation_rotation_error_degrees": 0.0,
+  "position_tolerance_m": 0.001,
+  "direction_tolerance_degrees": 0.1,
+  "tail_length_note": "无叶骨FBX会重建末端尾长；不用于重建角色网格，头位置、方向及相对休息姿势的旋转单独检查",
+  "passed": true,
+  "scope": "Blender FBX往返，不代表Unity Humanoid或Warudo已验证"
+}

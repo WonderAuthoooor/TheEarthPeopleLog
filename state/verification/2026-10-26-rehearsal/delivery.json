@@ -1,0 +1,80 @@
+{
+  "model_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+  "master_sha256": "28c4db98385dd6103caf9f96e7f69ef388cd0b97cce7344bcc79fe3426f4471a",
+  "baked_frames": 900,
+  "rendered_frames": 14,
+  "fps": 30,
+  "images": [
+    {
+      "file": "00000.png",
+      "opaque_pixels": 34862
+    },
+    {
+      "file": "00090.png",
+      "opaque_pixels": 34862
+    },
+    {
+      "file": "00135.png",
+      "opaque_pixels": 36305
+    },
+    {
+      "file": "00180.png",
+      "opaque_pixels": 34862
+    },
+    {
+      "file": "00300.png",
+      "opaque_pixels": 34864
+    },
+    {
+      "file": "00375.png",
+      "opaque_pixels": 34827
+    },
+    {
+      "file": "00450.png",
+      "opaque_pixels": 34862
+    },
+    {
+      "file": "00570.png",
+      "opaque_pixels": 34864
+    },
+    {
+      "file": "00615.png",
+      "opaque_pixels": 36282
+    },
+    {
+      "file": "00660.png",
+      "opaque_pixels": 34864
+    },
+    {
+      "file": "00750.png",
+      "opaque_pixels": 34864
+    },
+    {
+      "file": "00795.png",
+      "opaque_pixels": 34727
+    },
+    {
+      "file": "00840.png",
+      "opaque_pixels": 34864
+    },
+    {
+      "file": "00899.png",
+      "opaque_pixels": 34853
+    }
+  ],
+  "replay": {
+    "baked_frames": 900,
+    "fps": 30,
+    "bone_count": 91,
+    "max_adjacent_degrees": 10.49383007004766,
+    "protected_cycle_error_degrees": 0,
+    "reverse_seek_replay_error_degrees": 0,
+    "root_translation": 0,
+    "passed": true,
+    "warudo_mixing": "not tested",
+    "visual_naturalness": "pending manual review"
+  },
+  "video_rendered": false,
+  "default_application": "0.1.8 unchanged",
+  "manual_validation": "paused"
+}

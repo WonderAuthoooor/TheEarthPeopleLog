@@ -1,0 +1,39 @@
+{
+  "actions": [
+    {
+      "action": "idle",
+      "video_frames": {
+        "角色透明.mov": 90,
+        "动作预览.mp4": 90,
+        "browser-preview/preview.webm": 90
+      },
+      "fps": 30,
+      "loop": true,
+      "mod": "AvatarLabIdlea5c207ac973a",
+      "mapped_bones": 54,
+      "clip_seconds": 3.000000238418579,
+      "alpha_pts_hashes": true,
+      "input_restored": true
+    },
+    {
+      "action": "explain",
+      "video_frames": {
+        "角色透明.mov": 90,
+        "动作预览.mp4": 90,
+        "browser-preview/preview.webm": 90
+      },
+      "fps": 30,
+      "loop": false,
+      "mod": "AvatarLabExplaind69ac459edb6",
+      "mapped_bones": 54,
+      "clip_seconds": 2.9666669368743896,
+      "alpha_pts_hashes": true,
+      "input_restored": true
+    }
+  ],
+  "scenes_unchanged": true,
+  "model_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+  "warudo_manual": "pending",
+  "camera_obs": "pending",
+  "desktop_rebuilt": false
+}

@@ -1,0 +1,21 @@
+{
+    "schema": 1,
+    "runId": "20261025T030123762Z-dfc7ba29",
+    "time": "2026-10-25T11:01:23.7838327+08:00",
+    "editorVersion": "2021.3.45f2",
+    "fbxSha256": "631918798807e5b8281b95b58e3e4f8f80e46bf0e9e4b52dd253c701d8331eb8",
+    "modelSha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+    "passed": false,
+    "stage": "failed",
+    "clipAsset": "",
+    "clipSha256": "",
+    "expectedDuration": 3.0,
+    "actualDuration": 0.0,
+    "frameRate": 0.0,
+    "mappedBones": 0,
+    "actionId": "idle",
+    "loop": true,
+    "loopMaxCurveError": 0.0,
+    "error": "System.InvalidOperationException: Unity humanoid Avatar is invalid; inspect Rig mapping/T-pose.\r\n  at AvatarLab.Editor.AvatarBridge.Run () [0x00475] in D:\\work\\TheEarthPeopleLog\\.avatar3d\\unity-projects\\seed-wave-v01\\Assets\\AvatarBridge\\Editor\\AvatarBridge.cs:118 ",
+    "warudoPlayback": "pending"
+}

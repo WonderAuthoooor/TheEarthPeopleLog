@@ -3,7 +3,7 @@ import json,threading,os,uuid
 from PySide6.QtCore import QThread,Signal,QTimer,Qt,QUrl
 from PySide6.QtGui import QPixmap,QDesktopServices,QIcon
 from PySide6.QtWidgets import (QMainWindow,QWidget,QHBoxLayout,QVBoxLayout,QLabel,QPushButton,QComboBox,
-    QDoubleSpinBox,QFileDialog,QListWidget,QMessageBox,QProgressBar)
+    QDoubleSpinBox,QFileDialog,QListWidget,QMessageBox,QProgressBar,QTabWidget)
 from . import __version__
 from .contracts import RenderSpec,ACTIONS
 from .models import import_model
@@ -11,6 +11,15 @@ from .service import RenderService
 from .backend import Runtime,BlenderBackend
 from .motion_exchange import export_exchange,verify_exchange
 from .browser_preview import prepare as prepare_browser_preview
+from .audio_assets import import_audio,output_duration
+
+class AudioWorker(QThread):
+    result=Signal(object,str)
+    def __init__(self,workspace,path):
+        super().__init__();self.workspace=workspace;self.path=path;self.cancel=threading.Event()
+    def run(self):
+        try:self.result.emit(import_audio(self.workspace,self.path,self.cancel),'')
+        except Exception as exc:self.result.emit(None,str(exc))
 
 class PreviewWorker(QThread):
     progress=Signal(int);result=Signal(str,str)
@@ -38,20 +47,26 @@ class Worker(QThread):
         except Exception as exc:self.result.emit('',str(exc))
 
 class Window(QMainWindow):
-    def __init__(self,workspace,runtime,sample,smoke=None,smoke_exchange=False,smoke_export=False,smoke_preview=False,smoke_action='wave'):
-        super().__init__();self.workspace=Path(workspace);self.runtime=Runtime.load(runtime)
+    def __init__(self,workspace,runtime,sample,smoke=None,smoke_exchange=False,smoke_export=False,smoke_preview=False,smoke_action='wave',smoke_audio=None):
+        super().__init__();self.closing=False;self.workspace=Path(workspace);self.runtime=Runtime.load(runtime)
         self.service=RenderService(workspace,BlenderBackend(self.runtime));self.service.jobs.recover()
-        self.worker=None;self.exchange_worker=None;self.preview_worker=None;self.last_exchange=None
+        self.worker=None;self.exchange_worker=None;self.preview_worker=None;self.audio_worker=None;self.last_exchange=None
+        self.audio_info=None
         self.current=None;self.last_output=None;self.smoke=smoke;self.smoke_exchange=smoke_exchange
         self.smoke_export=smoke_export;self.smoke_export_started=False
         self.smoke_preview=smoke_preview
         self.smoke_action=smoke_action
+        self.smoke_audio=smoke_audio
         self.setWindowTitle('地球人日志 · 三维角色工坊 '+__version__)
         self.setWindowIcon(QIcon(str(Path(__file__).parent/'assets/app-icon.ico')))
-        root=QWidget();self.setCentralWidget(root);row=QHBoxLayout(root)
+        self.tabs=QTabWidget();self.setCentralWidget(self.tabs)
+        root=QWidget();self.tabs.addTab(root,'单段动作');row=QHBoxLayout(root)
         self.picture=QLabel('导入VRM模型，生成姿势预览或动画。\n当前为离线三维验证，尚无实时拖拽骨架／直播。')
         self.picture.setAlignment(Qt.AlignmentFlag.AlignCenter);self.picture.setFixedSize(400,600);self.picture.setStyleSheet('background:#293139;color:#d8eee9;')
-        row.addWidget(self.picture);controls=QVBoxLayout();row.addLayout(controls)
+        row.addWidget(self.picture)
+        from PySide6.QtWidgets import QScrollArea
+        panel=QWidget();controls=QVBoxLayout(panel)
+        scroll=QScrollArea();scroll.setWidgetResizable(True);scroll.setWidget(panel);scroll.setMinimumWidth(430);row.addWidget(scroll)
         title=QLabel('3D骨骼 · 卡通渲染');title.setStyleSheet('font-size:22px;font-weight:600');controls.addWidget(title)
         self.model=QComboBox();self.model.currentIndexChanged.connect(self.select_model);controls.addWidget(self.model)
         choose=QPushButton('导入本地VRM模型…');choose.clicked.connect(self.choose_model);controls.addWidget(choose)
@@ -60,6 +75,14 @@ class Window(QMainWindow):
         self.action=QComboBox()
         for key,name in ACTIONS.items():self.action.addItem(name,key)
         controls.addWidget(self.action)
+        self.framing=QComboBox()
+        for label,key in (('全身 · 检查完整动作','full'),('半身 · 口播人物','bust')):self.framing.addItem(label,key)
+        controls.addWidget(self.framing)
+        audio_buttons=QHBoxLayout()
+        self.audio_choose=QPushButton('选择口播音频…');self.audio_choose.clicked.connect(self.choose_audio);audio_buttons.addWidget(self.audio_choose)
+        self.audio_clear=QPushButton('清除音频');self.audio_clear.clicked.connect(self.clear_audio);audio_buttons.addWidget(self.audio_clear)
+        controls.addLayout(audio_buttons)
+        self.audio_label=QLabel('未选音频：生成无声动作素材');self.audio_label.setWordWrap(True);controls.addWidget(self.audio_label)
         self.angle=QComboBox()
         for label,value in (('正面',0),('左侧45°',45),('右侧45°',-45),('侧面90°',90)):self.angle.addItem(label,value)
         controls.addWidget(self.angle)
@@ -71,7 +94,9 @@ class Window(QMainWindow):
         self.fps.setToolTip('仅影响新动画任务；短姿势预览使用12fps，已有任务保留原帧率。')
         controls.addWidget(self.fps)
         self.duration=QDoubleSpinBox();self.duration.setRange(.5,30);self.duration.setValue(3);self.duration.setSuffix(' 秒');controls.addWidget(self.duration)
+        self.fps.currentIndexChanged.connect(self.sync_duration)
         self.preview=QPushButton('生成短姿势预览');self.preview.clicked.connect(lambda:self.add_job(True));controls.addWidget(self.preview)
+        self.preview.setToolTip('仅检查姿势；口播请使用下方完整导出。')
         self.export=QPushButton('生成动画＋透明MOV');self.export.clicked.connect(lambda:self.add_job(False));controls.addWidget(self.export)
         self.cancel=QPushButton('取消当前任务');self.cancel.clicked.connect(self.cancel_active);controls.addWidget(self.cancel)
         self.progress=QProgressBar();controls.addWidget(self.progress)
@@ -82,11 +107,15 @@ class Window(QMainWindow):
         self.exchange=QPushButton('导出选中动作交换包（FBX）');self.exchange.clicked.connect(self.export_motion);controls.addWidget(self.exchange)
         exchange_open=QPushButton('打开最近导出的动作交换包');exchange_open.clicked.connect(self.open_exchange);controls.addWidget(exchange_open)
         output=QPushButton('打开选中任务／诊断目录');output.clicked.connect(self.open_folder);controls.addWidget(output)
-        controls.addStretch();self.resize(850,650)
+        controls.addStretch();self.resize(950,800)
         for path in sorted((self.workspace/'models').glob('*.json')):
             try:
                 info=json.loads(path.read_text(encoding='utf-8'));self.model.addItem(info['name'],info)
             except (ValueError,KeyError):pass
+        from .speech_ui import SpeechPanel
+        self.speech=SpeechPanel(self,runtime);self.tabs.addTab(self.speech,'分段口播')
+        from .live_ui import LivePanel
+        self.live=LivePanel(self.workspace,self);self.tabs.addTab(self.live,'直播准备')
         self.timer=QTimer(self);self.timer.timeout.connect(self.dispatch);self.timer.start(300)
         self.refresh()
         if self.model.currentData() and not smoke:
@@ -111,6 +140,43 @@ class Window(QMainWindow):
         path,_=QFileDialog.getOpenFileName(self,'选择标准VRM模型','','VRM模型 (*.vrm)')
         if path:self.load_model(path)
 
+    def choose_audio(self):
+        path,_=QFileDialog.getOpenFileName(self,'选择口播音频（0.25—29.75秒）','','音频 (*.wav *.mp3 *.m4a *.aac *.flac *.ogg);;所有文件 (*)')
+        if path:self.load_audio(path)
+
+    def load_audio(self,path):
+        if self.audio_worker and self.audio_worker.isRunning():return
+        self.audio_choose.setEnabled(False);self.audio_clear.setEnabled(False)
+        self.audio_label.setText('正在读取音频并保存副本…')
+        self.audio_worker=AudioWorker(self.workspace,path)
+        self.audio_worker.result.connect(self.audio_finished);self.audio_worker.start()
+
+    def audio_finished(self,info,error):
+        self.audio_choose.setEnabled(True);self.audio_clear.setEnabled(True)
+        if error:
+            self.status.setText('音频导入未完成：'+error)
+            self.update_audio_label()
+            if self.smoke:self.finished('',error)
+        else:
+            self.audio_info=info
+            if self.action.currentData() not in ('idle','explain'):self.action.setCurrentIndex(self.action.findData('idle'))
+            self.framing.setCurrentIndex(self.framing.findData('bust'))
+            self.update_audio_label();self.sync_duration()
+            self.status.setText('音频已准备。选择待机或单手讲解，再生成完整口播。')
+            if self.smoke and self.smoke_audio and not self.smoke_export_started:QTimer.singleShot(0,self.start_smoke_export)
+
+    def update_audio_label(self):
+        if self.audio_info:self.audio_label.setText(f"{self.audio_info['source_name']} · {self.audio_info['audio_duration']:.2f}秒\n基础口型：随音量开合，非逐字发音")
+        else:self.audio_label.setText('未选音频：生成无声动作素材')
+
+    def sync_duration(self):
+        self.duration.setEnabled(self.audio_info is None)
+        if self.audio_info:self.duration.setValue(output_duration(self.audio_info,self.fps.currentData()))
+
+    def clear_audio(self):
+        if self.audio_worker and self.audio_worker.isRunning():return
+        self.audio_info=None;self.update_audio_label();self.sync_duration()
+
     def select_model(self,index):
         if not hasattr(self,'info'):return
         info=self.model.currentData()
@@ -132,6 +198,7 @@ class Window(QMainWindow):
         self.picture.setPixmap(pixmap.scaled(self.picture.size(),Qt.AspectRatioMode.KeepAspectRatio,Qt.TransformationMode.SmoothTransformation))
 
     def ensure_model_preview(self,info):
+        if self.closing:return
         spec=self.model_preview_spec(info)
         existing=self.service.jobs.matching(spec,('complete',))
         if existing:
@@ -155,14 +222,23 @@ class Window(QMainWindow):
         info=self.model.currentData()
         if not info:self.status.setText('请先导入模型或加载技术测试模型。');return
         try:
-            spec=RenderSpec(info['sha256'],self.action.currentData(),.5 if preview else self.duration.value(),self.width.currentData(),12 if preview else self.fps.currentData(),self.angle.currentData())
+            if self.audio_worker and self.audio_worker.isRunning():raise ValueError('请等待音频导入完成后再入队。')
+            audio=self.audio_info if not preview else None
+            fps=12 if preview else self.fps.currentData()
+            duration=.5 if preview else (output_duration(audio,fps) if audio else self.duration.value())
+            framing=self.framing.currentData()
+            spec=RenderSpec(info['sha256'],self.action.currentData(),duration,self.width.currentData(),fps,self.angle.currentData(),
+                            schema=2 if audio or framing!='full' else 1,audio_sha256=audio['source_sha256'] if audio else None,framing=framing)
             self.service.jobs.add(spec);self.status.setText('任务已入队。模型、动作和参数已保存快照。');self.refresh();self.dispatch()
         except Exception as exc:self.status.setText(str(exc))
 
     def dispatch(self):
+        if self.closing:return
+        if hasattr(self,'speech') and self.speech.busy:return
         if self.worker and self.worker.isRunning():return
         if self.exchange_worker and self.exchange_worker.isRunning():return
         if self.preview_worker and self.preview_worker.isRunning():return
+        if self.audio_worker and self.audio_worker.isRunning():return
         ident=self.service.jobs.next_queued()
         if not ident:return
         self.current=ident;self.worker=Worker(self.service,self.current)
@@ -177,7 +253,7 @@ class Window(QMainWindow):
             selected=self.model.currentData()
             if selected and selected['sha256']==request['model_sha256']:
                 self.show_picture(self.last_output/'姿势预览.png')
-            self.status.setText('已完成。透明MOV供剪映；scene.blend保留可编辑模型与骨架。')
+            self.status.setText('已完成。'+('透明MOV和口播WAV从0对齐；预览含声音。' if request.get('audio_sha256') else '透明MOV供剪映；scene.blend保留可编辑模型与骨架。'))
         self.refresh()
         if self.smoke:
             if not error:
@@ -187,10 +263,8 @@ class Window(QMainWindow):
                     assert len(self.service.jobs.list())==count,'重复加载不应再排队'
                     assert self.picture.pixmap() and not self.picture.pixmap().isNull()
                 if self.smoke_export and not self.smoke_export_started:
-                    self.smoke_export_started=True
-                    self.fps.setCurrentIndex(self.fps.findData(30));self.width.setCurrentIndex(self.width.findData(320))
-                    self.duration.setValue(.5);self.action.setCurrentIndex(self.action.findData(self.smoke_action))
-                    self.export.click()
+                    if self.smoke_audio:self.load_audio(self.smoke_audio)
+                    else:self.start_smoke_export()
                     return
                 if self.smoke_exchange:
                     self.exchange.click()
@@ -236,9 +310,11 @@ class Window(QMainWindow):
     def preview_finished(self,page,error):
         if self.smoke and self.smoke_preview:
             from .models import atomic_json
+            self.grab().save(str(self.smoke/'window.png'))
             atomic_json(self.smoke/'gui-preview-result.json',{'page':page,'error':error,
                 'animation_export_button':self.smoke_export_started,'selected_fps':self.fps.currentData(),
-                'preview_button':True,'native_browser_playback':'not verified'})
+                'preview_button':True,'audio_sha256':self.audio_info['source_sha256'] if self.audio_info else None,
+                'native_browser_playback':'not verified'})
             QTimer.singleShot(500,self.close)
             return
         if error:self.status.setText('兼容预览未完成：'+error+'\n原始成品保留，可重试或打开任务目录。')
@@ -291,7 +367,7 @@ class Window(QMainWindow):
         except Exception as exc:self.status.setText(str(exc))
 
     def cancel_active(self):
-        for worker in (self.worker,self.exchange_worker,self.preview_worker):
+        for worker in (self.worker,self.exchange_worker,self.preview_worker,self.audio_worker):
             if worker and worker.isRunning():worker.cancel.set()
 
     def smoke_start(self,sample):
@@ -300,10 +376,21 @@ class Window(QMainWindow):
         assert len(self.service.jobs.list())==1,'连点加载按钮不能生成重复预览'
         self.grab().save(str(self.smoke/'loading.png'))
 
+    def start_smoke_export(self):
+        if self.audio_worker and self.audio_worker.isRunning():
+            QTimer.singleShot(20,self.start_smoke_export);return
+        self.smoke_export_started=True
+        self.fps.setCurrentIndex(self.fps.findData(30));self.width.setCurrentIndex(self.width.findData(320))
+        if not self.audio_info:self.duration.setValue(.5)
+        self.action.setCurrentIndex(self.action.findData(self.smoke_action))
+        self.export.click()
+
     def closeEvent(self,event):
         self.timer.stop()
-        for worker in (self.worker,self.exchange_worker,self.preview_worker):
+        if not self.live.shutdown():event.ignore();self.timer.start(300);return
+        if not self.speech.shutdown():event.ignore();self.timer.start(300);return
+        for worker in (self.worker,self.exchange_worker,self.preview_worker,self.audio_worker):
             if worker and worker.isRunning():
                 worker.cancel.set()
                 if not worker.wait(15000):self.status.setText('正在停止本任务，请稍候再关闭。');event.ignore();self.timer.start(300);return
-        event.accept()
+        self.closing=True;event.accept()

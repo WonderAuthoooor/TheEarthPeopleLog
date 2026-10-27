@@ -1,0 +1,13 @@
+{
+  "frames": 15,
+  "fps": 30,
+  "binding_error": 2.7549470371646123e-08,
+  "max_aa": 0.7156952018254183,
+  "final_aa": 0.0,
+  "max_blink": 0.0,
+  "blink_expected_in_this_clip": false,
+  "mouth_vertex_delta": 0.012773474666099474,
+  "replay_vertex_error": 0.0,
+  "source_unchanged": true,
+  "manual_sync_verified": false
+}

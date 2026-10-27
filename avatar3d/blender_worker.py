@@ -11,7 +11,7 @@ from earthlog_render.motion import arm_targets
 
 def main():
     request=json.loads(Path(sys.argv[sys.argv.index('--')+1]).read_text(encoding='utf-8'))
-    RenderSpec.from_dict({k:request[k] for k in ('schema','model_sha256','action','duration','fps','width','azimuth')})
+    RenderSpec.from_request(request)
     folder=Path(request['folder'])
     sys.path.insert(0,request['addon'])
     import bpy,io_scene_vrm
@@ -52,6 +52,15 @@ def main():
     from earthlog_render.natural_pose import NaturalPose
     natural_pose=NaturalPose(arm,bones) if request['action'] in ('idle','explain') else None
     natural_checks=[]
+    rehearsal_pose=None;rehearsal_checks=[]
+    rehearsal_frames=None
+    if request.get('rehearsal'):
+        from earthlog_render.rehearsal_pose import RehearsalPose
+        if request['action']!='idle' or request.get('mouth_track') or request['rehearsal']['duration']!=request['duration']:
+            raise ValueError('排练仅接受无音频待机底层且时长一致的请求。')
+        rehearsal_pose=RehearsalPose(arm,bones,request['rehearsal'])
+        from earthlog_render.rehearsal import selected_frames
+        rehearsal_frames=selected_frames(request)
     mouth_pose=None;mouth_checks=[]
     if request.get('mouth_track'):
         from earthlog_render.models import digest
@@ -75,8 +84,8 @@ def main():
     camera.data.type='ORTHO';camera.data.ortho_scale=height*1.17
     target=Vector((hips.x,hips.y,foot+height*.52))
     if request.get('framing')=='bust':
-        camera.data.ortho_scale=height*.50
-        target=Vector((hips.x,hips.y,head.z-height*.09))
+        camera.data.ortho_scale=height*.62
+        target=Vector((hips.x,hips.y,head.z-height*.10))
     elif request.get('framing','full')!='full':raise ValueError('未知构图。')
     def place_camera(degrees):
         a=math.radians(degrees);camera.location=target+Vector((math.sin(a)*height*3,-math.cos(a)*height*3,0))
@@ -94,7 +103,9 @@ def main():
             p.matrix_basis=Matrix.Identity(4)
         bpy.context.view_layer.update()
         action=request['action']
-        if natural_pose:
+        if rehearsal_pose:
+            rehearsal_checks.append(rehearsal_pose.apply(t,index+1))
+        elif natural_pose:
             # 循环不重复最后一帧；单次讲解保留完整收手端点。
             sample_time=t if action=='idle' else phase*request['duration']
             natural_checks.append(natural_pose.apply(action,sample_time,request['duration'],index+1))
@@ -114,15 +125,25 @@ def main():
             bpy.context.view_layer.update()
         place_camera(request['azimuth']+(90*math.sin(phase*2*math.pi) if action=='turntable' else 0))
         camera.keyframe_insert('location',frame=index+1);camera.keyframe_insert('rotation_euler',frame=index+1)
-        scene.render.filepath=str(folder/'frames'/f'{index:05}.png')
-        bpy.ops.render.render(write_still=True)
-        atomic_json(folder/'progress.json',{'percent':round((index+1)/total*85)})
+        if rehearsal_pose:
+            atomic_json(folder/'progress.json',{'percent':round((index+1)/total*60)})
+        else:
+            scene.render.filepath=str(folder/'frames'/f'{index:05}.png')
+            bpy.ops.render.render(write_still=True)
+            atomic_json(folder/'progress.json',{'percent':round((index+1)/total*85)})
     # 保存烘焙后的骨骼动作与相机关键帧，作为可复用且可编辑的生成工程。
     if wave_checks:atomic_json(folder/'wave-pose-checks.json',wave_checks)
     if natural_checks:atomic_json(folder/'natural-pose-checks.json',natural_checks)
     if mouth_checks:atomic_json(folder/'mouth-pose-checks.json',mouth_checks)
+    if rehearsal_checks:atomic_json(folder/'rehearsal-checks.json',rehearsal_checks)
     scene.frame_set(1)
     bpy.ops.wm.save_as_mainfile(filepath=str(folder/'scene.blend'))
+    if rehearsal_pose:
+        for offset,index in enumerate(rehearsal_frames):
+            scene.frame_set(index+1)
+            scene.render.filepath=str(folder/'frames'/f'{index:05}.png')
+            bpy.ops.render.render(write_still=True)
+            atomic_json(folder/'progress.json',{'percent':60+round((offset+1)/len(rehearsal_frames)*25)})
 
 if __name__=='__main__':
     try:main()

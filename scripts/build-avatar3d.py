@@ -16,7 +16,7 @@ if __name__=='__main__':
     args=[str(ROOT/'avatar3d_entry.py'),'--name','EarthPeopleLogAvatar3D','--onedir','--windowed','--clean','--noconfirm',
           '--icon',str(ROOT/'avatar3d/assets/app-icon.ico'),'--paths',str(ROOT/'.runtime/python'),'--paths',str(ROOT),
           '--distpath',str(dist),'--workpath',str(build),'--specpath',str(build),
-          '--collect-all','av','--add-data',str(ROOT/'avatar3d')+';avatar3d',
+          '--collect-all','av','--collect-all','imageio_ffmpeg','--add-data',str(ROOT/'avatar3d')+';avatar3d',
           '--add-data',str(ROOT/'.runtime/avatar-notices')+';licenses']
     for module in ('studio','globe_app','avatar_app','pipeline','mediapipe','yt_dlp','tkinter','matplotlib','IPython','pytest','PyQt5','PyQt6'):
         args+=['--exclude-module',module]

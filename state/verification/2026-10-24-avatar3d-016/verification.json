@@ -1,0 +1,92 @@
+{
+  "tests_passed": 169,
+  "results": {
+    "source": {
+      "folder": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\source-workspace\\jobs\\7f44daf7b7f74b4882f8a1d10e142ed5",
+      "request": {
+        "model_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+        "action": "explain",
+        "duration": 0.5,
+        "width": 320,
+        "fps": 30,
+        "azimuth": 0,
+        "schema": 2,
+        "audio_sha256": "539e62532cb8222ec451887dabcc2b4df47fc0c1a2a939f6420a528242a13413",
+        "framing": "bust",
+        "model": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\source-workspace\\models\\090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70.vrm",
+        "sample": false,
+        "mouth_track": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\source-workspace\\jobs\\7f44daf7b7f74b4882f8a1d10e142ed5\\mouth-track.json",
+        "mouth_track_sha256": "2bf130bd5a87f5fe0cf24bede001cd11eece5bedf4c2b545ab369de0444c8e1b"
+      },
+      "frames": 15,
+      "fps": 30,
+      "alpha_and_pts": "passed",
+      "gui": {
+        "page": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\source-workspace\\jobs\\7f44daf7b7f74b4882f8a1d10e142ed5\\browser-preview\\index.html",
+        "error": "",
+        "animation_export_button": true,
+        "selected_fps": 30,
+        "preview_button": true,
+        "audio_sha256": "539e62532cb8222ec451887dabcc2b4df47fc0c1a2a939f6420a528242a13413",
+        "native_browser_playback": "not verified"
+      },
+      "files": {
+        "姿势预览.png": "3217bfc4d60486829c303e9b9fbad94addd0b6b8e10bc3f34c22215fd0828684",
+        "有声预览.mp4": "e35a35e56e5acc6c6512bb492f838dddcc5846f017a1d6ebadc630f2895488b4",
+        "有声预览.webm": "d158ecf9356e565cdbae9dcb27f6f7380d38de09a401b9ffb902bc0fbdc618c7",
+        "mouth-track.json": "2bf130bd5a87f5fe0cf24bede001cd11eece5bedf4c2b545ab369de0444c8e1b",
+        "mouth-pose-checks.json": "995d4e34a14169ef3c570b808997b727bcaed0d2be3c4d1c8e60f656181ccbc5",
+        "角色透明.mov": "35de15db4bab55e38641b2fec46988e2b731878009f5a39e9db8d44707a944b9",
+        "口播.wav": "aa61df8da96dd71449e6f9b3f77f435cc54121f6bec182f5d56ce9e2aaa01fa7",
+        "scene.blend": "875cd9ae2509ffa9060ad8e218ecc5d038b31e1101882af5ee461f2cea94bd05",
+        "动作预览.mp4": "ff0d67081e067b317c9d369ddde62dc0ec2c53e2195209c4e43037c849c35b4b"
+      }
+    },
+    "frozen": {
+      "folder": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\frozen-workspace\\jobs\\8213d10d05494e9a8ead90558e3d15b6",
+      "request": {
+        "model_sha256": "090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70",
+        "action": "explain",
+        "duration": 0.5,
+        "width": 320,
+        "fps": 30,
+        "azimuth": 0,
+        "schema": 2,
+        "audio_sha256": "539e62532cb8222ec451887dabcc2b4df47fc0c1a2a939f6420a528242a13413",
+        "framing": "bust",
+        "model": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\frozen-workspace\\models\\090301c984f13ba7b7b11223c9b556844fdd7aa332672c7b96390da82952bc70.vrm",
+        "sample": false,
+        "mouth_track": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\frozen-workspace\\jobs\\8213d10d05494e9a8ead90558e3d15b6\\mouth-track.json",
+        "mouth_track_sha256": "2bf130bd5a87f5fe0cf24bede001cd11eece5bedf4c2b545ab369de0444c8e1b"
+      },
+      "frames": 15,
+      "fps": 30,
+      "alpha_and_pts": "passed",
+      "gui": {
+        "page": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\audio-ui-016\\frozen-workspace\\jobs\\8213d10d05494e9a8ead90558e3d15b6\\browser-preview\\index.html",
+        "error": "",
+        "animation_export_button": true,
+        "selected_fps": 30,
+        "preview_button": true,
+        "audio_sha256": "539e62532cb8222ec451887dabcc2b4df47fc0c1a2a939f6420a528242a13413",
+        "native_browser_playback": "not verified"
+      },
+      "files": {
+        "动作预览.mp4": "ff0d67081e067b317c9d369ddde62dc0ec2c53e2195209c4e43037c849c35b4b",
+        "姿势预览.png": "3217bfc4d60486829c303e9b9fbad94addd0b6b8e10bc3f34c22215fd0828684",
+        "mouth-pose-checks.json": "995d4e34a14169ef3c570b808997b727bcaed0d2be3c4d1c8e60f656181ccbc5",
+        "有声预览.mp4": "e35a35e56e5acc6c6512bb492f838dddcc5846f017a1d6ebadc630f2895488b4",
+        "scene.blend": "0322edda14af57231bd59e630cd6a581310db214f250730b308d634432697a4e",
+        "mouth-track.json": "2bf130bd5a87f5fe0cf24bede001cd11eece5bedf4c2b545ab369de0444c8e1b",
+        "口播.wav": "aa61df8da96dd71449e6f9b3f77f435cc54121f6bec182f5d56ce9e2aaa01fa7",
+        "角色透明.mov": "35de15db4bab55e38641b2fec46988e2b731878009f5a39e9db8d44707a944b9",
+        "有声预览.webm": "fb4474e17a4efdf91df88a3f11c113c0801b0f06caca46524ad825d337b56419"
+      }
+    }
+  },
+  "frozen_source_hashes": "passed",
+  "native_browser_playback": "pending",
+  "gui_offscreen_layout": "checked with Microsoft YaHei loaded explicitly for offscreen QA",
+  "manual_verification": "paused by user",
+  "old_workspace_not_migrated": true
+}

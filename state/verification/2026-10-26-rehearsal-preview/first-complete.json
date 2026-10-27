@@ -1,0 +1,26 @@
+{
+  "source": "D:\\work\\TheEarthPeopleLog\\工作素材\\虚拟形象\\C角色\\连续排练-v002",
+  "master_sha256": "28c4db98385dd6103caf9f96e7f69ef388cd0b97cce7344bcc79fe3426f4471a",
+  "request_sha256": "be78a31fa872bb7c40d4bc2a18c4056c1b4800008e0b2019149603bdb57aa586",
+  "frames": 900,
+  "fps": 30,
+  "duration": 30.0,
+  "revision": 1,
+  "engine": "BLENDER_WORKBENCH",
+  "quality": "motion",
+  "width": 320,
+  "height": 480,
+  "samples": 2,
+  "verified_frames": 900,
+  "reused_frames": 0,
+  "files": {
+    "预览.html": "cc5108387caab70ce20eabaf31f988beb36d6bc649c8b30ae6b498370ae0ae65",
+    "动作预览.mp4": "263d0a5e2aa7c7ab0be4505af17253ffef02870d1a62a45d580e92ad3dced5b0",
+    "角色透明.mov": "12c012ea418775aab2fcb96d01fef3e2691e8b32dd67d7ad64128a1171b1fb4c",
+    "browser-preview/preview.webm": "0ac25d1522994bbc6d1b962af2a206438ece23709c3026450ae0d86a9b0a8b18",
+    "browser-preview/fallback.webp": "f68944e63d5aa5d34f45294dd5cf80299e81f3f930a4be0f06e495515a830e00",
+    "browser-preview/poster.jpg": "b37c650f624b64f25ba6a9ce6753ce8235ffe4e8aff3d2ec72eb8d5bf588b64a"
+  },
+  "visual_acceptance": "pending",
+  "warudo": "not tested"
+}

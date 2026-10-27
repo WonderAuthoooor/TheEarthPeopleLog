@@ -1,0 +1,38 @@
+{
+  "first": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\speech-project-v1\\workspace\\projects\\runs\\bd2ee36ba5054e00aa4d6474043526bd",
+  "repeated": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\speech-project-v1\\workspace\\projects\\runs\\0cec2a4c3a2c47b19149d02d774f14ef",
+  "changed": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\speech-project-v1\\workspace\\projects\\runs\\d285f334dcea4968817c6730361a6c09",
+  "reordered": "D:\\work\\TheEarthPeopleLog\\.runtime\\avatar3d-tests\\speech-project-v1\\workspace\\projects\\runs\\a9fcc0274b7149068dec05d53e79e36b",
+  "initial_jobs": [
+    "31c007407f5d4c7e92c020866704b1b4",
+    "4f6486c48a4e4ca295bef20ca26ba264"
+  ],
+  "changed_jobs": [
+    "188e4d32da644edcba70de0bf429f253",
+    "4f6486c48a4e4ca295bef20ca26ba264"
+  ],
+  "checks": [
+    {
+      "job_id": "31c007407f5d4c7e92c020866704b1b4",
+      "frames": 15,
+      "fps": 30,
+      "alpha_pts_hashes": true
+    },
+    {
+      "job_id": "4f6486c48a4e4ca295bef20ca26ba264",
+      "frames": 15,
+      "fps": 30,
+      "alpha_pts_hashes": true
+    },
+    {
+      "job_id": "188e4d32da644edcba70de0bf429f253",
+      "frames": 21,
+      "fps": 30,
+      "alpha_pts_hashes": true
+    }
+  ],
+  "stale_audio_blocked": true,
+  "lock_rejected": true,
+  "history_add_remove": true,
+  "note": "合成测试音，非真实口播；实际C模型Blender及编码链路。"
+}

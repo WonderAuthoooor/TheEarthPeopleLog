@@ -12,9 +12,10 @@ class Jobs:
         self.workspace=Path(workspace);self.workspace.mkdir(parents=True,exist_ok=True)
         self.path=self.workspace/'jobs.sqlite3'
         with closing(self.connect()) as c:
-            if c.execute('PRAGMA user_version').fetchone()[0]>1:raise ValueError('工作区数据库来自更新版本，不能用旧程序修改。')
+            version=c.execute('PRAGMA user_version').fetchone()[0]
+            if version>2:raise ValueError('工作区数据库来自更新版本，不能用旧程序修改。')
             c.executescript('PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY, request TEXT NOT NULL, status TEXT NOT NULL, progress INTEGER NOT NULL DEFAULT 0, error TEXT NOT NULL DEFAULT "", created TEXT NOT NULL, updated TEXT NOT NULL);')
-            c.execute('PRAGMA user_version=1')
+            if version==0:c.execute('PRAGMA user_version=1')
 
     def connect(self):
         c=sqlite3.connect(self.path,timeout=10);c.row_factory=sqlite3.Row
@@ -24,6 +25,7 @@ class Jobs:
         request=json.dumps(spec.to_dict(),ensure_ascii=False,sort_keys=True);ident=uuid.uuid4().hex
         with closing(self.connect()) as c,c:
             c.execute('INSERT INTO jobs(id,request,status,created,updated) VALUES(?,?,?,?,?)',(ident,request,'queued',now(),now()))
+            if spec.schema==2:c.execute('PRAGMA user_version=2')
         return ident
 
     def get(self,ident):

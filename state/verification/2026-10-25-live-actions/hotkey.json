@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-25T11:01:27.089221+08:00",
+  "warudo_version": "0.15.1",
+  "source": "本机Warudo.Plugins.Core.Events.Keystroke只读反射",
+  "keystroke_enum": {
+    "F8": 66,
+    "F9": 67
+  },
+  "source_scene_sha256": "6fa2400653a579b6afaca15a5ff43e62258cfa5747835267b96f7da0dc28b509",
+  "blueprint_sha256": "60a3fa15adf0f0347f68905aea707afd61f78971ee7b4ba9b2f43491a5578f0d",
+  "character_id": "29399e49-1c26-41bb-b40f-294dc0590f68",
+  "shortcut": "Ctrl+Alt+F9",
+  "animation_resource": "pending native picker selection",
+  "native_playback": "pending",
+  "existing_wave_binding_preserved": true
+}

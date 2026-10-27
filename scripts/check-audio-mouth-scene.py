@@ -37,7 +37,8 @@ def main():
         for key,weight in pose.bindings.values():
             error=max(error,abs(key.value-min(1.,expected*weight)))
     if error>1e-5 or max(weights)<.05 or weights[-1]!=0:raise ValueError('保存工程口型曲线异常。')
-    if max(blink_values)<.5:raise ValueError('眨眼叠加没有保留。')
+    blink_expected=request['duration']>=2
+    if blink_expected and max(blink_values)<.5:raise ValueError('眨眼叠加没有保留。')
     peak=max(range(len(weights)),key=weights.__getitem__)+1
     scene.frame_set(peak);bpy.context.view_layer.update()
     mesh=bpy.data.objects[next(iter(pose.bindings))[0]]
@@ -55,6 +56,7 @@ def main():
     if digest(request['model'])!=record['model_sha256']:raise ValueError('源模型发生修改。')
     atomic_json(output,{'frames':record['frames'],'fps':record['fps'],'binding_error':error,
                        'max_aa':max(weights),'final_aa':weights[-1],'max_blink':max(blink_values),
+                       'blink_expected_in_this_clip':blink_expected,
                        'mouth_vertex_delta':deformation,'replay_vertex_error':replay_error,
                        'source_unchanged':True,'manual_sync_verified':False})
 

@@ -44,13 +44,14 @@ def bone_bindings(source):
     return bindings
 
 
-def prepare_project(exchange, destination, sdk):
-    exchange, destination, sdk = map(lambda p: Path(p).resolve(), (exchange, destination, sdk))
+def exchange_request(exchange):
+    """准备工程和复用构建工程使用同一来源／时序校验。"""
+    exchange = Path(exchange).resolve()
     record = verify_exchange(exchange)
     manifest = json.loads((exchange / 'manifest.json').read_text(encoding='utf-8'))
     fps, frames = manifest.get('fps'), manifest.get('frames')
     if (manifest.get('schema') != 1 or type(fps) is not int or not 1 <= fps <= 120 or
-            type(frames) is not int or not 2 <= frames <= 21600 or
+            type(frames) is not int or not 2 <= frames <= 21601 or
             manifest.get('validation', {}).get('blender_fbx_roundtrip') != 'passed' or
             manifest.get('model_sha256') != record['files']['character.vrm'] or
             manifest.get('source_blend_sha256') != record['files']['source.blend']):
@@ -63,6 +64,24 @@ def prepare_project(exchange, destination, sdk):
     if roundtrip.get('passed') is not True:
         raise ValueError('交换包FBX往返验证未通过。')
     bindings = bone_bindings(manifest.get('source_bones'))
+    action = manifest.get('action_id', 'wave')  # 兼容早期挥手交换包。
+    if action not in ('neutral', 'idle', 'explain', 'bend', 'wave', 'hold', 'turntable'):
+        raise ValueError('未知动作标识，不能构建动作包。')
+    if type(manifest.get('loop', False)) is not bool:
+        raise ValueError('循环标识必须是布尔值。')
+    if manifest.get('loop') and (roundtrip.get('loop_closed') is not True or
+                                roundtrip.get('checked_frames') != frames):
+        raise ValueError('循环动作缺少完整周期闭合验证。')
+    return {'schema': 1, 'editorVersion': EDITOR_VERSION, 'fbxAsset': FBX_ASSET,
+            'fbxSha256': record['files']['animation.fbx'], 'fps': fps, 'frames': frames,
+            'duration': duration, 'loop': manifest.get('loop') is True, 'actionId': action,
+            'modelSha256': manifest['model_sha256'], 'bindings': bindings}
+
+
+def prepare_project(exchange, destination, sdk):
+    exchange, destination, sdk = map(lambda p: Path(p).resolve(), (exchange, destination, sdk))
+    request = exchange_request(exchange)
+    record = verify_exchange(exchange)
     if sdk.name != SDK_FILENAME or digest(sdk) != SDK_SHA256:
         raise ValueError('SDK不是已缓存的固定版本或文件已损坏。')
     template = Path(__file__).parent / 'unity/AvatarBridge.cs'
@@ -87,12 +106,7 @@ def prepare_project(exchange, destination, sdk):
             if digest(target) != expected:
                 raise ValueError(f'复制期间文件变化：{source.name}')
             files[relative] = expected
-        atomic_json(destination / 'AvatarBridge/request.json', {
-            'schema': 1, 'editorVersion': EDITOR_VERSION, 'fbxAsset': FBX_ASSET,
-            'fbxSha256': record['files']['animation.fbx'], 'fps': fps, 'frames': frames,
-            'duration': duration, 'loop': manifest.get('loop') is True,
-            'modelSha256': manifest['model_sha256'], 'bindings': bindings,
-        })
+        atomic_json(destination / 'AvatarBridge/request.json', request)
         # 先在纯Unity验证人形动作；SDK稍后按官方流程导入，避免依赖下载阻塞骨骼排错。
         atomic_json(destination / 'Packages/manifest.json', {
             'dependencies': {'com.unity.modules.animation': '1.0.0'}})
